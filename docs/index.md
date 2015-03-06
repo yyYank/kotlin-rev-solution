@@ -5,9 +5,10 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 ## 目次
 
 * `Kotlinをインストールする`
-* `KotlinプラグインをAndroid Studioに入れる`
 * `KotlinプラグインをIntelliJ IDEAに導入する`
+* `KotlinプラグインをAndroid Studioに入れる`
 * `KotlinをEclipseで動かす`
+* `GradleのKotlinプラグインを使う`
 * `変数を宣言する`
 * `型を宣言する`
 * `配列を生成する`

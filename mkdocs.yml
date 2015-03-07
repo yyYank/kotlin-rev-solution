@@ -1,1 +1,4 @@
 site_name: 逆引きKotlin
+pages:
+- [index.md, Home]
+- [variable.md, '目次', '変数を宣言する']

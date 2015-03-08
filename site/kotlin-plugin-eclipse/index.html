@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-        <title>変数を宣言する - 逆引きKotlin</title>
+        <title>KotlinをEclipseで動かす - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -65,16 +65,16 @@
                                 <a href="../kotlin-plugin-androidstudio">KotlinプラグインをAndroid Studioに入れる</a>
                             </li>
                         
-                            <li >
-                                <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
+                            <li class="active">
+                                <a href=".">KotlinをEclipseで動かす</a>
                             </li>
                         
                             <li >
                                 <a href="../kotlin-plugin-gradle">GradleのKotlinプラグインを使う</a>
                             </li>
                         
-                            <li class="active">
-                                <a href=".">変数を宣言する</a>
+                            <li >
+                                <a href="../variable">変数を宣言する</a>
                             </li>
                         
                             <li >
@@ -122,12 +122,12 @@
                 
                 
                 <li >
-                    <a rel="next" href="../kotlin-plugin-gradle">
+                    <a rel="next" href="../kotlin-plugin-androidstudio">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../type">
+                    <a rel="prev" href="../kotlin-plugin-gradle">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -144,55 +144,65 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">変数を宣言する</a></li>
+        <li class="main active"><a href="#kotlineclipse">KotlinをEclipseで動かす</a></li>
         
-            <li><a href="#_2">文字列の宣言</a></li>
+    
+        <li class="main "><a href="#_1">事前準備</a></li>
         
-            <li><a href="#null">nullは?を付けないと代入できない</a></li>
+    
+        <li class="main "><a href="#_2">手順</a></li>
+        
+    
+        <li class="main "><a href="#_3">使ってみた感想</a></li>
+        
+    
+        <li class="main "><a href="#url">参考URL</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">変数を宣言する</h2>
-<p>変数の宣言には2種類の宣言があります</p>
+<h3 id="kotlineclipse">KotlinをEclipseで動かす</h3>
+<p><font color=red>先に言っておきますと、非推奨です。</font>   </p>
+<p>Kotlinの公式サイトからは現在公表されておらず、 <br />
+（昔はcoming soonとか書いてあった） </p>
+<p>プラグインは公式リリースされているものではありません（２０１５年３月８日現在）。</p>
+<p>素直にIntelliJ IDEAかAndroid Studio使ったほうが楽です。 <br />
+一応記録として残しておく程度という認識でお願いします。</p>
+<h3 id="_1">事前準備</h3>
 <ul>
-<li>var</li>
-<li>val</li>
+<li>Eclipse 4.3.1(Kepler)以上インストール<br />
+-&gt; Kepler推奨みたいですが、Lunaでも動きました。</li>
+<li>Eclipse SDKインストール</li>
+<li><a href="https://github.com/JetBrains/kotlin-eclipse">kotlin-eclipse</a>をgit cloneする <br />
+-&gt; Jet Brains社提供のEclipse SDKのKotlin開発環境</li>
 </ul>
-<p>varで宣言した場合は読み書き可能です。  <br />
-valで宣言した場合は読み取り専用です。</p>
-<pre><code>var hoge = "a"
-hoge = "b"  //OK
-val fuga = "a"
-fuga = "b"  // コンパイルエラー
-</code></pre>
-<p>varはいつでもどこでも代入できてしまいます。  <br />
-valで宣言すると再代入時にコンパイルエラーにしてくれます。  <br />
-代入を何度も繰り返す破壊的代入は良くないので、  <br />
-基本的にはvalを使いましょう</p>
-<p><font color=red>※varを使わざるを得ないケースもあります</font></p>
-<h3 id="_2">文字列の宣言</h3>
-<pre><code>// 文字列の宣言
-val hoge = "aiueo"
-// 型の宣言も可能
-val hoge : String = "aiueo"
-// 数値の宣言
-val number = 1
-</code></pre>
-<p>型の宣言は明示的にすることも可能ですが、 <br />
-推論されるので宣言しなくても良いです。</p>
-<h3 id="null">nullは?を付けないと代入できない</h3>
-<pre><code>// コンパイルエラー!
-val a = null
-// これならnullを代入してもOK
-val a : String? = null
-</code></pre>
-<p>こういうこと言われてしまいます <br />
-「 is not satisfied: inferred type kotlin.Nothing? is not a subtype of kotlin.Any」  <br />
-null使わないほうがいいですね   </p>
-<p>どうしてもnullを許容するためには型を宣言して「?」を付ける必要があります。</p>
+<h3 id="_2">手順</h3>
+<p>１．Eclipseを起動し、File&gt;Import&gt;Project&gt;existing project into workspaceで <br />
+kotlin-eclipseのプロジェクトを取り込む</p>
+<p>２．kotlin-eclipseプロジェクトのantスクリプトからkotlin-eclipseをビルドする</p>
+<p>３．Kotlin-eclipseのlauncherプロジェクトのlaunch用のantスクリプトを実行</p>
+<p>3.の実行時にプラグインを全て追加する必要があります。 <br />
+うまく行けばEclipse上にEclipse（Eclipse SDK）が起動するような形になる。   </p>
+<h3 id="_3">使ってみた感想</h3>
+<p>Eclipseの良さがあんまり感じられなくなっちゃってる</p>
+<ul>
+<li>Eclipse起動してさらにEclipse起動する感じが面倒くさい <br />
+-&gt; 多分環境変数を切り出してantスクリプト実行出来れば良いのだろうけど、 <br />
+   JetBrainsさんに頑張ってもらえないと辛い</li>
+<li>コード補完は出来る</li>
+<li>Eclipseの補助的な機能は死んでたりする</li>
+</ul>
+<p>例えば文字列リテラルで <br />
+    String a = "a <br />
+という状態で開業すると <br />
+    String a = "a" <br />
+    + " <br />
+という風にEclipseはしてくれるはずなんだけどKotlin-eclipseだと出来ないとか。</p>
+<h3 id="url">参考URL</h3>
+<p><a href="https://www.youtube.com/watch?v=6AZ6NjWXjzc">動画-Kotlin Eclipse Plugin @clomie #jkug</a> <br />
+<a href="https://speakerdeck.com/clomie/kotlin-eclipse-plugin-number-jkug">スライド-Kotlin Eclipse Plugin #jkug by clomie</a></p>
 </div>
             
         </div>

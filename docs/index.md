@@ -11,7 +11,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * `KotlinをEclipseで動かす`
 * `GradleのKotlinプラグインを使う`
 * [変数を宣言する](./variable)
-* `型を宣言する`
+* [型を宣言する](./type)
 * `配列を生成する`
 * `関数を宣言する`
 * `条件分岐を行う`

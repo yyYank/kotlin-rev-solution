@@ -61,6 +61,10 @@
                                 <a href=".">変数を宣言する</a>
                             </li>
                         
+                            <li >
+                                <a href="../type">型を宣言する</a>
+                            </li>
+                        
                         </ul>
                     </li>
                 
@@ -78,8 +82,8 @@
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="prev" >
+                <li >
+                    <a rel="prev" href="../type">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -113,9 +117,18 @@
 <li>var</li>
 <li>val</li>
 </ul>
-<p>varで宣言した場合は可変(mutable)、 <br />
-valで宣言した場合は不変(immutable)です   </p>
-<p>基本的にはvalを使いましょう。</p>
+<p>varで宣言した場合は読み書き可能です。  <br />
+valで宣言した場合は読み取り専用です。</p>
+<pre><code>var hoge = "a"
+hoge = "b"  //OK
+val fuga = "a"
+fuga = "b"  // コンパイルエラー
+</code></pre>
+<p>varはいつでもどこでも代入できてしまいます。  <br />
+valで宣言すると再代入時にコンパイルエラーにしてくれます。  <br />
+代入を何度も繰り返す破壊的代入は良くないので、  <br />
+基本的にはvalを使いましょう</p>
+<p><font color=red>※varを使わざるを得ないケースもあります</font></p>
 <h3 id="_2">文字列の宣言</h3>
 <pre><code>// 文字列の宣言
 val hoge = "aiueo"

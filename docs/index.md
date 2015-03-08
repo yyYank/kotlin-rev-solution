@@ -5,19 +5,20 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 <br/>  
 ## 目次
 
-* `Kotlinをインストールする`
-* `KotlinプラグインをIntelliJ IDEAに導入する`
-* `KotlinプラグインをAndroid Studioに入れる`
-* `KotlinをEclipseで動かす`
-* `GradleのKotlinプラグインを使う`
+* [Kotlinをインストールする](.)
+* [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
+* [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
+* [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)
+* [GradleのKotlinプラグインを使う](./kotlin-plugin-gradle)
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)
-* `配列を生成する`
-* `関数を宣言する`
-* `条件分岐を行う`
-* `ifを式として扱う`
-* `switchみたいな条件分岐がしたい`
-* `ループ処理を行う`
+* [インスタンスを生成する](./instance)
+* [配列を生成する](./array)
+* [関数を宣言する](./function)
+* [条件分岐を行う](if-statement)
+* [ifを式として扱う](./if-function)
+* [switchみたいな条件分岐がしたい](./when)
+* [ループ処理を行う](./loop)
    
    
 <br/>  

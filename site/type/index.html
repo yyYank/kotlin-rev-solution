@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>型を宣言する - 逆引きKotlin</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">逆引きKotlin</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">目次 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../variable">変数を宣言する</a>
+                            </li>
+                        
+                            <li class="active">
+                                <a href=".">型を宣言する</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="../variable">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#_1">型を宣言する</a></li>
+        
+            <li><a href="#_2">型の宣言(変数)</a></li>
+        
+            <li><a href="#_3">型の宣言(関数)</a></li>
+        
+            <li><a href="#null">null許容型の宣言</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="_1">型を宣言する</h2>
+<p>型の宣言は変数の後に:(コロン) + 形名で表現します。
+関数の戻り値の型指定に関しても同様です。</p>
+<h3 id="_2">型の宣言(変数)</h3>
+<pre><code>val hoge : String = "a"
+val fuga : Int = 1
+val piyo : Double = 1.0
+</code></pre>
+<p>型は基本的に大文字始まりです。
+Javaではintやdoubleなどプリミティブものは小文字始まりですが、
+Kotlinでは全てをクラスとして扱います。</p>
+<h3 id="_3">型の宣言(関数)</h3>
+<pre><code>fun createHogeString() : String = "Hoge"
+</code></pre>
+<p>関数の型宣言も同様に:(コロン) + 型名でで表現します。</p>
+<h3 id="null">null許容型の宣言</h3>
+<p><a href="../../variable">変数の宣言の項</a>でも説明しましたが、 <br />
+Kotlinでは基本的にnull（何も値が無い状態）を許容しません。    </p>
+<p>nullを許容する場合には:（コロン） + 型名のあとに「？」をつけます。</p>
+<pre><code>val hoge : String? = null // OK
+val hoge : String = null // コンパイルエラー
+
+
+fun nullValue() : String? = null // OK
+fun nullValue() : String = null // コンパイルエラー
+</code></pre>
+<p>基本的にはnull許さないよう言語設計されています。</p>
+<p><br/><br />
+<br/><br />
+<br/><br />
+<br/><br />
+NULL</p>
+<blockquote>
+<p>NULLはNULL値（あるいは空値）と呼ばれることもあるが、
+コッドによると値ではない（特殊な値や例外的な値ではない）。
+値ではないので型もない。
+整数型の列にあるNULLも文字列型の列にあるNULLも同じNULLであり、
+NULL整数・NULL文字列などの区別はない。 
+内部的にはNULLは、（NaNやヌルポインタのような）特定のビット列ではなく、
+値とは別個の「NULLかどうか」を表すメモリ領域で管理されていることが多い。</p>
+</blockquote>
+<p>（Wikipediaより）</p>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>

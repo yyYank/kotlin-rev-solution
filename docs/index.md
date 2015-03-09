@@ -5,7 +5,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 <br/>  
 ## 目次
 
-* [Kotlinをインストールする](.)
+* [Kotlinをインストールする](./kotlin-install)
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
 * [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)

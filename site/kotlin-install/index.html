@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>Kotlinをインストールする - 逆引きKotlin</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">逆引きKotlin</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">目次 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li class="active">
+                                <a href=".">Kotlinをインストールする</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../kotlin-plugin-intellij">KotlinプラグインをIntelliJ IDEAに導入する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../kotlin-plugin-androidstudio">KotlinプラグインをAndroid Studioに入れる</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../kotlin-plugin-gradle">GradleのKotlinプラグインを使う</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../variable">変数を宣言する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../type">型を宣言する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../instance">インスタンスを生成する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../array">配列を生成する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../function">関数を宣言する</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../if-statement">条件分岐を行う</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../if-function">ifを式として扱う</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../when">switchみたいな条件分岐がしたい</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../loop">ループ処理を行う</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="..">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../kotlin-plugin-intellij">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#kotlin">Kotlinをインストールする</a></li>
+        
+            <li><a href="#_1">準備</a></li>
+        
+            <li><a href="#_2">使えるコマンド</a></li>
+        
+            <li><a href="#_3">コンパイラ構成</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="kotlin">Kotlinをインストールする</h2>
+<p>KotlinをIDE(統合開発環境)などを介さずに実行するためには <br />
+Kotlin Compilerをダウンロードする必要があります。   </p>
+<p>2015年3月現在、kotlin-compiler-0.10.195.zipとして <br />
+ダウンロードできます。   </p>
+<p><a href="http://kotlinlang.org/">Kotlinの公式サイト</a>からダウンロードしましょう。   </p>
+<p>なお、IDEを使う場合はこの作業は必要ないです。   </p>
+<h3 id="_1">準備</h3>
+<p>環境変数にKOTLIN_HOME/binを通してください。</p>
+<h3 id="_2">使えるコマンド</h3>
+<ul>
+<li>kotlinc</li>
+<li>kotlinc-jvm</li>
+<li>kotlinc-js</li>
+</ul>
+<p>kotlincはkoltin-jvmのAlias。つまり、一緒なので <br />
+kotlincを使えば間違えないです。   </p>
+<h4 id="kotlinckotlinc-jvm">kotlinc（kotlinc-jvm）</h4>
+<p>以下のフォーマットでコマンドは使えます。</p>
+<pre><code>kotlinc ＜ファイル名＞ ＜オプション＞
+</code></pre>
+<p>具体的には、こんな感じ。</p>
+<pre><code>kotlinc-jvm hello.kt -include-runtime -d hello.jar
+</code></pre>
+<p>コンパイル時はkotlincですが、実行時はkotlinコマンドはないです。
+   つまりこういうこと。</p>
+<pre><code>java -jar hello.jar
+</code></pre>
+<p>-include-runtimeでKotlinの実行ランタイムが内包される。 <br />
+これがないと動かない。   </p>
+<p>kotlincのオプションは以下のとおり</p>
+<pre><code>-d &lt;directory|jar&gt;         jarとして出力するファイルパスを指定
+-classpath (-cp) &lt;path&gt;    読み込ませたいclass filesが存在するパスを指定
+-annotations &lt;path&gt;        external annotationsをパスに含む
+-include-runtime           Kotlinのランタイムをjarに含む
+-no-jdk                    Java runtimeをクラスパスに含まない
+-no-stdlib                 Kotlin runtimeをクラスパスに含まない
+-no-jdk-annotations        JDK external annotationsをクラスパスに含まない
+-module &lt;path&gt;             コンパイルするモジュールを指定
+-script                    Scriptのファイルを評価する
+-kotlin-home &lt;path&gt;        KotlinランタイムのHOMEを指定（annotationとruntime librariesを見つけるため）
+-nowarn                    渓谷を表示しない
+-verbose                   verboseログ出力を有効にする
+-version                   バージョン確認
+-help (-h)                 HELP表示
+-X                         advancedオプション表示
+</code></pre>
+<p>kotlincだけ打ち込むとREPL（対話環境モードになる）</p>
+<h4 id="kotlinc-js">kotlinc-js</h4>
+<p>kolinc-jsにはREPLはないようです。 <br />
+動作確認はしていないが以下の様なコマンドで <br />
+JavaScriptにコンバートされるよう。</p>
+<pre><code>kotlinc-js -output test -sourceFiles test.kt -libraryFiles kotlin-jslib.jar
+</code></pre>
+<p>オプションは以下のとおり。</p>
+<pre><code>-output &lt;path&gt;             出力ファイルパス
+-no-stdlib                 Kotlinのシステムライブラリを使わない
+-library-files &lt;path[,]&gt;   zipされたライブラリまたはkotlinファイルをカンマ繋ぎでパス指定
+-source-map                ソースマップを生成
+-target &lt;version&gt;          ECMA標準のファイルを生成(ECMA 5のみサポート)
+-main {call,noCall}        main関数を実行するかどうか（デフォルトは実行）
+-output-prefix &lt;path&gt;      出力ファイルにprefixを追加する
+-output-postfix &lt;path&gt;     出力ファイルにpostfixを追加する
+-nowarn                    警告を表示しない
+-verbose                   verboseログ出力を有効にする
+-version                   バージョン確認
+-help (-h)                 HELP表示
+-X                         advancedオプション表示
+</code></pre>
+<h3 id="_3">コンパイラ構成</h3>
+<h4 id="bin">bin</h4>
+<ul>
+<li>kotlinc</li>
+<li>kotlinc-js.bat</li>
+<li>kotlinc-jvm.bat</li>
+<li>kotlinc-js</li>
+<li>kotlinc-jvm</li>
+<li>kotlinc.bat</li>
+</ul>
+<h4 id="lib">lib</h4>
+<ul>
+<li>kotlin-android-sdk-annotations.jar</li>
+<li>kotlin-jslib.jar</li>
+<li>kotlin-ant.jar</li>
+<li>kotlin-preloader.jar</li>
+<li>kotlin-compiler.jar</li>
+<li>kotlin-runtime-sources.jar</li>
+<li>kotlin-jdk-annotations.jar</li>
+<li>kotlin-runtime.jar</li>
+<li>kotlin-jslib-sources.jar</li>
+</ul>
+<p>だいたいこんな感じです。</p>
+<p>参考</p>
+<p><a href="http://kotlinlang.org/docs/tutorials/command-line.html">公式チュートリアル</a></p>
+<p><a href="http://taro.hatenablog.jp/entry/2013/04/06/162855">あまり知られていない？ #Kotlin の対話型評価環境</a></p>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>

@@ -1,6 +1,7 @@
 site_name: 逆引きKotlin
 pages:
 - [index.md, Home]
+- [kotlin-install.md, '目次', 'Kotlinをインストールする']
 - [kotlin-plugin-intellij.md, '目次', 'KotlinプラグインをIntelliJ IDEAに導入する']
 - [kotlin-plugin-androidstudio.md, '目次', 'KotlinプラグインをAndroid Studioに入れる']
 - [kotlin-plugin-eclipse.md, '目次', 'KotlinをEclipseで動かす']

@@ -57,6 +57,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/03/08:型の宣言についてページ作成
      2015/03/08:KotlinをEclipseで動かす ページ作成
      2015/03/09:Kotlinをインストールする ページ作成
+     2015/03/10:KotlinプラグインをIntelliJ IDEAに導入する ページ作成
    
    
    

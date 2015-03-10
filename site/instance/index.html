@@ -150,12 +150,32 @@
     
         <li class="main active"><a href="#_1">インスタンスを生成する</a></li>
         
+            <li><a href="#_2">フォーマット</a></li>
+        
+            <li><a href="#_3">実装サンプル</a></li>
+        
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="_1">インスタンスを生成する</h3>
+<h2 id="_1">インスタンスを生成する</h2>
+<h3 id="_2">フォーマット</h3>
+<p>Kotlinにおいてクラスのインスタンスを生成するには</p>
+<pre><code>クラス名(コンストラクタ引数)
+</code></pre>
+<p>の形式で指定します。new演算子は使いません。   </p>
+<h3 id="_3">実装サンプル</h3>
+<p>例えば、以下の様なHogeというクラスが合った時   </p>
+<pre><code>public class Hoge(val message : String) {
+   fun printHoge () {
+       println("helllo! -&gt; $message")
+   }
+}
+</code></pre>
+<p>インスタンスの生成は以下のように行います。</p>
+<pre><code>val hoge = Hoge("hoge")
+</code></pre>
 </div>
             
         </div>

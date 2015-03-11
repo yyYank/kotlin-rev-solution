@@ -74,10 +74,6 @@
                             </li>
                         
                             <li >
-                                <a href="../kotlin-plugin-gradle">GradleのKotlinプラグインを使う</a>
-                            </li>
-                        
-                            <li >
                                 <a href="../variable">変数を宣言する</a>
                             </li>
                         
@@ -150,12 +146,81 @@
     
         <li class="main active"><a href="#_1">ループ処理を行う</a></li>
         
+            <li><a href="#for">for</a></li>
+        
+            <li><a href="#_2">イテレータブルなオブジェクト</a></li>
+        
+            <li><a href="#forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかは出来ない</a></li>
+        
+            <li><a href="#_3">参考</a></li>
+        
+            <li><a href="#while">while</a></li>
+        
+            <li><a href="#do-while">do-while</a></li>
+        
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="_1">ループ処理を行う</h3>
+<h2 id="_1">ループ処理を行う</h2>
+<p>ループ処理にはいくつかの構文があります。   </p>
+<ul>
+<li>for</li>
+<li>do-while</li>
+<li>while</li>
+</ul>
+<h3 id="for">for</h3>
+<p>フォーマットは以下のとおりです。</p>
+<pre><code>for(任意の変数名 in イテレータブルなオブジェクト) {
+    処理
+}
+</code></pre>
+<p>実際には以下のように書きます。</p>
+<pre><code>val arr = listOf(1, 2, 3, 4, 5)
+for (value in arr) {
+    print(value) // 1 2 3 4 5
+}
+</code></pre>
+<h3 id="_2">イテレータブルなオブジェクト</h3>
+<p>イテレータブルというと難しそうですが、配列などをイメージしてもらえれば大体あっています。 <br />
+以下のような性質を持つものの事を言います。    </p>
+<ul>
+<li>関数 iterator()を持っている（クラスがjava.lang.Iterableを実装している必要はない）</li>
+<li>関数 next()を持っている、かつ、Boolean型の関数 next() またはプロパティnext を持っている</li>
+</ul>
+<h3 id="forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかは出来ない</h3>
+<p>言語として提供されていません</p>
+<h3 id="_3">参考</h3>
+<p><a href="https://sites.google.com/site/tarokotlin/3-kotlinno-biao-zhunapi/sec34">プログラミング言語Kotlin-3.4 制御構文</a></p>
+<p>whileとdo-whileに関しては他の言語とほぼ同じです。</p>
+<h3 id="while">while</h3>
+<p>フォーマットは以下のとおりです。   </p>
+<pre><code>while(条件){処理}
+</code></pre>
+<p>実装サンプルは以下のとおりです。   </p>
+<pre><code>var i = 0
+while (i &lt; 10) {
+    print(i++) // 0 1 2 3 4 5 6 7 8 9
+}
+</code></pre>
+<h3 id="do-while">do-while</h3>
+<p>フォーマットは以下のとおりです。   </p>
+<pre><code>do{処理}while(条件)
+</code></pre>
+<p>実装サンプルは以下のとおりです。   </p>
+<pre><code>var i = 0
+do {
+    print(i++) // 0 1 2 3 4 5 6 7 8 9
+} while(i &lt; 10)
+</code></pre>
+<p><br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
+<p>0.10.195 </p>
 </div>
             
         </div>

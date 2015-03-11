@@ -74,10 +74,6 @@
                             </li>
                         
                             <li >
-                                <a href="../kotlin-plugin-gradle">GradleのKotlinプラグインを使う</a>
-                            </li>
-                        
-                            <li >
                                 <a href="../variable">変数を宣言する</a>
                             </li>
                         
@@ -150,12 +146,73 @@
     
         <li class="main active"><a href="#_1">関数を宣言する</a></li>
         
+            <li><a href="#_2">フォーマット</a></li>
+        
+            <li><a href="#_3">実装サンプル</a></li>
+        
+            <li><a href="#_4">関数オブジェクト</a></li>
+        
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="_1">関数を宣言する</h3>
+<h2 id="_1">関数を宣言する</h2>
+<p>関数の宣言はfunを使います。 <br />
+関数はクラスに属す必要はありません。トップレベルに定義できます。 <br />
+(クラスの関数としても宣言できます)</p>
+<h3 id="_2">フォーマット</h3>
+<pre><code>fun 関数名(仮引数 : 型) : 型 = 処理
+fun 関数名(仮引数 : 型) : 型 {
+    処理
+}
+</code></pre>
+<h3 id="_3">実装サンプル</h3>
+<p>以下のように実装できます。</p>
+<pre><code>fun greetPerson() : String = "yank"
+
+fun greet() : Unit {
+  println("hello")
+}
+
+fun greetTo(person : String) : Unit = println("hello! $person")
+</code></pre>
+<p>さらに推論される型は省略できます。</p>
+<pre><code>fun greetPerson() = "yank"
+
+fun greet() {
+  println("hello")
+}
+
+fun greetTo(person : String) = println("hello! $person")
+</code></pre>
+<p>$personは文字列への埋め込みの記法です。</p>
+<h3 id="_4">関数オブジェクト</h3>
+<p>KotlinではJavaScriptなどのように関数オブジェクトを宣言できます。
+例えば、先ほどのgreetTo関数を以下のように書き換え可能です。</p>
+<pre><code>val greetTo  = {
+    (person : String) -&gt; "hello! $person"
+}
+println(greetTo("duke"))
+</code></pre>
+<p>またはこんな感じです。  </p>
+<pre><code>val greetMessage  = {
+    (person : String) -&gt; "hello! $person"
+}("duke")
+println(greetMessage)
+</code></pre>
+<p>簡単にフォーマットを示すとこんな感じです。</p>
+<pre><code>{
+    (引数 : 型) -&gt; 処理
+}
+</code></pre>
+<p><br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
+<p>0.10.195 </p>
 </div>
             
         </div>

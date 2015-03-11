@@ -74,10 +74,6 @@
                             </li>
                         
                             <li >
-                                <a href="../kotlin-plugin-gradle">GradleのKotlinプラグインを使う</a>
-                            </li>
-                        
-                            <li >
                                 <a href="../variable">変数を宣言する</a>
                             </li>
                         
@@ -150,12 +146,44 @@
     
         <li class="main active"><a href="#if">ifを式として扱う</a></li>
         
+            <li><a href="#_1">引用</a></li>
+        
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="if">ifを式として扱う</h3>
+<h2 id="if">ifを式として扱う</h2>
+<p>Kotlinでのifは単なる条件分岐としての役割だけでなく、 <br />
+式として評価するための構文です。</p>
+<pre><code>val hoge = "hoge"
+val result = if(hoge == "hoge") { "期待通り" } else { "hogeじゃない"}
+println(result) // =&gt; 期待通り
+</code></pre>
+<p>Stringの戻り値を持つ、処理のように扱うことが出来ます。 <br />
+（もちろん、IntでもBigDecimalでも問題ありません）</p>
+<p>このように書くことも出来ます</p>
+<pre><code>val hoge = "hoge"
+val result = 
+  if(hoge == "hoge")  "期待通り" 
+  else  "hogeじゃない"
+println(result) // =&gt; 期待通り
+</code></pre>
+<p><a href="../../if-statement">条件分岐を行う</a>で書いた処理も <br />
+厳密にはUnitという戻り値を持たない処理ための型を返しています。</p>
+<h3 id="_1">引用</h3>
+<blockquote>
+<p>if式 <br />
+式の計算結果の真偽で条件分岐を行う <br />
+<a href="https://sites.google.com/site/autohotkeyjp/reference/commands/IfExpression">AutoHotkeyJp- if式</a></p>
+</blockquote>
+<p><br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
+<p>0.10.195 </p>
 </div>
             
         </div>

@@ -9,7 +9,6 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
 * [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)
-* [GradleのKotlinプラグインを使う](./kotlin-plugin-gradle)
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)
 * [インスタンスを生成する](./instance)

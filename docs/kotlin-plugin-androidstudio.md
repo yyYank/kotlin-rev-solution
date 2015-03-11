@@ -1,1 +1,1 @@
-### KotlinプラグインをAndroid Studioに入れる
+## KotlinプラグインをAndroid Studioに入れる

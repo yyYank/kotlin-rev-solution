@@ -4,6 +4,7 @@ pages:
 - [kotlin-install.md, '目次', 'Kotlinをインストールする']
 - [kotlin-plugin-intellij.md, '目次', 'KotlinプラグインをIntelliJ IDEAに導入する']
 - [kotlin-plugin-androidstudio.md, '目次', 'KotlinプラグインをAndroid Studioに入れる']
+- [hello-kotlin-android.md, '目次', 'AndroidでHelloWorld']
 - [kotlin-plugin-eclipse.md, '目次', 'KotlinをEclipseで動かす']
 - [variable.md, '目次', '変数を宣言する']
 - [type.md, '目次', '型を宣言する']

@@ -8,6 +8,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [Kotlinをインストールする](./kotlin-install)
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
+* [AndroidでHello World](./hello-kotlin-android)
 * [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)
@@ -64,6 +65,9 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/03/11:ifを式として扱う ページ作成
      2015/03/11:switchみたいな条件分岐がしたい ページ作成
      2015/03/11:ループ処理を行う ページ作成
+     2015/03/12:KotlinプラグインをAndroid Studioに入れる ページ作成
+     2015/03/12:AndroidでHello World  ページ作成
+
    
    
    

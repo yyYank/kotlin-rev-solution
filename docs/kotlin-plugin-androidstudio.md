@@ -33,6 +33,6 @@ Android Studioのインストール
 と思いましたが、長くなるので、別ページに記載します。   
    
    
-[AndroidでHello World](../hello-kotlin-android/)
+[AndroidでHello World](./hello-kotlin-android/)
 
 

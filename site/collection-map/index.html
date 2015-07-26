@@ -205,10 +205,7 @@
 </code></pre>
 <h3 id="_3">実装サンプル</h3>
 <pre><code>// 名前と年齢を持つだけのクラスを定義
-class Person(name : String, age : Int) {
-    val name = name
-    val age = age
-}
+class Person(val name : String, val age : Int)
 
 fun main (args : Array&lt;String&gt;) {    
     val array = arrayOf(

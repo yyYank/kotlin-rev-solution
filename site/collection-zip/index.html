@@ -204,10 +204,7 @@
 <h3 id="_2">実装サンプル</h3>
 <p>分かりやすく、2つのグループで2人1組になってもらいます。</p>
 <pre><code>// 年齢と名前を持ったクラス
-class Person(name : String, age : Int) {
-    val name = name
-    val age = age
-}
+class Person(val name : String, val age : Int)
 
 fun main (args : Array&lt;String&gt;) {    
     // なんでもこなすグループ

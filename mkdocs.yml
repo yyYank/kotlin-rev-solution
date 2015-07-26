@@ -19,7 +19,10 @@ pages:
 - [if-function.md, '目次', 'ifを式として扱う']
 - [when.md, '目次', 'switchみたいな条件分岐がしたい']
 - [loop.md, '目次', 'ループ処理を行う']
-
-
-
-
+- [collection-for-each.md, '目次', 'リストの要素分ループして操作する']
+- [collection-filter.md, '目次', '条件でリストを絞り込む']
+- [collection-map.md, '目次', 'リストの要素の名前のみを抽出する']
+- [collection-merge.md, '目次', 'リストをマージする']
+- [collection-sum.md, '目次', 'リストの値を集計する']
+- [collection-drop.md, '目次', 'リストの1部分を切り出す']
+- [collection-zip.md, '目次', '２つのリストのペアのリストを作る']

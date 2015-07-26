@@ -9,10 +9,7 @@ map関数を使います
 ### 実装サンプル
 
     // 名前と年齢を持つだけのクラスを定義
-    class Person(name : String, age : Int) {
-        val name = name
-        val age = age
-    }
+    class Person(val name : String, val age : Int)
 
     fun main (args : Array<String>) {    
         val array = arrayOf(

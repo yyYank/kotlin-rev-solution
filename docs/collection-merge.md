@@ -10,10 +10,7 @@ merge関数を使います
 ### 実装サンプル
 
     // 年齢と名前を持つクラス
-    class Person(name : String, age : Int) {
-        val name = name
-        val age = age
-    }
+    class Person(val name : String, val age : Int)
 
     fun main (args : Array<String>) {    
     

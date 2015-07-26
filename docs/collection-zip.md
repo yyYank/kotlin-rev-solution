@@ -10,10 +10,7 @@ zip関数を使います
 分かりやすく、2つのグループで2人1組になってもらいます。
 
     // 年齢と名前を持ったクラス
-    class Person(name : String, age : Int) {
-        val name = name
-        val age = age
-    }
+    class Person(val name : String, val age : Int)
 
     fun main (args : Array<String>) {    
         // なんでもこなすグループ

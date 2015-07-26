@@ -191,6 +191,8 @@
         
             <li><a href="#_2">実装サンプル</a></li>
         
+            <li><a href="#url">参考URL</a></li>
+        
     
     </ul>
 </div></div>
@@ -199,7 +201,18 @@
 <h2 id="1">リストの1部分を切り出す</h2>
 <p>drop関数を使います</p>
 <h3 id="_1">フォーマット</h3>
+<pre><code>drop(削る要素数)
+</code></pre>
 <h3 id="_2">実装サンプル</h3>
+<pre><code>val array = arrayOf(1, 2, 3, 4, 5)
+array.drop(1).forEach{println(it)} // =&gt; 2, 3, 4, 5
+array.drop(2).forEach{println(it)} // =&gt; 3, 4, 5
+array.drop(3).forEach{println(it)} // =&gt; 4, 5
+array.drop(4).forEach{println(it)} // =&gt; 5
+array.drop(5).forEach{println(it)} // =&gt; 空のArray
+</code></pre>
+<h3 id="url">参考URL</h3>
+<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/zip.html">Kotlin公式ドキュメント stdlib / kotlin /zip</a></p>
 </div>
             
         </div>

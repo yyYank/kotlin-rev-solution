@@ -191,6 +191,8 @@
         
             <li><a href="#_3">実装サンプル</a></li>
         
+            <li><a href="#url">参考URL</a></li>
+        
     
     </ul>
 </div></div>
@@ -199,7 +201,28 @@
 <h2 id="_1">リストの要素をループして操作する</h2>
 <p>forEach関数を使います</p>
 <h3 id="_2">フォーマット</h3>
+<pre><code>forEach{ 処理 }
+</code></pre>
 <h3 id="_3">実装サンプル</h3>
+<pre><code>val array = arrayOf(1, 2, 3, 4, 5)
+
+// ラムダを使った書き方
+array.forEach({ element -&gt;
+    println(element) 
+}) // =&gt; 1,2,3,4,5
+
+// （）は省略できます
+array.forEach{ element -&gt;
+    println(element) 
+} // =&gt; 1,2,3,4,5
+
+// itでラムダの変わりに要素を評価することも可能
+array.forEach{
+    println(it) 
+} // =&gt; 1,2,3,4,5
+</code></pre>
+<h3 id="url">参考URL</h3>
+<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/for-each.html">Kotlin公式ドキュメント stdlib / kotlin / for-each</a>   </p>
 </div>
             
         </div>

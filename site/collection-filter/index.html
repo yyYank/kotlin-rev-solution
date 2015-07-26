@@ -191,6 +191,8 @@
         
             <li><a href="#_3">実装サンプル</a></li>
         
+            <li><a href="#url">参考URL</a></li>
+        
     
     </ul>
 </div></div>
@@ -199,12 +201,19 @@
 <h2 id="_1">条件でリストの要素を絞り込む</h2>
 <p>filter関数を使います</p>
 <h3 id="_2">フォーマット</h3>
-<pre><code>a.filter { 条件式 }
+<pre><code>filter { 条件 }
 </code></pre>
 <h3 id="_3">実装サンプル</h3>
-<pre><code>val array = arrayOf(1, 2, 3, 4, 5) // =&gt; 1,2,3,4,5 のIntArrayの生成
-array.filter { it % 2 == 0 }  // =&gt; 2, 4
+<pre><code>val array = arrayOf(1, 2, 3, 4, 5) // =&gt; 1,2,3,4,5 のArrayの生成
+// filterの中に条件となる関数を渡します
+array.filter({e -&gt; e % 2 == 0}).forEach{ println(it) } // =&gt; 2,4
+// （）は省略出来ます
+array.filter{e -&gt; e % 2 == 0}.forEach{ println(it) } // =&gt; 2,4
+// ラムダで書かなくてもitで代用することも可能です
+array.filter{it % 2 == 0}.forEach{ println(it) } // =&gt; 2,4
 </code></pre>
+<h3 id="url">参考URL</h3>
+<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/filter.html">Kotlin公式ドキュメント stdlib / kotlin / filter</a></p>
 </div>
             
         </div>

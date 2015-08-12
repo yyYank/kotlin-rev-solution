@@ -4,7 +4,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 <br/>  
 <br/>  
 ## 目次
-
+<br/>  
 ### 導入
 * [Kotlinをインストールする](./kotlin-install)
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
@@ -87,10 +87,19 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/07/26:リストの要素の名前のみを抽出する ページ作成 
      2015/07/26:リストをマージする ページ作成 
      2015/07/26:リストの値を集計する ページ作成 
-     2015/07/26:リストの1部分を切り出す](./collection-drop)  ページ作成 
+     2015/07/26:リストの1部分を切り出す] ページ作成 
      2015/07/26:２つのリストのペアのリストを作る  ページ作成 
+     2015/08/13:ループ処理を行う  一部修正(drmashuさんプルリク) 
+     2015/08/13:クラスの機能を拡張したい  ページ作成(drmashuさんプルリク) 
+     2015/08/13:クラスのメタデータを取得したい（リフレクション操作がしたい）  ページ作成(drmashuさんプルリク)
    
-   
+
+## Special Thanks
+
+### プルリクしてくれた方
+
+* [siosioさん](https://github.com/siosio)
+* [drmashuさん](https://github.com/drmashu)
    
    
   

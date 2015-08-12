@@ -5,11 +5,13 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 <br/>  
 ## 目次
 
+### 導入
 * [Kotlinをインストールする](./kotlin-install)
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
 * [AndroidでHello World](./hello-kotlin-android)
 * [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)
+### 基本文法
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)
 * [インスタンスを生成する](./instance)
@@ -19,6 +21,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [ifを式として扱う](./if-function)
 * [switchみたいな条件分岐がしたい](./when)
 * [ループ処理を行う](./loop)
+### コレクション操作
 * [リストの要素をループして操作する](./collection-for-each)  
 * [条件でリストの要素を絞り込む](./collection-filter)  
 * [リストの要素の名前のみを抽出する](./collection-map)
@@ -26,6 +29,12 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [リストの値を集計する](./collection-sum) 
 * [リストの1部分を切り出す](./collection-drop) 
 * [２つのリストのペアのリストを作る](./collection-map) 
+
+### 機能拡張
+* [クラスの機能を拡張したい](./extension) 
+
+### リフレクション
+* [クラスのメタデータを取得したい（リフレクション操作がしたい）](./reflection) 
    
 <br/>  
 <br/>  

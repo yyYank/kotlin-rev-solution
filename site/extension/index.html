@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/if-statement/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/extension/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-        <title>条件分岐を行う - 逆引きKotlin</title>
+        <title>クラスの機能拡張をしたい - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -82,7 +82,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -106,8 +106,8 @@
                                 <a href="../function">関数を宣言する</a>
                             </li>
                         
-                            <li class="active">
-                                <a href=".">条件分岐を行う</a>
+                            <li >
+                                <a href="../if-statement">条件分岐を行う</a>
                             </li>
                         
                             <li >
@@ -164,12 +164,12 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">機能拡張 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
-                            <li >
-                                <a href="../extension">クラスの機能拡張をしたい</a>
+                            <li class="active">
+                                <a href=".">クラスの機能拡張をしたい</a>
                             </li>
                         
                         </ul>
@@ -198,12 +198,12 @@
                 
                 
                 <li >
-                    <a rel="next" href="../function">
+                    <a rel="next" href="../collection-zip">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../if-function">
+                    <a rel="prev" href="../reflection">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -229,52 +229,39 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">条件分岐を行う</a></li>
+        <li class="main active"><a href="#_1">既存のクラスに機能を追加する</a></li>
         
-            <li><a href="#_2">フォーマット</a></li>
+            <li><a href="#_2">拡張関数</a></li>
         
-            <li><a href="#_3">実装サンプル</a></li>
+            <li><a href="#_3">拡張プロパティ</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">条件分岐を行う</h2>
-<p>他のプログラミング言語と同様にifを使います。 <br />
-Kotlinのifは単なる条件分岐ではなく、式（if式）です。 <br />
-これについては<a href=".././if-function">ifを式として扱う</a>参照。</p>
-<p>その他に<a href="../../when">when</a>などで条件を分岐する方法もあります。 <br />
-（whenも厳密には式です）   </p>
-<h3 id="_2">フォーマット</h3>
-<p>if、else if、elseで条件が分岐できます。</p>
-<pre><code>if(条件) {
-    処理
-} else if(条件){
-    処理
-} else {
-    処理
-}
-</code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>val value  = 1
+<h1 id="_1">既存のクラスに機能を追加する</h1>
+<p>KotlinではC#のように既存クラスのソースに変更を行うことなく、機能を追加することができます。</p>
+<h2 id="_2">拡張関数</h2>
+<p>既存のクラスに関数を追加するには、以下のように書きます。</p>
+<pre><code>class User(var name = "")
 
-
-if(value == 1) {
-    println("value is one")
-} else if(value == 2){
-    println("value is two")
-} else {
-    println("other value")
-}
+// Userクラスに関数を追加
+fun User.isEmptyName() = this.name == "" // thisはUserのオブジェクトを参照します
 </code></pre>
-<p><br/>
-<br/>
-<br/>
-<br/>
-<br/></p>
+<h2 id="_3">拡張プロパティ</h2>
+<p>既存のクラスにプロパティを追加するには、以下のように書きます。</p>
+<pre><code>// さん付けの名前プロパティを持たせる
+val User.appendedName : String
+    get() = name.toString() + "さん"
+</code></pre>
+<p>拡張プロパティで注意しなければならないのは、実際にクラスにはメンバーを挿入していない点です。
+バッキングフィールドを持てないため、初期化子を利用することは許可されていません。
+getter/setterでのみ値の決定が可能です。</p>
+<h4 id="_4">参考</h4>
+<p><a href="http://kotlinlang.org/docs/reference/extensions.html">Kotlin Reference - Extensions</a></p>
 <h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
-<p>0.10.195 </p>
+<p>0.12.613</p>
 </div>
             
         </div>

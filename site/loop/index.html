@@ -53,8 +53,8 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">目次 <b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">導入 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             <li >
@@ -70,12 +70,21 @@
                             </li>
                         
                             <li >
-                                <a href="../hello-kotlin-android">AndroidでHelloWorld</a>
+                                <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
                             </li>
                         
                             <li >
-                                <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
+                                <a href="../hello-kotlin-android">AndroidでHelloWorld</a>
                             </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
                             <li >
                                 <a href="../variable">変数を宣言する</a>
@@ -113,6 +122,15 @@
                                 <a href=".">ループ処理を行う</a>
                             </li>
                         
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
                             <li >
                                 <a href="../collection-for-each">リストの要素分ループして操作する</a>
                             </li>
@@ -139,6 +157,32 @@
                         
                             <li >
                                 <a href="../collection-zip">２つのリストのペアのリストを作る</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">機能拡張 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../extension">クラスの機能拡張をしたい</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">リフレクション <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../reflection">クラスのメタデータを操作する</a>
                             </li>
                         
                         </ul>
@@ -191,7 +235,7 @@
         
             <li><a href="#_2">イテレータブルなオブジェクト</a></li>
         
-            <li><a href="#forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかは出来ない</a></li>
+            <li><a href="#forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかをするには</a></li>
         
             <li><a href="#_3">参考</a></li>
         
@@ -230,10 +274,27 @@ for (value in arr) {
 <li>関数 iterator()を持っている（クラスがjava.lang.Iterableを実装している必要はない）</li>
 <li>関数 next()を持っている、かつ、Boolean型の関数 next() またはプロパティnext を持っている</li>
 </ul>
-<h3 id="forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかは出来ない</h3>
-<p>言語として提供されていません</p>
+<h3 id="forint-i-0-i-10-i">for(int i = 0; i &lt; 10; i++)とかをするには</h3>
+<p>Javaのように条件式を書くことはできませんが、
+Range構文を使用して値の取りうる範囲と、ステップを指定する事ができます。</p>
+<p>以下のように書きます。</p>
+<pre><code>for (i in 0..4) print(i) // "01234"
+
+for (i in 0..4 step 2) print(i) // "024"
+
+for (i in 4 downTo 0) print(i) // "43210"
+
+for (i in 4 downTo 0 step 2) print(i) // "420"
+
+for (x in 1.0..2.0) print("$x ") // "1.0 2.0 "
+
+for (x in 1.0..2.0 step 0.3) print("$x ") // "1.0 1.3 1.6 1.9 "
+
+for (x in 2.0 downTo 1.0 step 0.3) print("$x ") // "2.0 1.7 1.4 1.1 "
+</code></pre>
 <h3 id="_3">参考</h3>
 <p><a href="https://sites.google.com/site/tarokotlin/3-kotlinno-biao-zhunapi/sec34">プログラミング言語Kotlin-3.4 制御構文</a></p>
+<p><a href="http://kotlinlang.org/docs/reference/ranges.html">Kotlin Reference - Ranges</a></p>
 <p>whileとdo-whileに関しては他の言語とほぼ同じです。</p>
 <h3 id="while">while</h3>
 <p>フォーマットは以下のとおりです。   </p>

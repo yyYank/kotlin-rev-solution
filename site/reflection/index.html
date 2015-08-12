@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/if-statement/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/reflection/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-        <title>条件分岐を行う - 逆引きKotlin</title>
+        <title>クラスのメタデータを操作する - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -82,7 +82,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -106,8 +106,8 @@
                                 <a href="../function">関数を宣言する</a>
                             </li>
                         
-                            <li class="active">
-                                <a href=".">条件分岐を行う</a>
+                            <li >
+                                <a href="../if-statement">条件分岐を行う</a>
                             </li>
                         
                             <li >
@@ -177,12 +177,12 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">リフレクション <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
-                            <li >
-                                <a href="../reflection">クラスのメタデータを操作する</a>
+                            <li class="active">
+                                <a href=".">クラスのメタデータを操作する</a>
                             </li>
                         
                         </ul>
@@ -198,12 +198,12 @@
                 
                 
                 <li >
-                    <a rel="next" href="../function">
+                    <a rel="next" href="../extension">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="../if-function">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -229,52 +229,105 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">条件分岐を行う</a></li>
+        <li class="main active"><a href="#_1">クラスのメタデータを取得する</a></li>
         
-            <li><a href="#_2">フォーマット</a></li>
+            <li><a href="#_2">静的に取得する</a></li>
         
-            <li><a href="#_3">実装サンプル</a></li>
+            <li><a href="#_3">動的に取得する</a></li>
+        
+            <li><a href="#_4">プロパティの取得</a></li>
+        
+            <li><a href="#_5">メソッドの呼び出し</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">条件分岐を行う</h2>
-<p>他のプログラミング言語と同様にifを使います。 <br />
-Kotlinのifは単なる条件分岐ではなく、式（if式）です。 <br />
-これについては<a href=".././if-function">ifを式として扱う</a>参照。</p>
-<p>その他に<a href="../../when">when</a>などで条件を分岐する方法もあります。 <br />
-（whenも厳密には式です）   </p>
-<h3 id="_2">フォーマット</h3>
-<p>if、else if、elseで条件が分岐できます。</p>
-<pre><code>if(条件) {
-    処理
-} else if(条件){
-    処理
-} else {
-    処理
+<h1 id="_1">クラスのメタデータを取得する</h1>
+<p>リフレクションによって、クラスのメタデータを取得する事ができます。
+現状、Kotlin独自のメタデータ(プロパティ等)はKClass、
+Javaと共通のメタデータ(関数、コンストラクタ等)はJavaのClassを使用してアクセスします。
+(最新SnapShot(2015/8/11時点)では、KClassの操作のみでクラスの全情報にアクセスできるようになりつつあります)</p>
+<p>リフレクションによってクラスのメタデータを取得する方法は2種類あります。</p>
+<h3 id="_2">静的に取得する</h3>
+<p>クラスの静的情報から取得する場合、以下のように書きます。</p>
+<pre><code>import kotlin.reflect.jvm.java
+
+class MyClass(){
+    val value = "MyClassのバリュー"
+    fun add(x : String, y : String) = x + y
+}
+
+val kClass = MyClass::class // Kotlinのクラスインスタンス
+val jClass = kClass.java // Javaのクラスインスタンス
+</code></pre>
+<h3 id="_3">動的に取得する</h3>
+<p>動的に生成されるインスタンスから取得する場合、以下のように書きます。</p>
+<pre><code>import kotlin.reflect.jvm.kotlin
+
+val obj = MyClass() // インスタンス生成
+val jClass = obj.javaClass // Javaのクラスインスタンス
+val kClass = jClass.kotlin // Kotlinのクラスインスタンス
+</code></pre>
+<h2 id="_4">プロパティの取得</h2>
+<p>KClassのメタデータを使用して、対象のオブジェクトのプロパティリストを取得するには、次のように書きます。</p>
+<pre><code>import kotlin.reflect.jvm.javaGetter
+
+val obj = MyClass()
+val kClass = MyClass::class
+val properties = kClass.properties
+for(property in properties) {
+    println(property.name + ":" + property.javaGetter?.invoke(obj)) // =&gt; value:MyClassのバリュー
+    //  こうも書ける println("${property.name}:${property.javaGetter?.invoke(obj)}")
 }
 </code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>val value  = 1
+<p>この時のpropertiesの型は、Collection<KMemberProperty<T, out Any?>&gt;となっており、
+値を取得するだけでなく、設定も行いたい場合はKMutableMemberPropertyにキャストする必要があります。</p>
+<pre><code>import kotlin.reflect.KMutableMemberProperty
+import kotlin.reflect.jvm.javaGetter
+import kotlin.reflect.jvm.javaSetter
 
+val obj = MyClass()
+val kClass = MyClass::class
+val properties = kClass.properties
 
-if(value == 1) {
-    println("value is one")
-} else if(value == 2){
-    println("value is two")
-} else {
-    println("other value")
+for(property in properties) {
+    // 変更可能なメンバのみ、Setterが取得できる
+    val setter = if (property is KMutableMemberProperty){property.javaSetter} else { null }
+    // String型の場合にのみセットする
+    if (setter?.getParameterTypes()?.get(0)?.isAssignableFrom(String.javaClass) ?: false){
+        setter?.invoke(obj, "set")  
+    }
 }
 </code></pre>
-<p><br/>
-<br/>
-<br/>
-<br/>
-<br/></p>
+<p>そのクラスおよびスーパークラスで定義したプロパティは上記のpropertiesで、
+そのクラスおよびスーパークラスに対して定義された拡張プロパティはextensionProperties、
+それらのうちスーパークラスに定義されたものを除いたものはそれぞれdeclaredProperties、declaredExtensionPropertiesで
+取得することができます。</p>
+<h2 id="_5">メソッドの呼び出し</h2>
+<p>現状、メソッドやコンストラクタを呼ぶにはJava側の機能を使用する必要があります。</p>
+<pre><code>import kotlin.reflect.jvm.java
+
+val obj = MyClass()
+val jClass = obj.javaClass
+val method = jClass.getMethod("add", String::class.java, String::class.java)
+val result = method.invoke(obj, "X", "Y")
+println(result) // =&gt; XY
+</code></pre>
+<p>Javaでinvokeメソッドを呼ぶ場合のように、コレクションにパラメータを作りこむ場合は、
+コレクションをスプレッド演算子(*)を使用して展開する。</p>
+<pre><code>import kotlin.reflect.jvm.java
+
+val obj = MyClass()
+val jClass = obj.javaClass
+val method = jClass.getMethod("add", String::class.java, String::class.java)
+val params = arrayOf("XX", "YY")
+val result = method.invoke(obj, *params)
+println(result) // =&gt; XXYY
+</code></pre>
 <h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
-<p>0.10.195 </p>
+<p>0.12.613</p>
 </div>
             
         </div>

@@ -36,17 +36,34 @@
 * 関数 next()を持っている、かつ、Boolean型の関数 next() またはプロパティnext を持っている
 
 
-### for(int i = 0; i < 10; i++)とかは出来ない
+### for(int i = 0; i < 10; i++)とかをするには
    
    
-言語として提供されていません
+Javaのように条件式を書くことはできませんが、
+Range構文を使用して値の取りうる範囲と、ステップを指定する事ができます。
+
+以下のように書きます。
+
+    for (i in 0..4) print(i) // "01234"
+
+    for (i in 0..4 step 2) print(i) // "024"
+
+    for (i in 4 downTo 0) print(i) // "43210"
+
+    for (i in 4 downTo 0 step 2) print(i) // "420"
+
+    for (x in 1.0..2.0) print("$x ") // "1.0 2.0 "
+   
+    for (x in 1.0..2.0 step 0.3) print("$x ") // "1.0 1.3 1.6 1.9 "
+
+    for (x in 2.0 downTo 1.0 step 0.3) print("$x ") // "2.0 1.7 1.4 1.1 "
    
    
 ### 参考
 
 [プログラミング言語Kotlin-3.4 制御構文](https://sites.google.com/site/tarokotlin/3-kotlinno-biao-zhunapi/sec34)
 
-
+[Kotlin Reference - Ranges](http://kotlinlang.org/docs/reference/ranges.html)
 
    
    

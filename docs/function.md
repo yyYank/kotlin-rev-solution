@@ -51,37 +51,6 @@ $personは文字列への埋め込みの記法です。
 
 
 
-### 関数オブジェクト
-   
-   
-   
-KotlinではJavaScriptなどのように関数オブジェクトを宣言できます。
-例えば、先ほどのgreetTo関数を以下のように書き換え可能です。
-
-    val greetTo  = {
-        (person : String) -> "hello! $person"
-    }
-    println(greetTo("duke"))
-    
-またはこんな感じです。  
-   
-   
-
-    val greetMessage  = {
-        (person : String) -> "hello! $person"
-    }("duke")
-    println(greetMessage)
-    
-   
-   
-   
-簡単にフォーマットを示すとこんな感じです。
-
-    {
-        (引数 : 型) -> 処理
-    }
-
-
 
 <br/>
 <br/>

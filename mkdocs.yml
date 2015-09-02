@@ -15,6 +15,8 @@ pages:
 - [instance.md, '基本文法', 'インスタンスを生成する']
 - [array.md, '基本文法', '配列を生成する']
 - [function.md, '基本文法', '関数を宣言する']
+- [function_type.md, '基本文法', '好きなタイミングで特定の処理を行う']
+- [function_object.md, '基本文法', '関数をオブジェクトとして使う']
 - [if-statement.md, '基本文法', '条件分岐を行う']
 - [if-function.md, '基本文法', 'ifを式として扱う']
 - [when.md, '基本文法', 'switchみたいな条件分岐がしたい']

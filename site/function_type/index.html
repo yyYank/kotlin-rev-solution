@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/variable/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/function_type/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-        <title>変数を宣言する - 逆引きKotlin</title>
+        <title>好きなタイミングで特定の処理を行う - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -86,8 +86,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
-                            <li class="active">
-                                <a href=".">変数を宣言する</a>
+                            <li >
+                                <a href="../variable">変数を宣言する</a>
                             </li>
                         
                             <li >
@@ -106,8 +106,8 @@
                                 <a href="../function">関数を宣言する</a>
                             </li>
                         
-                            <li >
-                                <a href="../function_type">好きなタイミングで特定の処理を行う</a>
+                            <li class="active">
+                                <a href=".">好きなタイミングで特定の処理を行う</a>
                             </li>
                         
                             <li >
@@ -206,12 +206,12 @@
                 
                 
                 <li >
-                    <a rel="next" href="../hello-kotlin-android">
+                    <a rel="next" href="../function">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../type">
+                    <a rel="prev" href="../function_object">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -237,62 +237,65 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">変数を宣言する</a></li>
+        <li class="main active"><a href="#_1">好きなタイミングで特定の処理を行う</a></li>
         
-            <li><a href="#_2">文字列の宣言</a></li>
+            <li><a href="#_2">フォーマット</a></li>
         
-            <li><a href="#null">nullは?を付けないと代入できない</a></li>
+            <li><a href="#_3">使用例</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">変数を宣言する</h2>
-<p>変数の宣言には2種類の宣言があります</p>
-<ul>
-<li>var</li>
-<li>val</li>
-</ul>
-<p>varで宣言した場合は読み書き可能です。  <br />
-valで宣言した場合は読み取り専用です。</p>
-<pre><code>var hoge = "a"
-hoge = "b"  //OK
-val fuga = "a"
-fuga = "b"  // コンパイルエラー
+<h1 id="_1">好きなタイミングで特定の処理を行う</h1>
+<p><br/></p>
+<p>そういうとき、高階関数が便利です。</p>
+<p><a href="https://ja.wikipedia.org/wiki/%E9%AB%98%E9%9A%8E%E9%96%A2%E6%95%B0">高階関数 - Wikipedia</a></p>
+<p><br/></p>
+<h2 id="_2">フォーマット</h2>
+<p><br/>
+<br/>
+関数型の指定は、以下のように書きます。</p>
+<pre><code>    (引数の型[, 引数の型]...) -&gt; 戻り値の型
 </code></pre>
-<p>varはいつでもどこでも代入できてしまいます。  <br />
-valで宣言すると再代入時にコンパイルエラーにしてくれます。  <br />
-代入を何度も繰り返す破壊的代入は良くないので、  <br />
-基本的にはvalを使いましょう</p>
-<p><font color=red>※varを使わざるを得ないケースもあります</font></p>
-<h3 id="_2">文字列の宣言</h3>
-<pre><code>// 文字列の宣言
-val hoge = "aiueo"
-// 型の宣言も可能
-val hoge : String = "aiueo"
-// 数値の宣言
-val number = 1
+<p><br/>
+<br/></p>
+<h2 id="_3">使用例</h2>
+<p><br/>
+<br/></p>
+<h4 id="_4">関数を引数として渡す</h4>
+<p><br/></p>
+<p>関数を引数として渡せば、振る舞いの定義だけすることが出来ます。</p>
+<p>Ajaxのコールバックなどが好例です。</p>
+<p>引数として関数オブジェクトを受け取るには、次のように書きます。</p>
+<pre><code>fun printResult(callee: (Int, Int) -&gt; Int, val1: Int, val2: Int): String {
+  val result = callee(val1, val2)
+  return "Result : $result";
+}
 </code></pre>
-<p>型の宣言は明示的にすることも可能ですが、 <br />
-推論されるので宣言しなくても良いです。</p>
-<h3 id="null">nullは?を付けないと代入できない</h3>
-<pre><code>// コンパイルエラー!
-val a = null
-// これならnullを代入してもOK
-val a : String? = null
+<p>この例では、第一引数に関数を受け取るように定義しています。
+受け取る関数は、第一、第二引数、戻り値ともにInt型を指定しています。</p>
+<p><br/>
+<br/></p>
+<h4 id="_5">関数を戻り値として受け取る</h4>
+<p><br/>
+<br/>
+逆に関数オブジェクトを戻り値として受け取れば、好きなタイミングで
+実行できます。</p>
+<pre><code>fun example2(val1: Int): (Int, Int) -&gt; Int {
+    return {x, y -&gt; (x + y) % val1};
+}
 </code></pre>
-<p>こういうこと言われてしまいます <br />
-「 is not satisfied: inferred type kotlin.Nothing? is not a subtype of kotlin.Any」  <br />
-null使わないほうがいいですね   </p>
-<p>どうしてもnullを許容するためには型を宣言して「?」を付ける必要があります。</p>
+<p>関数型には引数で受け取る場合と同じ型を指定しています。</p>
+<p>返す関数は関数リテラルで、クロージャーを使用して引数として渡された値を使用するように書いています。</p>
 <p><br/>
 <br/>
 <br/>
 <br/>
 <br/></p>
 <h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
-<p>0.10.195 </p>
+<p>0.12.613</p>
 </div>
             
         </div>

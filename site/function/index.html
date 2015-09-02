@@ -107,6 +107,14 @@
                             </li>
                         
                             <li >
+                                <a href="../function_type">好きなタイミングで特定の処理を行う</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../function_object">関数をオブジェクトとして使う</a>
+                            </li>
+                        
+                            <li >
                                 <a href="../if-statement">条件分岐を行う</a>
                             </li>
                         
@@ -203,7 +211,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../if-statement">
+                    <a rel="prev" href="../function_type">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -234,8 +242,6 @@
             <li><a href="#_2">フォーマット</a></li>
         
             <li><a href="#_3">実装サンプル</a></li>
-        
-            <li><a href="#_4">関数オブジェクト</a></li>
         
     
     </ul>
@@ -272,25 +278,6 @@ fun greet() {
 fun greetTo(person : String) = println("hello! $person")
 </code></pre>
 <p>$personは文字列への埋め込みの記法です。</p>
-<h3 id="_4">関数オブジェクト</h3>
-<p>KotlinではJavaScriptなどのように関数オブジェクトを宣言できます。
-例えば、先ほどのgreetTo関数を以下のように書き換え可能です。</p>
-<pre><code>val greetTo  = {
-    (person : String) -&gt; "hello! $person"
-}
-println(greetTo("duke"))
-</code></pre>
-<p>またはこんな感じです。  </p>
-<pre><code>val greetMessage  = {
-    (person : String) -&gt; "hello! $person"
-}("duke")
-println(greetMessage)
-</code></pre>
-<p>簡単にフォーマットを示すとこんな感じです。</p>
-<pre><code>{
-    (引数 : 型) -&gt; 処理
-}
-</code></pre>
 <p><br/>
 <br/>
 <br/>

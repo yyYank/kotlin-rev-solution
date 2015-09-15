@@ -19,4 +19,4 @@ drop関数を使います
 
 ### 参考URL
 
-[Kotlin公式ドキュメント stdlib / kotlin /zip](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/zip.html)
+[Kotlin公式ドキュメント stdlib / kotlin /drop](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/drop.html)

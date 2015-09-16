@@ -28,7 +28,8 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [条件でリストの要素を絞り込む](./collection-filter)  
 * [リストの要素の名前のみを抽出する](./collection-map)
 * [リストをマージする](./collection-merge) 
-* [リストの値を集計する](./collection-sum) 
+* [リストの値を集計する](./collection-sum)
+* [リストの前からいくつかを取り出した部分リストを切り出す](./collection-take.md) 
 * [リストの前からいくつかを取り除いた部分リストを切り出す](./collection-drop) 
 * [２つのリストのペアのリストを作る](./collection-map) 
 

@@ -66,7 +66,7 @@ kotlincのオプションは以下のとおり
     -module <path>             コンパイルするモジュールを指定
     -script                    Scriptのファイルを評価する
     -kotlin-home <path>        KotlinランタイムのHOMEを指定（annotationとruntime librariesを見つけるため）
-    -nowarn                    渓谷を表示しない
+    -nowarn                    警告を表示しない
     -verbose                   verboseログ出力を有効にする
     -version                   バージョン確認
     -help (-h)                 HELP表示

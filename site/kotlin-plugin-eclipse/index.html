@@ -243,11 +243,13 @@
     
         <li class="main active"><a href="#kotlineclipse">KotlinをEclipseで動かす</a></li>
         
-            <li><a href="#_1">事前準備</a></li>
+            <li><a href="#_1">手順</a></li>
         
-            <li><a href="#_2">手順</a></li>
+            <li><a href="#_2">事前準備</a></li>
         
-            <li><a href="#_3">使ってみた感想</a></li>
+            <li><a href="#_3">手順</a></li>
+        
+            <li><a href="#_4">使ってみた感想</a></li>
         
             <li><a href="#url">参考URL</a></li>
         
@@ -257,13 +259,22 @@
                 <div class="col-md-9" role="main">
 
 <h2 id="kotlineclipse">KotlinをEclipseで動かす</h2>
-<p><font color=red>先に言っておきますと、非推奨です。</font>   </p>
+<h3 id="_1">手順</h3>
+<p>こちらの公式ブログに詳しく載っています。
+(Eclipse Plugin Alpha is Out!)[http://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/]</p>
+<p>1.Eclipseを起動し、「Help(ヘルプ)&gt;Eclipse Market Place(マーケットプレイス)」を選択してKotlinで検索しプラグインをインストール
+もしくは「Help(ヘルプ)＞ Install New Software(新規ソフトウェアのインストール)」を選択し、
+https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/へアクセスする
+2.ラインセンスに同意します
+3.Eclipseを再起動します</p>
+<p>以上</p>
+<p><font color=red>ここから下は昔話です</font>   </p>
 <p>Kotlinの公式サイトからは現在公表されておらず、 <br />
 （昔はcoming soonとか書いてあった） </p>
 <p>プラグインは公式リリースされているものではありません（２０１５年３月８日現在）。</p>
 <p>素直にIntelliJ IDEAかAndroid Studio使ったほうが楽です。 <br />
 一応記録として残しておく程度という認識でお願いします。</p>
-<h3 id="_1">事前準備</h3>
+<h3 id="_2">事前準備</h3>
 <ul>
 <li>Eclipse 4.3.1(Kepler)以上インストール<br />
 -&gt; Kepler推奨みたいですが、Lunaでも動きました。</li>
@@ -271,14 +282,14 @@
 <li><a href="https://github.com/JetBrains/kotlin-eclipse">kotlin-eclipse</a>をgit cloneする <br />
 -&gt; Jet Brains社提供のEclipse SDKのKotlin開発環境</li>
 </ul>
-<h3 id="_2">手順</h3>
+<h3 id="_3">手順</h3>
 <p>１．Eclipseを起動し、File&gt;Import&gt;Project&gt;existing project into workspaceで <br />
 kotlin-eclipseのプロジェクトを取り込む</p>
 <p>２．kotlin-eclipseプロジェクトのantスクリプトからkotlin-eclipseをビルドする</p>
 <p>３．Kotlin-eclipseのlauncherプロジェクトのlaunch用のantスクリプトを実行</p>
 <p>3.の実行時にプラグインを全て追加する必要があります。 <br />
 うまく行けばEclipse上にEclipse（Eclipse SDK）が起動するような形になる。   </p>
-<h3 id="_3">使ってみた感想</h3>
+<h3 id="_4">使ってみた感想</h3>
 <p>Eclipseの良さがあんまり感じられなくなっちゃってる</p>
 <ul>
 <li>Eclipse起動してさらにEclipse起動する感じが面倒くさい <br />

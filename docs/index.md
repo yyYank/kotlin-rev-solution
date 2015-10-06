@@ -10,7 +10,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
 * [AndroidでHello World](./hello-kotlin-android)
-* [KotlinをEclipseで動かす（非推奨）](./kotlin-plugin-eclipse)
+* [KotlinをEclipseで動かす](./kotlin-plugin-eclipse)
 ### 基本文法
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)

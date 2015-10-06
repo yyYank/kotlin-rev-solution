@@ -1,7 +1,25 @@
 ## KotlinをEclipseで動かす
    
-   
-<font color=red>先に言っておきますと、非推奨です。</font>   
+
+### 手順
+
+こちらの公式ブログに詳しく載っています。
+(Eclipse Plugin Alpha is Out!)[http://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/]
+
+1.Eclipseを起動し、「Help(ヘルプ)>Eclipse Market Place(マーケットプレイス)」を選択してKotlinで検索しプラグインをインストール
+もしくは「Help(ヘルプ)＞ Install New Software(新規ソフトウェアのインストール)」を選択し、
+https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/へアクセスする
+2.ラインセンスに同意します
+3.Eclipseを再起動します
+
+以上
+
+
+
+
+
+
+<font color=red>ここから下は昔話です</font>   
    
      
 Kotlinの公式サイトからは現在公表されておらず、   

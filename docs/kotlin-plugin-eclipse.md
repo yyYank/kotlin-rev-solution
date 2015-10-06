@@ -6,11 +6,23 @@
 こちらの公式ブログに詳しく載っています。
 (Eclipse Plugin Alpha is Out!)[http://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/]
 
-1.Eclipseを起動し、「Help(ヘルプ)>Eclipse Market Place(マーケットプレイス)」を選択してKotlinで検索しプラグインをインストール
+1.Eclipseを起動し、「Help(ヘルプ)>Eclipse Market Place(マーケットプレイス)」を選択して
+
+Kotlinで検索しプラグインをインストール
+
+
 もしくは「Help(ヘルプ)＞ Install New Software(新規ソフトウェアのインストール)」を選択し、
+
+
 https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/へアクセスする
+
+
 2.ラインセンスに同意します
+
+
 3.Eclipseを再起動します
+
+
 
 以上
 

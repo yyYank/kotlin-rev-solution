@@ -29,8 +29,8 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [リストの要素の名前のみを抽出する](./collection-map)
 * [リストをマージする](./collection-merge) 
 * [リストの値を集計する](./collection-sum)
-* [リストの前からいくつかを取り出した部分リストを切り出す](./collection-take.md) 
-* [リストの前からいくつかを取り除いた部分リストを切り出す](./collection-drop) 
+* [リストの要素を前からいくつか取り出す](./collection-take) 
+* [リストの要素を前からいくつか削る](./collection-drop) 
 * [２つのリストのペアのリストを作る](./collection-map) 
 
 ### 機能拡張
@@ -98,6 +98,9 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/09/02:関数を宣言する  ページ修正(drmashuさんプルリク)
      2015/09/02:関数をオブジェクトとして扱う  ページ作成(drmashuさんプルリク)
      2015/09/02:好きなタイミングで特定の処理を行う ページ作成(drmashuさんプルリク)
+     2015/10/06:リストの要素を前からいくつか取り出す ページ作成(hkdnetさんプルリク)
+     2015/10/06:drop関数の説明 リストの要素を前からいくつか削る ページ名変更(hkdnetさんプルリク)
+     2015/10/06:Kotlinをインストールする ページ誤字修正(iwata-nさんプルリク)
 
 ## Special Thanks
 
@@ -105,7 +108,8 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 
 * [siosioさん](https://github.com/siosio)
 * [drmashuさん](https://github.com/drmashu)
-   
+* [iwata-nさん](https://github.com/iwata-n)  
+* [hkdnetさん](https://github.com/hkdnet)  
    
   
    

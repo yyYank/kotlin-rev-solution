@@ -3,6 +3,7 @@ site_url: http://kotlin-rev-solution.herokuapp.com/site
 repo_url: https://github.com/yyYank/kotlin-rev-solution
 site_description: JVM言語、Kotlin(ことりん)の逆引きサイトです。基本的な環境導入、文法から、あんなことがしたいこんなことがしたいというKotlinでやりたいことを網羅的に逆引き出来るサイトを目指しています。
 site_author: yy_yank
+theme_dir: 'theme'
 pages:
 - [index.md, Home]
 - [kotlin-install.md, '導入', 'Kotlinをインストールする']

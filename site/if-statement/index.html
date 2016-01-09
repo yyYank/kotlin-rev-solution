@@ -14,7 +14,7 @@
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/highlight.css">
+        <link rel="stylesheet" href="../css/androidstudio.css">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -320,7 +320,7 @@
 <h2 id="_1">条件分岐を行う</h2>
 <p>他のプログラミング言語と同様にifを使います。 <br />
 Kotlinのifは単なる条件分岐ではなく、式（if式）です。 <br />
-これについては<a href="../return-on-statement">条件分岐を式として扱う</a>参照。</p>
+これについては<a href="../return-on-statement">制御構文を式として扱う</a>参照。</p>
 <p>その他に<a href="../../when">when</a>などで条件を分岐する方法もあります。 <br />
 （whenも厳密には式です）   </p>
 <h3 id="_2">フォーマット</h3>
@@ -364,6 +364,13 @@ if(value == 1) {
         <script src="../js/jquery-1.10.2.min.js"></script>
         <script src="../js/bootstrap-3.0.3.min.js"></script>
         <script src="../js/highlight.pack.js"></script>
+        <script>
+        $(document).ready(function() {
+          $('pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+          });
+            });
+        </script>
         <script>var base_url = '..';</script>
         <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
         <script src="../js/base.js"></script>
@@ -377,8 +384,7 @@ if(value == 1) {
                     </div>
                     <div class="modal-body">
                         <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
+                            検索したい語句を入力してください
                         </p>
                         <form role="form">
                             <div class="form-group">

@@ -8,7 +8,8 @@ Kotlinでのwhen,ifは条件分岐としての役割だけでなく、
 
 以下のようにifをStringの戻り値を持つ、処理のように扱うことが出来ます。   
 （もちろん、IntでもBigDecimalでも問題ありません）
-その場合、ifブロック最後のステートメントの評価値である『 "期待通り"』が変数『result』に代入されます。
+その場合、ifブロック最後のステートメントの評価値である<br/>
+『 "期待通り"』が変数『result』に代入されます。
 
     val hoge = "hoge"
     val result :String = if(hoge == "hoge") { "期待通り" } else { "hogeじゃない"}

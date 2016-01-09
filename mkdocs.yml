@@ -5,6 +5,7 @@ site_description: JVM言語、Kotlin(ことりん)の逆引きサイトです。
 site_author: yy_yank
 theme_dir: 'theme'
 pages:
+
 - [index.md, Home]
 - [kotlin-install.md, '導入', 'Kotlinをインストールする']
 - [kotlin-plugin-intellij.md, '導入', 'KotlinプラグインをIntelliJ IDEAに導入する']

@@ -19,6 +19,7 @@ pages:
 - [function_object.md, '基本文法', '関数をオブジェクトとして使う']
 - [if-statement.md, '基本文法', '条件分岐を行う']
 - [if-function.md, '基本文法', 'ifを式として扱う']
+- [return-on-statement.md, '基本文法','制御構文を式として扱う']
 - [when.md, '基本文法', 'switchみたいな条件分岐がしたい']
 - [loop.md, '基本文法', 'ループ処理を行う']
 - [collection-for-each.md, 'コレクション操作', 'リストの要素分ループして操作する']

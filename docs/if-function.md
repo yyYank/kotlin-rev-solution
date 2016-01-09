@@ -6,24 +6,26 @@ Kotlinでのifは単なる条件分岐としての役割だけでなく、
 
 
     val hoge = "hoge"
-    val result = if(hoge == "hoge") { "期待通り" } else { "hogeじゃない"}
+    val result :String = if(hoge == "hoge") { "期待通り" } else { "hogeじゃない"}
     println(result) // => 期待通り
 
    
    
 Stringの戻り値を持つ、処理のように扱うことが出来ます。   
 （もちろん、IntでもBigDecimalでも問題ありません）
+その場合、最後のステートメントの評価値が変数に代入されます。
+
    
    
    
-このように書くことも出来ます
+{}を省略してこのように書くことも出来ます
    
    
    
    
 
     val hoge = "hoge"
-    val result = 
+    val result:String = 
       if(hoge == "hoge")  "期待通り" 
       else  "hogeじゃない"
     println(result) // => 期待通り

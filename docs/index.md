@@ -20,7 +20,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [関数をオブジェクトとして扱う](./function_object)
 * [好きなタイミングで特定の処理を行う](./function_type)
 * [条件分岐を行う](if-statement)
-* [制御構文を式として扱う](./return-on-statement)
+* [ifを式として扱う](./if-function)
 * [switchみたいな条件分岐がしたい](./when)
 * [ループ処理を行う](./loop)
 ### コレクション操作

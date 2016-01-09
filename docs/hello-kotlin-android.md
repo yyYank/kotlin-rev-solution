@@ -7,7 +7,7 @@
    
    
    
-プロジェクトを新規作成します。Androidバージョンなどは任意のバージョンにし、   
+プロジェクトを新規作成します。Anroidバージョンなどは任意のバージョンにし、   
 質問に答えながら作成してください。
 ![新規プロジェクト生成](http://3.bp.blogspot.com/-I03KESEJECA/VQGckLDTS5I/AAAAAAAACTA/kDCCVCemlLI/s1600/hellokotlinandroid1.png)
    
@@ -50,7 +50,7 @@ JavaのソースをKotlinのファイルにコピーすると下図のような�
 
 右上に「Configure Kotlin」というメッセージが出るので、   
 as Kotlin(Android with Gradle) moduleというリンクをクリックしてください。   
-<font color=red>この時Android StudioとGradleのKotlinのバージョンにミスマッチがないか注意して選択するようにしてください。</font>
+<font color=red>この時Andorid StudioとGradleのKotlinのバージョンにミスマッチがないか注意して選択するようにしてください。</font>
 
 ![Gradleスクリプトの自動生成１](http://4.bp.blogspot.com/-7Jt30Q7GkPU/VQGchDqYAGI/AAAAAAAACSk/EHIUAB9fbY4/s1600/gradle-alert.png)
    

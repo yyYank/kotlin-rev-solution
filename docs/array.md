@@ -19,11 +19,6 @@
 
     // [0, 2, 4 , 6, 8, 10, 12, 14, 16, 18]
     val evenNumbers = Array<Int>(10, {it * 2})
-    
-また、以下の方法でも配列を生成することが可能です     
-以下は上の例と同じ動作をします。
-
-    val evenNumbers=  IntArray(10, {it * 2})
 
 
 ### array, listOf, arrayListOf, linkedListOf
@@ -55,7 +50,7 @@ arrayListという関数もあったようですが、非推奨になってい�
     val linkedList = linkedListOf(1,2,3,4,5)
   
   
- 
+   
    
    
    

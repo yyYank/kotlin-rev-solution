@@ -5,7 +5,6 @@
 Kotlinにはswitch構文はありません。   
 代替としてwhenを使います。   
 ifと同様にwhenも式（when式）です。
-これについては[制御構文を式として扱う](./return-on-statement)参照。
 
 ### フォーマット
    
@@ -13,13 +12,12 @@ ifと同様にwhenも式（when式）です。
 以下のように記述します。
 
 
-
     when(引数) {
-        値-> {戻り値}
-        else -> {戻り値}
+        値-> 戻り値
+        else -> 戻り値
     }
    
-elseは必須で、引数がどの値にも等しくない時に呼ばれます.
+elseは必須となっております
 
 
 ### 実装サンプル
@@ -37,7 +35,22 @@ elseは必須で、引数がどの値にも等しくない時に呼ばれます.
  
 
    
-  
+   
+
+Stringの戻り値を持つwhenはこのように書きます。
+
+
+    val value = "hoge"
+    val result = when(value) {
+        "hoge" -> "ほげ"
+        "fuga" -> "ふが"
+        else -> "piyo"
+    }
+    println(result) // => ほげ
+
+
+
+
 
 
 <br/>

@@ -101,6 +101,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/10/06:リストの要素を前からいくつか取り出す ページ作成(hkdnetさんプルリク)
      2015/10/06:drop関数の説明 リストの要素を前からいくつか削る ページ名変更(hkdnetさんプルリク)
      2015/10/06:Kotlinをインストールする ページ誤字修正(iwata-nさんプルリク)
+     2016/1/30:Siteのカスタムテーマ修正(EFEXPさんプルリク)
 
 ## Special Thanks
 
@@ -110,6 +111,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [drmashuさん](https://github.com/drmashu)
 * [iwata-nさん](https://github.com/iwata-n)  
 * [hkdnetさん](https://github.com/hkdnet)  
+* [EFEXPさん](https://github.com/EFEXP)  
    
   
    

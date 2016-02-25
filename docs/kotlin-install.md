@@ -4,10 +4,20 @@
 KotlinをIDE(統合開発環境)などを介さずに実行するためには   
 Kotlin Compilerをダウンロードする必要があります。   
    
+※導入が面倒ですぐにKotlinを書きたい人はWeb上で確認できます。
+  
+ 
+[try.kotlin.org](http://try.kotlinlang.org/)
    
-   
-2015年3月現在、kotlin-compiler-0.10.195.zipとして   
-ダウンロードできます。   
+  
+  
+    
+<del>2015年3月現在、kotlin-compiler-0.10.195.zipとして   
+ダウンロードできます。</del>
+  
+  
+Kotlin1.0 is out!!!!!
+メジャーバージョン出ました。   
    
    
    

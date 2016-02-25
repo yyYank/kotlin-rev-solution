@@ -31,7 +31,8 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [リストの値を集計する](./collection-sum)
 * [リストの要素を前からいくつか取り出す](./collection-take) 
 * [リストの要素を前からいくつか削る](./collection-drop) 
-* [２つのリストのペアのリストを作る](./collection-map) 
+### 応用編
+* [親子関係のある独自のブロックを作りたい](./type-safe-builder) 
 
 ### 機能拡張
 * [クラスの機能を拡張したい](./extension) 

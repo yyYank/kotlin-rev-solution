@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-eclipse/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/type-safe-builder/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>KotlinをEclipseで動かす - 逆引きKotlin - 逆引きKotlin</title>
+	<title>親子関係のある独自のブロックを作りたい - 逆引きKotlin - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -53,7 +53,7 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">導入 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -76,8 +76,8 @@
 
                         
                             
-<li class="active">
-    <a href=".">KotlinをEclipseで動かす</a>
+<li >
+    <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
 </li>
 
                         
@@ -239,13 +239,13 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="../type-safe-builder">親子関係のある独自のブロックを作りたい</a>
+<li class="active">
+    <a href=".">親子関係のある独自のブロックを作りたい</a>
 </li>
 
                         
@@ -279,12 +279,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../kotlin-plugin-androidstudio">
+                        <a rel="next" href="../extension">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../hello-kotlin-android">
+                        <a rel="prev" href="../reflection">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -309,73 +309,74 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#kotlineclipse">KotlinをEclipseで動かす</a></li>
+        <li class="main active"><a href="#_1">親子関係のある独自のブロックを作りたい</a></li>
         
-            <li><a href="#_1">手順</a></li>
+            <li><a href="#_2">関数を引数に渡すと出来そう</a></li>
         
-            <li><a href="#_2">事前準備</a></li>
+            <li><a href="#_3">問題点</a></li>
         
-            <li><a href="#_3">手順</a></li>
+            <li><a href="#type-safe-builders">親子関係をType-Safe Buildersで表現</a></li>
         
-            <li><a href="#_4">使ってみた感想</a></li>
+            <li><a href="#_4">使い方</a></li>
         
-            <li><a href="#url">参考URL</a></li>
+            <li><a href="#_5">解説</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="kotlineclipse">KotlinをEclipseで動かす</h2>
-<h3 id="_1">手順</h3>
-<p>こちらの公式ブログに詳しく載っています。
-(Eclipse Plugin Alpha is Out!)[http://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/]</p>
-<p>1.Eclipseを起動し、「Help(ヘルプ)&gt;Eclipse Market Place(マーケットプレイス)」を選択して</p>
-<p>Kotlinで検索しプラグインをインストール</p>
-<p>もしくは「Help(ヘルプ)＞ Install New Software(新規ソフトウェアのインストール)」を選択し、</p>
-<p>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/へアクセスする</p>
-<p>2.ラインセンスに同意します</p>
-<p>3.Eclipseを再起動します</p>
-<p>以上</p>
-<p><font color=red>ここから下は昔話です</font>   </p>
-<p>Kotlinの公式サイトからは現在公表されておらず、 <br />
-（昔はcoming soonとか書いてあった） </p>
-<p>プラグインは公式リリースされているものではありません（２０１５年３月８日現在）。</p>
-<p>素直にIntelliJ IDEAかAndroid Studio使ったほうが楽です。 <br />
-一応記録として残しておく程度という認識でお願いします。</p>
-<h3 id="_2">事前準備</h3>
-<ul>
-<li>Eclipse 4.3.1(Kepler)以上インストール<br />
--&gt; Kepler推奨みたいですが、Lunaでも動きました。</li>
-<li>Eclipse SDKインストール</li>
-<li><a href="https://github.com/JetBrains/kotlin-eclipse">kotlin-eclipse</a>をgit cloneする <br />
--&gt; Jet Brains社提供のEclipse SDKのKotlin開発環境</li>
-</ul>
-<h3 id="_3">手順</h3>
-<p>１．Eclipseを起動し、File&gt;Import&gt;Project&gt;existing project into workspaceで <br />
-kotlin-eclipseのプロジェクトを取り込む</p>
-<p>２．kotlin-eclipseプロジェクトのantスクリプトからkotlin-eclipseをビルドする</p>
-<p>３．Kotlin-eclipseのlauncherプロジェクトのlaunch用のantスクリプトを実行</p>
-<p>3.の実行時にプラグインを全て追加する必要があります。 <br />
-うまく行けばEclipse上にEclipse（Eclipse SDK）が起動するような形になる。   </p>
-<h3 id="_4">使ってみた感想</h3>
-<p>Eclipseの良さがあんまり感じられなくなっちゃってる</p>
-<ul>
-<li>Eclipse起動してさらにEclipse起動する感じが面倒くさい <br />
--&gt; 多分環境変数を切り出してantスクリプト実行出来れば良いのだろうけど、 <br />
-   JetBrainsさんに頑張ってもらえないと辛い</li>
-<li>コード補完は出来る</li>
-<li>Eclipseの補助的な機能は死んでたりする</li>
-</ul>
-<p>例えば文字列リテラルで <br />
-    String a = "a <br />
-という状態で開業すると <br />
-    String a = "a" <br />
-    + " <br />
-という風にEclipseはしてくれるはずなんだけどKotlin-eclipseだと出来ないとか。</p>
-<h3 id="url">参考URL</h3>
-<p><a href="https://www.youtube.com/watch?v=6AZ6NjWXjzc">動画-Kotlin Eclipse Plugin @clomie #jkug</a> <br />
-<a href="https://speakerdeck.com/clomie/kotlin-eclipse-plugin-number-jkug">スライド-Kotlin Eclipse Plugin #jkug by clomie</a></p>
+<h1 id="_1">親子関係のある独自のブロックを作りたい</h1>
+<p>Groovy風のType-Safe buildersを作りましょう。</p>
+<p><a href="https://kotlinlang.org/docs/reference/type-safe-builders.html">Type-Safe Builders</a></p>
+<h3 id="_2">関数を引数に渡すと出来そう</h3>
+<p>単純にブロックだけを作ろうとするとこういう関数を定義することになります。</p>
+<pre><code>fun parent(f: () -&gt; Unit){}
+fun child (f:() -&gt; Unit){}
+</code></pre>
+<h3 id="_3">問題点</h3>
+<p>この関数には親子関係がないので、こう書けてしまいます。</p>
+<pre><code>parent{
+    println("おや")
+}
+
+child {
+    println("こども")
+}
+</code></pre>
+<h3 id="type-safe-builders">親子関係をType-Safe Buildersで表現</h3>
+<p>これも防ぎたい、あとうまく親子関係で情報を受け渡したい場合に
+Type-Safe Buildersです。</p>
+<pre><code>fun parent(init: Parent.() -&gt; Unit) : Parent{
+    val parent = Parent()
+    parent.init()
+    return parent
+}
+
+class Parent(){
+    fun child(init: Child.() -&gt; Unit) : Child {
+        val child = Child()
+        child.init()
+        return child
+    }
+}
+
+class Child
+</code></pre>
+<h2 id="_4">使い方</h2>
+<p>さっきのがコンパイルエラーになります</p>
+<pre><code>parent{
+    println("おや")
+}
+
+child { // コンパイルエラー!!
+    println("こども")
+}
+</code></pre>
+<h2 id="_5">解説</h2>
+<p>Type-Safe Buildersのポイントはレシーバーです。</p>
+<p>「クラス名().-&gt;」と書くことで、当該クラスをレシーバーとしてそのクラスインスタンスに従属する引数なしの関数という定義になります。    </p>
+<p>これを組み合わせると前述のようにクラスでうまく隠蔽や情報の伝達が可能になります。</p>
 </div>
             
         </div>

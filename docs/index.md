@@ -103,6 +103,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/10/06:drop関数の説明 リストの要素を前からいくつか削る ページ名変更(hkdnetさんプルリク)
      2015/10/06:Kotlinをインストールする ページ誤字修正(iwata-nさんプルリク)
      2016/1/30:Siteのカスタムテーマ修正(EFEXPさんプルリク)
+     2016/2/25:Type-Safe Buildersのページを新規作成
 
 ## Special Thanks
 

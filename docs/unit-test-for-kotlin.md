@@ -2,6 +2,7 @@
 # Kotlinでユニットテストを書く
 
 KotlinでテスティングフレームワークはJUnitかspekなどがあります。
+ただし、spekは2016年2月29日現在、バージョンは0.1.xです。
 
 ## JUnit
 
@@ -62,6 +63,8 @@ Spekクラスを継承してgiven-on-itのスタイルでテストが出来ま�
 
 ### Maven
 
+リポジトリの追加も必要。jetbrainsのartifactory。
+
      <dependency>
         <groupId>org.spek</groupId>
         <artifactId>spek</artifactId>
@@ -80,6 +83,8 @@ Spekクラスを継承してgiven-on-itのスタイルでテストが出来ま�
 
 
 ### Gradle 
+
+リポジトリの追加も必要。jetbrainsのartifactory。
 
     repositories {
         maven {

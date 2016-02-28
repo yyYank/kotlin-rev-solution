@@ -62,11 +62,35 @@ Spekクラスを継承してgiven-on-itのスタイルでテストが出来ま�
 
 ### Maven
 
-あとで書く
+     <dependency>
+        <groupId>org.spek</groupId>
+        <artifactId>spek</artifactId>
+        <version>$version</version>
+        <type>pom</type>
+        <scope>test</scope>
+     </dependency>
+     
+     <repositories>
+        <repository>
+          <id>jebrains-all</id>
+          <url>http://repository.jetbrains.com/all</url>
+        </repository>
+      </repositories>
+      
+
 
 ### Gradle 
 
-あとで書く
+    repositories {
+        maven {
+            url "http://repository.jetbrains.com/all"
+        }
+    }
+    
+    dependencies {
+        testCompile 'org.spek:spek:$version'
+    }
+
 
 ### コード
 

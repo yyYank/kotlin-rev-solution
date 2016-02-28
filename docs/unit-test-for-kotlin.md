@@ -53,4 +53,34 @@ AssertJなども普通に使えます。
 ## spek
 
 
-後で書く。
+spekはJetBrains製のKotlinのテスティングフレームワーク。
+
+http://jetbrains.github.io/spek/
+
+
+Spekクラスを継承してgiven-on-itのスタイルでテストが出来ます。
+
+### Maven
+
+あとで書く
+
+### Gradle 
+
+あとで書く
+
+### コード
+
+公式ドキュメントより。
+
+    class TaxCalculatorSpecs: Spek() { init {
+    
+        given("Tax rate calculator with default locale settings") {
+            val taxRateCalculator = TaxRateCalculator()
+            on("calculating the rate for an income of 200 and an average change of 10 per semester") {
+                val value = taxRateCalculator.calculateRate(200, 10)
+                it("should result in a value of 300") {
+                    assertEquals(300, value)
+                }
+            }
+        }
+    }}

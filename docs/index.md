@@ -32,12 +32,9 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [リストの要素を前からいくつか取り出す](./collection-take) 
 * [リストの要素を前からいくつか削る](./collection-drop) 
 ### 応用編
+* [ユニットテストをしたい](./unit-test-for-kotlin) 
 * [親子関係のある独自のブロックを作りたい](./type-safe-builder) 
-
-### 機能拡張
 * [クラスの機能を拡張したい](./extension) 
-
-### 特殊操作
 * [クラスのメタデータを取得したい（リフレクション操作がしたい）](./reflection) 
    
 <br/>  
@@ -104,6 +101,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2015/10/06:Kotlinをインストールする ページ誤字修正(iwata-nさんプルリク)
      2016/1/30:Siteのカスタムテーマ修正(EFEXPさんプルリク)
      2016/2/25:Type-Safe Buildersのページを新規作成
+     2016/3/01:ユニットテストのページを新規作成
 
 ## Special Thanks
 

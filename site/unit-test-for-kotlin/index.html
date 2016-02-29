@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/collection-sum/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/unit-test-for-kotlin/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>リストの値を集計する - 逆引きKotlin - 逆引きKotlin</title>
+	<title>ユニットテストをしたい - 逆引きKotlin - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -167,7 +167,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -196,8 +196,8 @@
 
                         
                             
-<li class="active">
-    <a href=".">リストの値を集計する</a>
+<li >
+    <a href="../collection-sum">リストの値を集計する</a>
 </li>
 
                         
@@ -224,7 +224,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -247,8 +247,8 @@
 
                         
                             
-<li >
-    <a href="../unit-test-for-kotlin">ユニットテストをしたい</a>
+<li class="active">
+    <a href=".">ユニットテストをしたい</a>
 </li>
 
                         
@@ -267,12 +267,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../collection-merge">
+                        <a rel="next" href="../reflection">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../collection-drop">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -297,33 +297,103 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">リストの値を集計する</a></li>
+        <li class="main active"><a href="#kotlin">Kotlinでユニットテストを書く</a></li>
         
-            <li><a href="#_2">フォーマット</a></li>
+            <li><a href="#junit">JUnit</a></li>
         
-            <li><a href="#_3">実装サンプル</a></li>
-        
-            <li><a href="#url">参考URL</a></li>
+            <li><a href="#spek">spek</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">リストの値を集計する</h2>
-<p>sum関数を使います</p>
-<h3 id="_2">フォーマット</h3>
-<pre><code>対象のリスト.sum()
+<h1 id="kotlin">Kotlinでユニットテストを書く</h1>
+<p>KotlinでテスティングフレームワークはJUnitかspekなどがあります。
+ただし、spekは2016年2月29日現在、バージョンは0.1.xです。</p>
+<h2 id="junit">JUnit</h2>
+<p>JUnitは普通に依存関係に入れてください。</p>
+<h3 id="maven">Maven</h3>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;junit&lt;/groupId&gt;
+    &lt;artifactId&gt;junit&lt;/artifactId&gt;
+    &lt;version&gt;4.12&lt;/version&gt;
+&lt;/dependency&gt;
 </code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>// Array&lt;Int&gt;のインスタンス生成
-val array = arrayOf(1,2,3,4,5)
+<h3 id="gradle">Gradle</h3>
+<pre><code>'junit:junit:4.12'
+</code></pre>
+<h3 id="_1">コード</h3>
+<p>Javaとさほど変わりません。がhamcrest.CorMatchers.isがKotlinの予約ごとかぶるので、バッククオート「`」で囲ってあげないといけません。</p>
+<pre><code>import kebab.Browser
+import org.junit.Test
+import org.junit.Assert.assertThat
+import org.hamcrest.CoreMatchers.`is`
+/**
+ * Created by yy_yank on 2016/02/27.
+ */
+class BrowserTest {
 
-// sumする(1 + 2 + 3 + 4 + 5)
-println(array.sum()) // =&gt; 15
+    val sut : Browser = Browser()
+
+    @Test fun testCalculateURL() {
+        val map = mapOf(Pair("1",1), Pair("2",2) , Pair("3", 3))
+        val actual = sut.calculateUri("abcd", map)
+        assertThat(actual, `is`(""))
+    }
+}
 </code></pre>
-<h3 id="url">参考URL</h3>
-<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/sum.html">Kotlin公式ドキュメント stdlib / kotlin / sum</a></p>
+<p>assertEqualsとかは普通に何も意識せずに使えます。
+はまりどころはこれぐらい。
+AssertJなども普通に使えます。</p>
+<h2 id="spek">spek</h2>
+<p>spekはJetBrains製のKotlinのテスティングフレームワーク。</p>
+<p>http://jetbrains.github.io/spek/</p>
+<p>Spekクラスを継承してgiven-on-itのスタイルでテストが出来ます。</p>
+<h3 id="maven_1">Maven</h3>
+<p>リポジトリの追加も必要。jetbrainsのartifactory。</p>
+<pre><code> &lt;dependency&gt;
+    &lt;groupId&gt;org.spek&lt;/groupId&gt;
+    &lt;artifactId&gt;spek&lt;/artifactId&gt;
+    &lt;version&gt;$version&lt;/version&gt;
+    &lt;type&gt;pom&lt;/type&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+ &lt;/dependency&gt;
+
+ &lt;repositories&gt;
+    &lt;repository&gt;
+      &lt;id&gt;jebrains-all&lt;/id&gt;
+      &lt;url&gt;http://repository.jetbrains.com/all&lt;/url&gt;
+    &lt;/repository&gt;
+  &lt;/repositories&gt;
+</code></pre>
+<h3 id="gradle_1">Gradle</h3>
+<p>リポジトリの追加も必要。jetbrainsのartifactory。</p>
+<pre><code>repositories {
+    maven {
+        url "http://repository.jetbrains.com/all"
+    }
+}
+
+dependencies {
+    testCompile 'org.spek:spek:$version'
+}
+</code></pre>
+<h3 id="_2">コード</h3>
+<p>公式ドキュメントより。</p>
+<pre><code>class TaxCalculatorSpecs: Spek() { init {
+
+    given("Tax rate calculator with default locale settings") {
+        val taxRateCalculator = TaxRateCalculator()
+        on("calculating the rate for an income of 200 and an average change of 10 per semester") {
+            val value = taxRateCalculator.calculateRate(200, 10)
+            it("should result in a value of 300") {
+                assertEquals(300, value)
+            }
+        }
+    }
+}}
+</code></pre>
 </div>
             
         </div>

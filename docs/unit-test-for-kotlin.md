@@ -24,7 +24,7 @@ JUnitは普通に依存関係に入れてください。
 
 ### コード
 
-Javaとさほど変わりません。がhamcrest.CorMatchers.isがKotlinの予約ごとかぶるので、バッククオート「`」で囲ってあげないといけません。
+Javaとさほど変わりません。がhamcrest.CorMatchers.isがKotlinの予約語とかぶるので、バッククオート「`」で囲ってあげないといけません。
 
 
     import kebab.Browser

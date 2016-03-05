@@ -31,7 +31,9 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [リストの値を集計する](./collection-sum)
 * [リストの要素を前からいくつか取り出す](./collection-take) 
 * [リストの要素を前からいくつか削る](./collection-drop) 
+
 ### 応用編
+* [Kotlinでフレームワークを使いたい](./framework-for-kotlin) 
 * [ユニットテストをしたい](./unit-test-for-kotlin) 
 * [親子関係のある独自のブロックを作りたい](./type-safe-builder) 
 * [クラスの機能を拡張したい](./extension) 
@@ -102,6 +104,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2016/1/30:Siteのカスタムテーマ修正(EFEXPさんプルリク)
      2016/2/25:Type-Safe Buildersのページを新規作成
      2016/3/01:ユニットテストのページを新規作成
+     2016/3/05:ユニットテストのページを新規作成
 
 ## Special Thanks
 

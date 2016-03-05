@@ -76,5 +76,32 @@ Spring Bootすごい。
 
 wasabiはフルKotlinなHTTPフレームワーク。
 主に、httpリクエストのルーティングをコントロールする。
+https://github.com/hhariri/wasabi
 
 
+## Gradle
+
+
+    repositories {
+        // Other repositories you use.
+        maven { url 'http://repository.jetbrains.com/all' }
+    }
+
+    dependencies {
+        // Other dependencies you use.
+        compile 'org.wasabi:wasabi:0.1-SNAPSHOT'
+    }
+    
+
+
+## コード
+    
+こんな感じで書くと、ルーティングが出来る。
+server.start()で組み込みJettyが起動する。
+    
+    var server = AppServer()
+    
+    server.get("/", { response.send("Hello World!") })
+    
+    server.start()
+    

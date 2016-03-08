@@ -21,3 +21,13 @@ Javaとほぼ同じ。
 ## internal
 ## infix
 ## tailrec
+## data
+## is
+## companion
+## object
+## in
+## out
+## vararg
+## as
+## by
+## to

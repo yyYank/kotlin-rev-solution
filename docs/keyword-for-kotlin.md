@@ -17,6 +17,12 @@ Javaとほぼ同じ。
 
 
 ## open
+
+classの継承をする際に親クラスにつける。
+Kotlinではデフォルトで継承不可なクラスとなっている。
+
+    open class Hoge
+
 ## inline
 ## internal
 ## infix

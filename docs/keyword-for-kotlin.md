@@ -37,3 +37,5 @@ Kotlinではデフォルトで継承不可なクラスとなっている。
 ## as
 ## by
 ## to
+## reified
+## let

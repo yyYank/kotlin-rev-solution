@@ -39,3 +39,4 @@ Kotlinではデフォルトで継承不可なクラスとなっている。
 ## to
 ## reified
 ## let
+## lateinit

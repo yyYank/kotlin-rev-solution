@@ -24,6 +24,12 @@ Kotlinではデフォルトで継承不可なクラスとなっている。
     open class Hoge
 
 ## inline
+
+関数をインライン化することが出来、毎回インスタンス生成するようなオーバーヘッドを避けられる。
+inline関数内の特定の箇所をinline化したくない場合はnoinlineを使うようだ。
+
+https://kotlinlang.org/docs/reference/inline-functions.html
+
 ## internal
 ## infix
 ## tailrec

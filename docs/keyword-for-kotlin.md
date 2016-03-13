@@ -33,7 +33,17 @@ https://kotlinlang.org/docs/reference/inline-functions.html
 ## internal
 ## infix
 ## tailrec
+
+末尾再起最適化をするためのキーワード。
+
+
 ## data
+
+toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier
+
+
+https://kotlinlang.org/docs/reference/data-classes.html
+
 ## is
 ## companion
 ## object

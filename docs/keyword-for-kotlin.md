@@ -5,15 +5,31 @@ KotlinではJavaとのcompatibilityを目的にしたものはアノテーショ
 
 キーワードには以下のようなものがあります。
 
-## public
+## Visibility Modifier
 
 キーワードというかアクセス修飾子。
+
+
+https://kotlinlang.org/docs/reference/visibility-modifiers.html
+
+### public
+
 Javaとほぼ同じ。Kotlinではデフォルトのアクセスレベルがpublicとなっている。
 
-## private
+### private
 
-キーワードというかアクセス修飾子。
-Javaとほぼ同じ。
+Javaとほぼ同じ。クラス内からのみアクセス可能。
+
+
+### protected
+
+Javaとほぼ同じ。同一クラスかサブクラスからアクセス可能。
+
+
+### internal
+
+同一モジュール内ならどこでも見える。
+
 
 
 ## open
@@ -30,7 +46,9 @@ inline関数内の特定の箇所をinline化したくない場合はnoinlineを
 
 https://kotlinlang.org/docs/reference/inline-functions.html
 
-## internal
+
+
+
 ## infix
 ## tailrec
 
@@ -45,6 +63,9 @@ toString、hashCode,equalsなどの基本的な関数を定義したクラスを
 https://kotlinlang.org/docs/reference/data-classes.html
 
 ## is
+
+型チェックなどで使われる。Javaでいうinstanceofが近い。
+
 ## companion
 ## object
 ## in

@@ -32,12 +32,30 @@ Javaとほぼ同じ。同一クラスかサブクラスからアクセス可能�
 
 
 
-## open
+## classのキーワード
+
+### open
 
 classの継承をする際に親クラスにつける。
 Kotlinではデフォルトで継承不可なクラスとなっている。
 
     open class Hoge
+
+### data
+
+toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier
+
+
+https://kotlinlang.org/docs/reference/data-classes.html
+
+
+
+### object
+
+シングルトンなオブジェクトとか作りたいときに使う。
+
+https://kotlinlang.org/docs/reference/object-declarations.html
+
 
 ## inline
 
@@ -55,22 +73,24 @@ https://kotlinlang.org/docs/reference/inline-functions.html
 末尾再起最適化をするためのキーワード。
 
 
-## data
+## companion
 
-toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier
-
-
-https://kotlinlang.org/docs/reference/data-classes.html
 
 ## is
 
 型チェックなどで使われる。Javaでいうinstanceofが近い。
 
-## companion
-## object
 ## in
+
+
+
 ## out
+
+
 ## vararg
+
+引数を可変長としたいときに使う
+
 ## as
 ## by
 ## to

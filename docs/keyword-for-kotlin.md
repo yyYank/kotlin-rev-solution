@@ -45,6 +45,8 @@ Kotlinではデフォルトで継承不可なクラスとなっている。
 
 toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier
 
+    data class Hoge(val fuga : String)
+
 
 https://kotlinlang.org/docs/reference/data-classes.html
 

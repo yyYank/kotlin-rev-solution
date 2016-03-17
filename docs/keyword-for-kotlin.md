@@ -70,6 +70,12 @@ https://kotlinlang.org/docs/reference/inline-functions.html
 
 
 ## infix
+
+infixを関数に付与することで中置記法が出来る。
+
+https://kotlinlang.org/docs/reference/functions.html
+
+
 ## tailrec
 
 末尾再起最適化をするためのキーワード。
@@ -94,6 +100,9 @@ https://kotlinlang.org/docs/reference/inline-functions.html
 引数を可変長としたいときに使う
 
 ## as
+
+別名をつける場合、キャストする場合に利用する。
+
 ## by
 ## to
 ## reified

@@ -79,6 +79,10 @@ https://kotlinlang.org/docs/reference/functions.html
 ## tailrec
 
 末尾再起最適化をするためのキーワード。
+これでスタックオーバーフローとかしないようになるので安心。
+
+    tailrec fun findFixPoint(x: Double = 1.0): Double
+        = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 
 
 ## companion

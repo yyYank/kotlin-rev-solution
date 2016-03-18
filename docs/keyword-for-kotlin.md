@@ -111,4 +111,11 @@ https://kotlinlang.org/docs/reference/functions.html
 ## to
 ## reified
 ## let
+
 ## lateinit
+
+主に@Injectや@AutowiredなどのDIでフィールドインジェクションをしたい場合に
+フィールドにつける。あとはJUnitの@SetUpなど。
+変数はvarにしておかないとダメなのがちょっとやだ。
+
+    lateinit var subject: TestSubject

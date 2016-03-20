@@ -86,9 +86,22 @@ https://kotlinlang.org/docs/reference/functions.html
     tailrec fun findFixPoint(x: Double = 1.0): Double
         = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 
-
 ## companion
 
+staticな関数とかを使いときに使う。companion object。
+
+    class MyClass {
+      companion object Factory {
+        fun create(): MyClass = MyClass()
+      }
+    }
+    
+    
+    val instance = MyClass.create()
+    
+    
+
+https://kotlinlang.org/docs/reference/object-declarations.html
 
 ## is
 
@@ -96,10 +109,11 @@ https://kotlinlang.org/docs/reference/functions.html
 
 ## in
 
-
+ジェネリクスで入力のみ可能なコレクションクラスの宣言とかに使う。型パラメータを反変(contravariant)にする。
 
 ## out
 
+ジェネリクスで出力のみ可能なコレクションクラスの宣言とかに使う。
 
 ## vararg
 

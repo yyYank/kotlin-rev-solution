@@ -126,7 +126,12 @@ https://kotlinlang.org/docs/reference/object-declarations.html
 ## by
 ## to
 ## reified
-## let
+## let,with,run,apply
+
+スコープ関数と言われる便利なやつ
+
+http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e
+
 
 ## lateinit
 

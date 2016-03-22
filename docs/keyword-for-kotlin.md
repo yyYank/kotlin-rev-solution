@@ -124,8 +124,38 @@ https://kotlinlang.org/docs/reference/object-declarations.html
 別名をつける場合、キャストする場合に利用する。
 
 ## by
+
+フィールドのデリゲーションで使う。
+
+    class Example {
+      var p: String by Delegate()
+    }
+    
+The syntax is: val/var <property name>: <Type> by <expression>.
+
 ## to
+
+
 ## reified
+
+読み方はカタカナで書くならリーアファイドとかレイアファイドとか。
+javaのクラス指定を少し簡略化してような代物。
+
+    inline fun <reified T> membersOf() = T::class.members
+
+
+    fun main(s: Array<String>) {
+        println(membersOf<StringBuilder>().joinToString("\n"))
+        // こう書かなくて良い println(membersOf<StringBuilder::class.java>().joinToString("\n"))
+    }
+    
+    
+たろうさんの記事が詳しい。(M10と現在だとややjavaClass<T>とかあたりは変わっている)
+http://taro.hatenablog.jp/entry/2015/01/29/223239
+
+https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters
+
+
 ## let,with,run,apply
 
 スコープ関数と言われる便利なやつ

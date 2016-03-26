@@ -180,6 +180,16 @@ The syntax is: val/var <property name>: <Type> by <expression>.
 
 ## to
 
+toはPairの拡張関数。イディオム的に使える。
+
+     val map = mapOf("a" to 1, "b" to 2)
+
+toの関数定義はこんな感じ。
+
+    infix fun <A, B> A.to(that: B): Pair<A, B> (source)
+
+https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html
+
 
 ## reified
 

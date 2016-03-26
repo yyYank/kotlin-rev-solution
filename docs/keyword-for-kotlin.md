@@ -61,6 +61,42 @@ https://kotlinlang.org/docs/reference/object-declarations.html
 
 ### sealed
 
+sealde classは厳密に制限された階層構造のクラスを作りたい時に使う。
+enumも制限したものを持つ階層構造のものであるが、enumと違うのはサブクラスで扱える点、
+複数のインスタンスを持てる点など。
+
+https://kotlinlang.org/docs/reference/classes.html
+より引用
+
+
+    sealed class Expr {
+        class Const(val number: Double) : Expr()
+        class Sum(val e1: Expr, val e2: Expr) : Expr()
+        object NotANumber : Expr()
+    }
+
+
+実装サンプル
+
+
+    fun main(args: Array<String>) {    
+        val color = Color.Red
+        val colorName = selectColorName(color)
+        println(colorName)
+    }
+    
+    fun selectColorName(color : Color) = when(color) {
+            Color.Red -> "赤"
+            Color.Green -> "青"
+            Color.Yellow -> "黄"    
+    }
+
+
+    sealed class Color {
+        object Red : Color()
+        object Green : Color()
+        object Yellow : Color()
+    }
 
 
 ## 関数につけるキーワード

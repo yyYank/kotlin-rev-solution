@@ -100,7 +100,7 @@ https://kotlinlang.org/docs/reference/classes.html
     }
 
 
-when式にelseがないのはsealedのとりうる全ての分岐を網羅している琴をコンパイラが認識しているから。
+when式にelseがないのはsealedのとりうる全ての分岐を網羅している事をコンパイラが認識しているから。
 
 参考
 http://taro.hatenablog.jp/entry/2015/09/17/131439

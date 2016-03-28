@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="yy_yank">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/keyword-for-kotlin/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Kotlinのキーワードを知りたい - 逆引きKotlin - 逆引きKotlin</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">逆引きKotlin</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">導入 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../kotlin-install">Kotlinをインストールする</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../kotlin-plugin-intellij">KotlinプラグインをIntelliJ IDEAに導入する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../kotlin-plugin-androidstudio">KotlinプラグインをAndroid Studioに入れる</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../kotlin-plugin-eclipse">KotlinをEclipseで動かす</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../hello-kotlin-android">AndroidでHelloWorld</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../variable">変数を宣言する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../type">型を宣言する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../instance">インスタンスを生成する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../array">配列を生成する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../function">関数を宣言する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../function_type">好きなタイミングで特定の処理を行う</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../function_object">関数をオブジェクトとして使う</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../if-statement">条件分岐を行う</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../if-function">ifを式として扱う</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../when">switchみたいな条件分岐がしたい</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../loop">ループ処理を行う</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../collection-for-each">リストの要素分ループして操作する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-filter">条件でリストを絞り込む</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-map">リストの要素の名前のみを抽出する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-merge">リストをマージする</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-sum">リストの値を集計する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-drop">リストの要素を前からいくつか削る</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-take">リストの要素を前からいくつか取り出す</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../collection-zip">２つのリストのペアのリストを作る</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../extension">クラスの機能拡張をしたい</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../type-safe-builder">親子関係のある独自のブロックを作りたい</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../reflection">クラスのメタデータを操作する</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../framework-for-kotlin">Kotlinでフレームワークを使いたい</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../unit-test-for-kotlin">ユニットテストをしたい</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href=".">Kotlinのキーワードを知りたい</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../unit-test-for-kotlin">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/yyYank/kotlin-rev-solution">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#kotlin">Kotlinのキーワードを知りたい</a></li>
+        
+            <li><a href="#visibility-modifier">Visibility Modifier</a></li>
+        
+            <li><a href="#class">classのキーワード</a></li>
+        
+            <li><a href="#_1">関数につけるキーワード</a></li>
+        
+            <li><a href="#companion">companion</a></li>
+        
+            <li><a href="#is">is</a></li>
+        
+            <li><a href="#in">in</a></li>
+        
+            <li><a href="#out">out</a></li>
+        
+            <li><a href="#vararg">vararg</a></li>
+        
+            <li><a href="#as">as</a></li>
+        
+            <li><a href="#by">by</a></li>
+        
+            <li><a href="#to">to</a></li>
+        
+            <li><a href="#reified">reified</a></li>
+        
+            <li><a href="#letwithrunapply">let,with,run,apply</a></li>
+        
+            <li><a href="#lateinit">lateinit</a></li>
+        
+            <li><a href="#constructor">constructor</a></li>
+        
+            <li><a href="#init">init</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="kotlin">Kotlinのキーワードを知りたい</h1>
+<p>KotlinではJavaとのcompatibilityを目的にしたものはアノテーション、Kotlin側で使われるものをキーワードと表現する傾向があります。</p>
+<p>キーワードには以下のようなものがあります。</p>
+<h2 id="visibility-modifier">Visibility Modifier</h2>
+<p>キーワードというかアクセス修飾子。</p>
+<p>https://kotlinlang.org/docs/reference/visibility-modifiers.html</p>
+<h3 id="public">public</h3>
+<p>Javaとほぼ同じ。Kotlinではデフォルトのアクセスレベルがpublicとなっている。</p>
+<h3 id="private">private</h3>
+<p>Javaとほぼ同じ。クラス内からのみアクセス可能。</p>
+<h3 id="protected">protected</h3>
+<p>Javaとほぼ同じ。同一クラスかサブクラスからアクセス可能。</p>
+<h3 id="internal">internal</h3>
+<p>同一モジュール内ならどこでも見える。</p>
+<h2 id="class">classのキーワード</h2>
+<h3 id="open">open</h3>
+<p>classの継承をする際に親クラスにつける。
+Kotlinではデフォルトで継承不可なクラスとなっている。</p>
+<pre><code>open class Hoge
+</code></pre>
+<h3 id="data">data</h3>
+<p>toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier</p>
+<pre><code>data class Hoge(val fuga : String)
+</code></pre>
+<p>https://kotlinlang.org/docs/reference/data-classes.html</p>
+<h3 id="object">object</h3>
+<p>シングルトンなオブジェクトとか作りたいときに使う。</p>
+<p>https://kotlinlang.org/docs/reference/object-declarations.html</p>
+<h3 id="sealed">sealed</h3>
+<p>sealde classは厳密に制限された階層構造のクラスを作りたい時に使う。
+enumも制限したものを持つ階層構造のものであるが、enumと違うのはサブクラスで扱える点、
+複数のインスタンスを持てる点など。</p>
+<p>https://kotlinlang.org/docs/reference/classes.html
+より引用</p>
+<pre><code>sealed class Expr {
+    class Const(val number: Double) : Expr()
+    class Sum(val e1: Expr, val e2: Expr) : Expr()
+    object NotANumber : Expr()
+}
+</code></pre>
+<p>実装サンプル</p>
+<pre><code>fun main(args: Array&lt;String&gt;) {    
+    val color = Color.Red
+    val colorName = selectColorName(color)
+    println(colorName)
+}
+
+fun selectColorName(color : Color) = when(color) {
+        Color.Red -&gt; "赤"
+        Color.Green -&gt; "青"
+        Color.Yellow -&gt; "黄"    
+}
+
+
+sealed class Color {
+    object Red : Color()
+    object Green : Color()
+    object Yellow : Color()
+}
+</code></pre>
+<p>when式にelseがないのはsealedのとりうる全ての分岐を網羅している琴をコンパイラが認識しているから。</p>
+<p>参考
+http://taro.hatenablog.jp/entry/2015/09/17/131439</p>
+<h2 id="_1">関数につけるキーワード</h2>
+<h3 id="inline">inline</h3>
+<p>関数をインライン化することが出来、毎回インスタンス生成するようなオーバーヘッドを避けられる。
+inline関数内の特定の箇所をinline化したくない場合はnoinlineを使うようだ。</p>
+<p>https://kotlinlang.org/docs/reference/inline-functions.html</p>
+<h3 id="infix">infix</h3>
+<p>infixを関数に付与することで中置記法が出来る。</p>
+<p>https://kotlinlang.org/docs/reference/functions.html</p>
+<h3 id="tailrec">tailrec</h3>
+<p>末尾再起最適化をするためのキーワード。
+これでスタックオーバーフローとかしないようになるので安心。</p>
+<pre><code>tailrec fun findFixPoint(x: Double = 1.0): Double
+    = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
+</code></pre>
+<h2 id="companion">companion</h2>
+<p>staticな関数とかを使いときに使う。companion object。</p>
+<pre><code>class MyClass {
+  companion object Factory {
+    fun create(): MyClass = MyClass()
+  }
+}
+
+
+val instance = MyClass.create()
+</code></pre>
+<p>https://kotlinlang.org/docs/reference/object-declarations.html</p>
+<h2 id="is">is</h2>
+<p>型チェックなどで使われる。Javaでいうinstanceofが近い。</p>
+<h2 id="in">in</h2>
+<p>ジェネリクスで入力のみ可能なコレクションクラスの宣言とかに使う。型パラメータを反変(contravariant)にする。</p>
+<h2 id="out">out</h2>
+<p>ジェネリクスで出力のみ可能なコレクションクラスの宣言とかに使う。</p>
+<h2 id="vararg">vararg</h2>
+<p>引数を可変長としたいときに使う</p>
+<h2 id="as">as</h2>
+<p>別名をつける場合、キャストする場合に利用する。</p>
+<pre><code>import java.math.BigDecimal as Decimal
+
+
+var hoge = Hoge() as Fuga
+</code></pre>
+<h2 id="by">by</h2>
+<p>フィールドのデリゲーションで使う。</p>
+<pre><code>class Example {
+  var p: String by Delegate()
+}
+</code></pre>
+<p>The syntax is: val/var <property name>: <Type> by <expression>.</p>
+<h2 id="to">to</h2>
+<p>toはPairの拡張関数。イディオム的に使える。</p>
+<pre><code> val map = mapOf("a" to 1, "b" to 2)
+</code></pre>
+<p>toの関数定義はこんな感じ。</p>
+<pre><code>infix fun &lt;A, B&gt; A.to(that: B): Pair&lt;A, B&gt; (source)
+</code></pre>
+<p>https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html</p>
+<h2 id="reified">reified</h2>
+<p>読み方はカタカナで書くならリーアファイドとかレイアファイドとか。
+javaのクラス指定を少し簡略化してような代物。</p>
+<pre><code>inline fun &lt;reified T&gt; membersOf() = T::class.members
+
+
+fun main(s: Array&lt;String&gt;) {
+    println(membersOf&lt;StringBuilder&gt;().joinToString("\n"))
+    // こう書かなくて良い println(membersOf&lt;StringBuilder::class.java&gt;().joinToString("\n"))
+}
+</code></pre>
+<p>たろうさんの記事が詳しい。(M10と現在だとややjavaClass<T>とかあたりは変わっている)
+http://taro.hatenablog.jp/entry/2015/01/29/223239</p>
+<p>https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters</p>
+<h2 id="letwithrunapply">let,with,run,apply</h2>
+<p>スコープ関数と言われる便利なやつ</p>
+<p>http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e</p>
+<h2 id="lateinit">lateinit</h2>
+<p>主に@Injectや@AutowiredなどのDIでフィールドインジェクションをしたい場合に
+フィールドにつける。あとはJUnitの@SetUpなど。
+変数はvarにしておかないとダメなのがちょっとやだ。</p>
+<pre><code>lateinit var subject: TestSubject
+</code></pre>
+<h2 id="constructor">constructor</h2>
+<p>複数のコンストラクタを定義したい場合、使う。
+このキーワードを使わない場合はプライマリコンストラクタとなる。</p>
+<h2 id="init">init</h2>
+<p>初期化ブロックのキーワード</p>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

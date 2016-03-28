@@ -62,7 +62,7 @@ https://kotlinlang.org/docs/reference/object-declarations.html
 
 ### sealed
 
-sealde classは厳密に制限された階層構造のクラスを作りたい時に使う。
+sealed classは厳密に制限された階層構造のクラスを作りたい時に使う。
 enumも制限したものを持つ階層構造のものであるが、enumと違うのはサブクラスで扱える点、
 複数のインスタンスを持てる点など。
 

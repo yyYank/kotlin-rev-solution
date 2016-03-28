@@ -35,4 +35,5 @@ pages:
 - [reflection.md, '応用編', 'クラスのメタデータを操作する']
 - [framework-for-kotlin.md, '応用編', 'Kotlinでフレームワークを使いたい']
 - [unit-test-for-kotlin.md, '応用編', 'ユニットテストをしたい']
+- [keyword-for-kotlin.md, '応用編', 'Kotlinのキーワードを知りたい']
 

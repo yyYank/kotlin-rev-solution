@@ -38,6 +38,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [親子関係のある独自のブロックを作りたい](./type-safe-builder) 
 * [クラスの機能を拡張したい](./extension) 
 * [クラスのメタデータを取得したい（リフレクション操作がしたい）](./reflection) 
+* [Kotlinのキーワードを知りたい](./keyword-for-kotlin) 
    
 <br/>  
 <br/>  
@@ -104,7 +105,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2016/1/30:Siteのカスタムテーマ修正(EFEXPさんプルリク)
      2016/2/25:Type-Safe Buildersのページを新規作成
      2016/3/01:ユニットテストのページを新規作成
-     2016/3/05:ユニットテストのページを新規作成
+     2016/3/29:Kotlinのキーワードのページを新規作成
 
 ## Special Thanks
 

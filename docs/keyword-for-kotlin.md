@@ -56,6 +56,7 @@ https://kotlinlang.org/docs/reference/data-classes.html
 
 シングルトンなオブジェクトとか作りたいときに使う。
 
+  
 https://kotlinlang.org/docs/reference/object-declarations.html
 
 
@@ -167,6 +168,11 @@ https://kotlinlang.org/docs/reference/object-declarations.html
 ## as
 
 別名をつける場合、キャストする場合に利用する。
+
+    import java.math.BigDecimal as Decimal
+
+
+    var hoge = Hoge() as Fuga
 
 ## by
 

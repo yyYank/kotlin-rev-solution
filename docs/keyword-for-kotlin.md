@@ -5,12 +5,12 @@ KotlinではJavaとのcompatibilityを目的にしたものはアノテーショ
 
 キーワードには以下のようなものがあります。
 
-## Visibility Modifier
+## Visibility Modifiers
 
 キーワードというかアクセス修飾子。
 
 
-[https://kotlinlang.org/docs/reference/visibility-modifiers.html](https://kotlinlang.org/docs/reference/visibility-modifiers.html)
+[Visibility Modifiers](https://kotlinlang.org/docs/reference/visibility-modifiers.html)
 
 ### public
 

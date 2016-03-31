@@ -10,7 +10,7 @@ KotlinではJavaとのcompatibilityを目的にしたものはアノテーショ
 キーワードというかアクセス修飾子。
 
 
-https://kotlinlang.org/docs/reference/visibility-modifiers.html
+[https://kotlinlang.org/docs/reference/visibility-modifiers.html](https://kotlinlang.org/docs/reference/visibility-modifiers.html)
 
 ### public
 

@@ -48,7 +48,7 @@ toString、hashCode,equalsなどの基本的な関数を定義したクラスを
     data class Hoge(val fuga : String)
 
 
-https://kotlinlang.org/docs/reference/data-classes.html
+[Data Classes](https://kotlinlang.org/docs/reference/data-classes.html)
 
 
 
@@ -57,7 +57,7 @@ https://kotlinlang.org/docs/reference/data-classes.html
 シングルトンなオブジェクトとか作りたいときに使う。
 
   
-https://kotlinlang.org/docs/reference/object-declarations.html
+[Object Expressions and Declarations](https://kotlinlang.org/docs/reference/object-declarations.html)
 
 
 ### sealed
@@ -66,7 +66,7 @@ sealed classは厳密に制限された階層構造のクラスを作りたい�
 enumも制限したものを持つ階層構造のものであるが、enumと違うのはサブクラスで扱える点、
 複数のインスタンスを持てる点など。
 
-https://kotlinlang.org/docs/reference/classes.html
+[Classes and Inheritance](https://kotlinlang.org/docs/reference/classes.html)
 より引用
 
 
@@ -103,7 +103,7 @@ https://kotlinlang.org/docs/reference/classes.html
 when式にelseがないのはsealedのとりうる全ての分岐を網羅している事をコンパイラが認識しているから。
 
 参考
-http://taro.hatenablog.jp/entry/2015/09/17/131439
+[Kotlin M13で追加されたsealed class](http://taro.hatenablog.jp/entry/2015/09/17/131439)
 
 ## 関数につけるキーワード
 
@@ -112,7 +112,7 @@ http://taro.hatenablog.jp/entry/2015/09/17/131439
 関数をインライン化することが出来、毎回インスタンス生成するようなオーバーヘッドを避けられる。
 inline関数内の特定の箇所をinline化したくない場合はnoinlineを使うようだ。
 
-https://kotlinlang.org/docs/reference/inline-functions.html
+[Inline Functions](https://kotlinlang.org/docs/reference/inline-functions.html)
 
 
 
@@ -121,7 +121,7 @@ https://kotlinlang.org/docs/reference/inline-functions.html
 
 infixを関数に付与することで中置記法が出来る。
 
-https://kotlinlang.org/docs/reference/functions.html
+[Functions](https://kotlinlang.org/docs/reference/functions.html)
 
 
 ### tailrec
@@ -147,7 +147,7 @@ staticな関数とかを使いときに使う。companion object。
     
     
 
-https://kotlinlang.org/docs/reference/object-declarations.html
+[Object Expressions and Declarations](https://kotlinlang.org/docs/reference/object-declarations.html)
 
 ## is
 
@@ -194,7 +194,7 @@ toの関数定義はこんな感じ。
 
     infix fun <A, B> A.to(that: B): Pair<A, B> (source)
 
-https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html
+[https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html)
 
 
 ## reified
@@ -212,16 +212,16 @@ javaのクラス指定を少し簡略化してような代物。
     
     
 たろうさんの記事が詳しい。(M10と現在だとややjavaClass<T>とかあたりは変わっている)
-http://taro.hatenablog.jp/entry/2015/01/29/223239
+[Kotlin M10で追加されたreified type parameterがいい感じ](http://taro.hatenablog.jp/entry/2015/01/29/223239)
 
-https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters
+[Reified type parameters](https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters)
 
 
 ## let,with,run,apply
 
 スコープ関数と言われる便利なやつ
 
-http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e
+[Kotlin スコープ関数 用途まとめ](http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e)
 
 
 ## lateinit

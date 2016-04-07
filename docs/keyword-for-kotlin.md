@@ -132,6 +132,10 @@ infixを関数に付与することで中置記法が出来る。
     tailrec fun findFixPoint(x: Double = 1.0): Double
         = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 
+### operator
+
+演算子オーバーロードをしたいときに使う。
+
 ## companion
 
 staticな関数とかを使いときに使う。companion object。

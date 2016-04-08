@@ -311,7 +311,7 @@
     
         <li class="main active"><a href="#kotlin">Kotlinのキーワードを知りたい</a></li>
         
-            <li><a href="#visibility-modifier">Visibility Modifier</a></li>
+            <li><a href="#visibility-modifiers">Visibility Modifiers</a></li>
         
             <li><a href="#class">classのキーワード</a></li>
         
@@ -351,9 +351,9 @@
 <h1 id="kotlin">Kotlinのキーワードを知りたい</h1>
 <p>KotlinではJavaとのcompatibilityを目的にしたものはアノテーション、Kotlin側で使われるものをキーワードと表現する傾向があります。</p>
 <p>キーワードには以下のようなものがあります。</p>
-<h2 id="visibility-modifier">Visibility Modifier</h2>
+<h2 id="visibility-modifiers">Visibility Modifiers</h2>
 <p>キーワードというかアクセス修飾子。</p>
-<p>https://kotlinlang.org/docs/reference/visibility-modifiers.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/visibility-modifiers.html">Visibility Modifiers</a></p>
 <h3 id="public">public</h3>
 <p>Javaとほぼ同じ。Kotlinではデフォルトのアクセスレベルがpublicとなっている。</p>
 <h3 id="private">private</h3>
@@ -372,15 +372,15 @@ Kotlinではデフォルトで継承不可なクラスとなっている。</p>
 <p>toString、hashCode,equalsなどの基本的な関数を定義したクラスを使いたいときに用いる。data classをつくる時のmodifier</p>
 <pre><code>data class Hoge(val fuga : String)
 </code></pre>
-<p>https://kotlinlang.org/docs/reference/data-classes.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/data-classes.html">Data Classes</a></p>
 <h3 id="object">object</h3>
 <p>シングルトンなオブジェクトとか作りたいときに使う。</p>
-<p>https://kotlinlang.org/docs/reference/object-declarations.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/object-declarations.html">Object Expressions and Declarations</a></p>
 <h3 id="sealed">sealed</h3>
 <p>sealed classは厳密に制限された階層構造のクラスを作りたい時に使う。
 enumも制限したものを持つ階層構造のものであるが、enumと違うのはサブクラスで扱える点、
 複数のインスタンスを持てる点など。</p>
-<p>https://kotlinlang.org/docs/reference/classes.html
+<p><a href="https://kotlinlang.org/docs/reference/classes.html">Classes and Inheritance</a>
 より引用</p>
 <pre><code>sealed class Expr {
     class Const(val number: Double) : Expr()
@@ -410,21 +410,23 @@ sealed class Color {
 </code></pre>
 <p>when式にelseがないのはsealedのとりうる全ての分岐を網羅している事をコンパイラが認識しているから。</p>
 <p>参考
-http://taro.hatenablog.jp/entry/2015/09/17/131439</p>
+<a href="http://taro.hatenablog.jp/entry/2015/09/17/131439">Kotlin M13で追加されたsealed class</a></p>
 <h2 id="_1">関数につけるキーワード</h2>
 <h3 id="inline">inline</h3>
 <p>関数をインライン化することが出来、毎回インスタンス生成するようなオーバーヘッドを避けられる。
 inline関数内の特定の箇所をinline化したくない場合はnoinlineを使うようだ。</p>
-<p>https://kotlinlang.org/docs/reference/inline-functions.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/inline-functions.html">Inline Functions</a></p>
 <h3 id="infix">infix</h3>
 <p>infixを関数に付与することで中置記法が出来る。</p>
-<p>https://kotlinlang.org/docs/reference/functions.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/functions.html">Functions</a></p>
 <h3 id="tailrec">tailrec</h3>
 <p>末尾再起最適化をするためのキーワード。
 これでスタックオーバーフローとかしないようになるので安心。</p>
 <pre><code>tailrec fun findFixPoint(x: Double = 1.0): Double
     = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 </code></pre>
+<h3 id="operator">operator</h3>
+<p>演算子オーバーロードをしたいときに使う。</p>
 <h2 id="companion">companion</h2>
 <p>staticな関数とかを使いときに使う。companion object。</p>
 <pre><code>class MyClass {
@@ -436,7 +438,7 @@ inline関数内の特定の箇所をinline化したくない場合はnoinlineを
 
 val instance = MyClass.create()
 </code></pre>
-<p>https://kotlinlang.org/docs/reference/object-declarations.html</p>
+<p><a href="https://kotlinlang.org/docs/reference/object-declarations.html">Object Expressions and Declarations</a></p>
 <h2 id="is">is</h2>
 <p>型チェックなどで使われる。Javaでいうinstanceofが近い。</p>
 <h2 id="in">in</h2>
@@ -466,7 +468,7 @@ var hoge = Hoge() as Fuga
 <p>toの関数定義はこんな感じ。</p>
 <pre><code>infix fun &lt;A, B&gt; A.to(that: B): Pair&lt;A, B&gt; (source)
 </code></pre>
-<p>https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html</p>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/to.html</a></p>
 <h2 id="reified">reified</h2>
 <p>読み方はカタカナで書くならリーアファイドとかレイアファイドとか。
 javaのクラス指定を少し簡略化してような代物。</p>
@@ -479,11 +481,11 @@ fun main(s: Array&lt;String&gt;) {
 }
 </code></pre>
 <p>たろうさんの記事が詳しい。(M10と現在だとややjavaClass<T>とかあたりは変わっている)
-http://taro.hatenablog.jp/entry/2015/01/29/223239</p>
-<p>https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters</p>
+<a href="http://taro.hatenablog.jp/entry/2015/01/29/223239">Kotlin M10で追加されたreified type parameterがいい感じ</a></p>
+<p><a href="https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters">Reified type parameters</a></p>
 <h2 id="letwithrunapply">let,with,run,apply</h2>
 <p>スコープ関数と言われる便利なやつ</p>
-<p>http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e</p>
+<p><a href="http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e">Kotlin スコープ関数 用途まとめ</a></p>
 <h2 id="lateinit">lateinit</h2>
 <p>主に@Injectや@AutowiredなどのDIでフィールドインジェクションをしたい場合に
 フィールドにつける。あとはJUnitの@SetUpなど。

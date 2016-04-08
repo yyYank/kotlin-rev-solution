@@ -17,10 +17,12 @@ Site is below:
 <http://kotlin-rev-solution.herokuapp.com/site>
 
 
-## プルリクについて注意事項
+## プルリクについてのお願い
 
-プルリク募集してます！
+プルリク募集してます！ぜひ！
+
 以下の事項を踏まえた上でお送りいただけると嬉しいです。
+
 
 * site配下のhtmlのプルリクは受け付けないです(mdから生成されているため)
 * mkdocs buildとmkdocs serveで動作確認済みのものである

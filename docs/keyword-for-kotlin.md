@@ -136,6 +136,10 @@ infixを関数に付与することで中置記法が出来る。
 
 演算子オーバーロードをしたいときに使う。
 
+### const
+
+定数に使う。
+
 ## companion
 
 staticな関数とかを使いときに使う。companion object。

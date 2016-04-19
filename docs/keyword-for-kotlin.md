@@ -138,7 +138,9 @@ infixを関数に付与することで中置記法が出来る。
 
 ### const
 
-定数に使う。
+定数に使う。ただし、String型かプリミティブ型にしか利用できない。
+
+    const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
 
 ## companion
 

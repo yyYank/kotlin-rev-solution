@@ -234,6 +234,13 @@ javaのクラス指定を少し簡略化してような代物。
 [Kotlin スコープ関数 用途まとめ](http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e)
 
 
+
+    hoge.let{}
+    with(hoge){}
+    hoge.run{}
+    hoge.apply{}
+
+
 ## lateinit
 
 主に@Injectや@AutowiredなどのDIでフィールドインジェクションをしたい場合に

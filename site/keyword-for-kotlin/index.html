@@ -427,6 +427,10 @@ inline関数内の特定の箇所をinline化したくない場合はnoinlineを
 </code></pre>
 <h3 id="operator">operator</h3>
 <p>演算子オーバーロードをしたいときに使う。</p>
+<h3 id="const">const</h3>
+<p>定数に使う。ただし、String型かプリミティブ型にしか利用できない。</p>
+<pre><code>const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
+</code></pre>
 <h2 id="companion">companion</h2>
 <p>staticな関数とかを使いときに使う。companion object。</p>
 <pre><code>class MyClass {
@@ -486,6 +490,11 @@ fun main(s: Array&lt;String&gt;) {
 <h2 id="letwithrunapply">let,with,run,apply</h2>
 <p>スコープ関数と言われる便利なやつ</p>
 <p><a href="http://qiita.com/ngsw_taro/items/d29e3080d9fc8a38691e">Kotlin スコープ関数 用途まとめ</a></p>
+<pre><code>hoge.let{}
+with(hoge){}
+hoge.run{}
+hoge.apply{}
+</code></pre>
 <h2 id="lateinit">lateinit</h2>
 <p>主に@Injectや@AutowiredなどのDIでフィールドインジェクションをしたい場合に
 フィールドにつける。あとはJUnitの@SetUpなど。
@@ -497,6 +506,10 @@ fun main(s: Array&lt;String&gt;) {
 このキーワードを使わない場合はプライマリコンストラクタとなる。</p>
 <h2 id="init">init</h2>
 <p>初期化ブロックのキーワード</p>
+<pre><code>init {
+    // フィールド初期化などの処理
+}
+</code></pre>
 </div>
             
         </div>

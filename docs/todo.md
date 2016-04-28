@@ -16,4 +16,10 @@ Kotlinの場合TODO関数が用意されており、実行時にエラーにし�
     TODO()
     TODO("hogehogeなためfugafugaする")
     
+    
+こうすると実行時に例外が投げられます。
+
+    Exception in thread "main" kotlin.NotImplementedError: An operation is not implemented: hogehogeなためfugafugaする
+        at sample.Simplest_versionKt.main(Simplest version.kt:11)
+    
 [https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html)

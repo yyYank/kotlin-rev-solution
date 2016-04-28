@@ -16,3 +16,4 @@ Kotlinの場合TODO関数が用意されており、実行時にエラーにし�
     TODO()
     TODO("hogehogeなためfugafugaする")
     
+[https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html)

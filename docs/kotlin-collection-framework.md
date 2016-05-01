@@ -4,6 +4,7 @@
 
 
 Javaにコレクションフレームワークがあるように、Kotlinにもコレクションフレームワークがある。
+Kotlinのコレクションフレームワークはread onlyなコレクションとmutableなコレクションで構成されている。
 
 
 # Collection

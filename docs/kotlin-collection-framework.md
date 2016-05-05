@@ -47,4 +47,4 @@ Eはコレクションの要素。要素の追加・削除の機能を提供す�
 
 参考URL
 
-(https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/)[https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/]
+[https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/)

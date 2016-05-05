@@ -39,9 +39,18 @@ Eはコレクションの要素。要素の追加・削除の機能を提供す�
 
 
 ## Map
+
+    interface Map<K, out V>
+
 ## MutableMap
 
+    interface MutableMap<K, V> : Map<K, V>
+
+
 ## Set
+
+
+
 ## MutableSet
 
 

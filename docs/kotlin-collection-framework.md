@@ -49,11 +49,15 @@ Eはコレクションの要素。要素の追加・削除の機能を提供す�
 
 ## Set
 
-A generic unordered collection of elements that does not support duplicate elements. Methods in this interface support only read-only access to the set; read/write access is supported through the MutableSet interface.
+重複をサポートしない順序性の無いジェネリックなSet。
+setへのread onlyな処理を提供するインターフェース。
 
     interface Set<out E> : Collection<E>
 
 ## MutableSet
+
+重複をサポートしない順序性の無いジェネリックなSet。
+要素の追加と削除の処理を提供する。
 
     interface MutableSet<E> : Set<E>, MutableCollection<E>
 

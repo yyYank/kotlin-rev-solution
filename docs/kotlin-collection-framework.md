@@ -4,6 +4,7 @@
 Javaにコレクションフレームワークがあるように、Kotlinにもコレクションフレームワークがある。
 Kotlinのコレクションフレームワークはread onlyなコレクションとmutable(read/write)なコレクションで構成されている。
 
+代表的なものだけ抜粋。
 
 # Collection
 

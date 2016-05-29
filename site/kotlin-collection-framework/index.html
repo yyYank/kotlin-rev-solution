@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-intellij/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/kotlin-collection-framework/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>KotlinプラグインをIntelliJ IDEAに導入する - 逆引きKotlin - 逆引きKotlin</title>
+	<title>Kotlinのコレクション・フレームワークを知りたい - 逆引きKotlin - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -53,7 +53,7 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">導入 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -64,8 +64,8 @@
 
                         
                             
-<li class="active">
-    <a href=".">KotlinプラグインをIntelliJ IDEAに導入する</a>
+<li >
+    <a href="../kotlin-plugin-intellij">KotlinプラグインをIntelliJ IDEAに導入する</a>
 </li>
 
                         
@@ -173,13 +173,13 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="../kotlin-collection-framework">Kotlinのコレクション・フレームワークを知りたい</a>
+<li class="active">
+    <a href=".">Kotlinのコレクション・フレームワークを知りたい</a>
 </li>
 
                         
@@ -291,12 +291,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../kotlin-install">
+                        <a rel="next" href="../enum">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../kotlin-plugin-androidstudio">
+                        <a rel="prev" href="../collection-for-each">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -321,57 +321,73 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#kotlinintellij-idea">KotlinプラグインをIntelliJ IDEAに導入する</a></li>
+        <li class="main active"><a href="#kotlin">Kotlinのコレクション・フレームワークを知りたい</a></li>
         
-            <li><a href="#_1">事前準備</a></li>
+    
+        <li class="main "><a href="#collection">Collection</a></li>
         
-            <li><a href="#_2">プラグイン導入手順</a></li>
+    
+        <li class="main "><a href="#mutablecollection">MutableCollection</a></li>
         
-            <li><a href="#kotlinhello-world">KotlinでHello Worldしてみよう</a></li>
+            <li><a href="#list">List</a></li>
         
-            <li><a href="#hello-world">Hello World</a></li>
+            <li><a href="#mutablelist">MutableList</a></li>
+        
+            <li><a href="#map">Map</a></li>
+        
+            <li><a href="#mutablemap">MutableMap</a></li>
+        
+            <li><a href="#set">Set</a></li>
+        
+            <li><a href="#mutableset">MutableSet</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="kotlinintellij-idea">KotlinプラグインをIntelliJ IDEAに導入する</h2>
-<h3 id="_1">事前準備</h3>
-<ul>
-<li>IntelliJ IDEAのインストール</li>
-</ul>
-<h3 id="_2">プラグイン導入手順</h3>
-<ul>
-<li>IntelliJ IDEA起動</li>
-<li>Preferencesを開く（Ctrl(cmd) + カンマもしくはIntelliJ IDEA&gt;Preferences）</li>
-<li>Pluginsを選択する
-<img alt="図１" src="http://3.bp.blogspot.com/-IeqtRGH9heA/VP7ejZ5dpPI/AAAAAAAACRE/gCpTiY6K4M0/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.06.52.png" /></li>
-<li>Install JetBrains Plugin...を選択する
-<img alt="図２" src="http://4.bp.blogspot.com/-VsJlgrXtGn0/VP7gGEG8Y2I/AAAAAAAACRU/I5LQ29tsayI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.13.36.png" /></li>
-<li>Installを押す</li>
-<li>IntelliJ IDEAを再起動</li>
-</ul>
-<p>これでプラグイン導入は完了です</p>
-<h3 id="kotlinhello-world">KotlinでHello Worldしてみよう</h3>
-<ul>
-<li>IntelliJ IDEA起動</li>
-<li>New Projectを選択</li>
-<li>任意のプロジェクトを作成</li>
-<li>プロジェクトを生成</li>
-<li>File&gt;New&gt;Kotlin Fileを選択</li>
-</ul>
-<h3 id="hello-world">Hello World</h3>
-<p>こんなかんじで書いてみましょう。</p>
-<pre><code>fun main(args : Array&lt;String&gt;) {
-    println("hello Kotlin!")
-}
+<h1 id="kotlin">Kotlinのコレクション・フレームワークを知りたい</h1>
+<p>Javaにコレクションフレームワークがあるように、Kotlinにもコレクションフレームワークがある。
+Kotlinのコレクションフレームワークはread onlyなコレクションとmutable(read/write)なコレクションで構成されている。</p>
+<p>代表的なものだけ抜粋。</p>
+<h1 id="collection">Collection</h1>
+<p>kotlin.collection.Collectionインターフェース。</p>
+<pre><code>interface Collection&lt;out E&gt; : Iterable&lt;E&gt;
 </code></pre>
-<ul>
-<li>Run &gt; Run Default Packageでプログラムを実行。   </li>
-</ul>
-<p>hello Kotlin!と出力されたら成功です。</p>
-<p><img alt="図３" src="http://3.bp.blogspot.com/-Q6wHd05l_RE/VP7pZciMllI/AAAAAAAACRs/v1rI6pKTOd4/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.52.59.png" />  </p>
+<p>EはCollectionの要素。このインターフェースはread only のみサポートする。 read/writeアクセスはMutableCollection インターフェースがサポートする。</p>
+<h1 id="mutablecollection">MutableCollection</h1>
+<pre><code>interface MutableCollection&lt;E&gt; : Collection&lt;E&gt;, MutableIterable&lt;E&gt;
+</code></pre>
+<p>EはCollectionの要素。このインターフェースはread/writeアクセスをサポートする。</p>
+<h2 id="list">List</h2>
+<p>Listインターフェース。Collectionインターフェースを継承している。</p>
+<pre><code>interface List&lt;out E&gt; : Collection&lt;E&gt;
+</code></pre>
+<p>EはCollectionの要素。このインターフェースはListのread onlyな操作のみ提供する。
+read/writeアクセスはMutableListインターフェースが提供する。</p>
+<h2 id="mutablelist">MutableList</h2>
+<p>MutableなListインターフェース。</p>
+<pre><code>interface MutableList&lt;E&gt; : List&lt;E&gt;, MutableCollection&lt;E&gt;
+</code></pre>
+<p>Eはコレクションの要素。要素の追加・削除の機能を提供するインターフェース。</p>
+<h2 id="map">Map</h2>
+<pre><code>interface Map&lt;K, out V&gt;
+</code></pre>
+<h2 id="mutablemap">MutableMap</h2>
+<pre><code>interface MutableMap&lt;K, V&gt; : Map&lt;K, V&gt;
+</code></pre>
+<h2 id="set">Set</h2>
+<p>重複をサポートしない順序性の無いジェネリックなSet。
+setへのread onlyな処理を提供するインターフェース。</p>
+<pre><code>interface Set&lt;out E&gt; : Collection&lt;E&gt;
+</code></pre>
+<h2 id="mutableset">MutableSet</h2>
+<p>重複をサポートしない順序性の無いジェネリックなSet。
+要素の追加と削除の処理を提供する。</p>
+<pre><code>interface MutableSet&lt;E&gt; : Set&lt;E&gt;, MutableCollection&lt;E&gt;
+</code></pre>
+<p>参考URL</p>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/</a></p>
 </div>
             
         </div>

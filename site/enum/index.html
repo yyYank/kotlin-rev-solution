@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-intellij/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/enum/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>KotlinプラグインをIntelliJ IDEAに導入する - 逆引きKotlin - 逆引きKotlin</title>
+	<title>enumを使いたい - 逆引きKotlin - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -53,7 +53,7 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">導入 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -64,8 +64,8 @@
 
                         
                             
-<li class="active">
-    <a href=".">KotlinプラグインをIntelliJ IDEAに導入する</a>
+<li >
+    <a href="../kotlin-plugin-intellij">KotlinプラグインをIntelliJ IDEAに導入する</a>
 </li>
 
                         
@@ -92,7 +92,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -163,8 +163,8 @@
 
                         
                             
-<li >
-    <a href="../enum">enumを使いたい</a>
+<li class="active">
+    <a href=".">enumを使いたい</a>
 </li>
 
                         
@@ -291,12 +291,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../kotlin-install">
+                        <a rel="next" href="../loop">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../kotlin-plugin-androidstudio">
+                        <a rel="prev" href="../kotlin-collection-framework">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -321,57 +321,20 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#kotlinintellij-idea">KotlinプラグインをIntelliJ IDEAに導入する</a></li>
-        
-            <li><a href="#_1">事前準備</a></li>
-        
-            <li><a href="#_2">プラグイン導入手順</a></li>
-        
-            <li><a href="#kotlinhello-world">KotlinでHello Worldしてみよう</a></li>
-        
-            <li><a href="#hello-world">Hello World</a></li>
+        <li class="main active"><a href="#enum">enumを使いたい</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="kotlinintellij-idea">KotlinプラグインをIntelliJ IDEAに導入する</h2>
-<h3 id="_1">事前準備</h3>
-<ul>
-<li>IntelliJ IDEAのインストール</li>
-</ul>
-<h3 id="_2">プラグイン導入手順</h3>
-<ul>
-<li>IntelliJ IDEA起動</li>
-<li>Preferencesを開く（Ctrl(cmd) + カンマもしくはIntelliJ IDEA&gt;Preferences）</li>
-<li>Pluginsを選択する
-<img alt="図１" src="http://3.bp.blogspot.com/-IeqtRGH9heA/VP7ejZ5dpPI/AAAAAAAACRE/gCpTiY6K4M0/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.06.52.png" /></li>
-<li>Install JetBrains Plugin...を選択する
-<img alt="図２" src="http://4.bp.blogspot.com/-VsJlgrXtGn0/VP7gGEG8Y2I/AAAAAAAACRU/I5LQ29tsayI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.13.36.png" /></li>
-<li>Installを押す</li>
-<li>IntelliJ IDEAを再起動</li>
-</ul>
-<p>これでプラグイン導入は完了です</p>
-<h3 id="kotlinhello-world">KotlinでHello Worldしてみよう</h3>
-<ul>
-<li>IntelliJ IDEA起動</li>
-<li>New Projectを選択</li>
-<li>任意のプロジェクトを作成</li>
-<li>プロジェクトを生成</li>
-<li>File&gt;New&gt;Kotlin Fileを選択</li>
-</ul>
-<h3 id="hello-world">Hello World</h3>
-<p>こんなかんじで書いてみましょう。</p>
-<pre><code>fun main(args : Array&lt;String&gt;) {
-    println("hello Kotlin!")
+<h1 id="enum">enumを使いたい</h1>
+<p>Javaと同等のenumがあります。</p>
+<p><a href="https://kotlinlang.org/docs/reference/enum-classes.html">Enum Classes</a></p>
+<pre><code>enum class Direction {
+  NORTH, SOUTH, WEST, EAST
 }
 </code></pre>
-<ul>
-<li>Run &gt; Run Default Packageでプログラムを実行。   </li>
-</ul>
-<p>hello Kotlin!と出力されたら成功です。</p>
-<p><img alt="図３" src="http://3.bp.blogspot.com/-Q6wHd05l_RE/VP7pZciMllI/AAAAAAAACRs/v1rI6pKTOd4/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%2B2015-03-10%2B21.52.59.png" />  </p>
 </div>
             
         </div>

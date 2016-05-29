@@ -23,7 +23,9 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [ifを式として扱う](./if-function)
 * [switchみたいな条件分岐がしたい](./when)
 * [ループ処理を行う](./loop)
+* [enumを使いたい](./enum)  
 ### コレクション操作
+* [Kotlinのコレクション・フレームワークを知りたい](./kotlin-collection-framework)  
 * [リストの要素をループして操作する](./collection-for-each)  
 * [条件でリストの要素を絞り込む](./collection-filter)  
 * [リストの要素の名前のみを抽出する](./collection-map)

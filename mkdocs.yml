@@ -22,6 +22,8 @@ pages:
 - [if-function.md, '基本文法', 'ifを式として扱う']
 - [when.md, '基本文法', 'switchみたいな条件分岐がしたい']
 - [loop.md, '基本文法', 'ループ処理を行う']
+- [enum.md, '基本文法', 'enumを使いたい']
+- [kotlin-collection-framework.md, 'コレクション操作', 'Kotlinのコレクション・フレームワークを知りたい']
 - [collection-for-each.md, 'コレクション操作', 'リストの要素分ループして操作する']
 - [collection-filter.md, 'コレクション操作', '条件でリストを絞り込む']
 - [collection-map.md, 'コレクション操作', 'リストの要素の名前のみを抽出する']

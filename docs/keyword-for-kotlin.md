@@ -132,6 +132,15 @@ infixを関数に付与することで中置記法が出来る。
     tailrec fun findFixPoint(x: Double = 1.0): Double
         = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 
+#### 注意！！
+
+tailrecはScalaの意味するものと異なる。  
+Scalaの場合はTailrecアノテーションを  
+つけなくても末尾再帰最適化されるがKotlinの場合は、  
+このキーワードをつけない限り末尾再帰最適化されない。  
+
+Scalaはチェックアノテーションになっているらしい。
+
 ### operator
 
 演算子オーバーロードをしたいときに使う。

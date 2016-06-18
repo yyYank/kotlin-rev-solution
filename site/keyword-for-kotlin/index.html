@@ -437,6 +437,12 @@ inline関数内の特定の箇所をinline化したくない場合はnoinlineを
 <pre><code>tailrec fun findFixPoint(x: Double = 1.0): Double
     = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
 </code></pre>
+<h4 id="_2">注意！！</h4>
+<p>tailrecはScalaの意味するものと異なる。<br />
+Scalaの場合はTailrecアノテーションを<br />
+つけなくても末尾再帰最適化されるがKotlinの場合は、<br />
+このキーワードをつけない限り末尾再帰最適化されない。  </p>
+<p>Scalaはチェックアノテーションになっているらしい。</p>
 <h3 id="operator">operator</h3>
 <p>演算子オーバーロードをしたいときに使う。</p>
 <h3 id="const">const</h3>

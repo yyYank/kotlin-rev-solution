@@ -19,4 +19,6 @@ deployment:
       - mkdocs build --clean
       - git config --global user.email yy.yank.dev.blog@gmail.com
       - git config --global user.name yyYank
-      - git push git@github.com:yyYank/kotlin-rev-solution.git
+      - git add --all :/
+      - git commit ./site/* -m "cicle ci build"
+      - git push git@github.com:yyYank/kotlin-rev-solution.git master

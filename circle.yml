@@ -1,0 +1,22 @@
+general:
+  artifacts:
+    - build/reports
+
+machine:
+  timezone:
+    Asia/Tokyo
+python:
+    version: 3.5.0
+
+dependencies:
+  pre:
+    - pip install mkdocs
+
+deployment:
+  deploy:
+    branch: master
+    commands:
+      - mkdocs build --clean
+      - git config --global user.email yy.yank.dev.blog@gmail.com
+      - git config --global user.name yyYank
+      - git push git@github.com:yyYank/kotlin-rev-solution.git

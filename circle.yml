@@ -6,10 +6,11 @@ machine:
   timezone:
     Asia/Tokyo
 python:
-    version: 3.5.0
+    version: 2.7.2
 
 dependencies:
   pre:
+    - pip install PIL --allow-external PIL --allow-unverified PIL
     - pip install mkdocs
 
 deployment:

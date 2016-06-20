@@ -10,7 +10,6 @@ machine:
 
 dependencies:
   pre:
-    - pip install PIL --allow-external PIL --allow-unverified PIL
     - pip install mkdocs
 
 deployment:

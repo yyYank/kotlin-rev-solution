@@ -21,4 +21,4 @@ deployment:
       - git config --global user.name yyYank
       - git add --all :/
       - git commit ./site/* -m "cicle ci build"
-      - git push git@:github.com:yyYank/kotlin-rev-solution.git master
+      - git push git@github.com:yyYank/kotlin-rev-solution.git master

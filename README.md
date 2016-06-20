@@ -1,4 +1,5 @@
 # kotlin-rev-solution
+[![Circle CI](https://circleci.com/gh/yyYank/kotlin-rev-solution/tree/master.svg?style=shield)](https://circleci.com/gh/yyYank/kotlin-rev-solution/tree/master)
 
 This is site' source to search you want to do something by Kotlin. 
 It's written in Japanese.

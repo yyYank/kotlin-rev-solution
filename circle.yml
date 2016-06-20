@@ -22,3 +22,11 @@ deployment:
       - git add --all :/
       - git commit ./site/* -m "build [ci skip]"
       - git push git@github.com:yyYank/kotlin-rev-solution.git master
+
+test:
+  pre: 
+    - echo "-----start test-----"
+  override:    
+    - echo "-----no test-----"
+  post: 
+    - echo "-----end test-----"

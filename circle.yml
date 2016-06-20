@@ -6,7 +6,7 @@ machine:
   timezone:
     Asia/Tokyo
   python:
-    version: 2.7.2
+    version: 2.7.10
 
 dependencies:
   pre:

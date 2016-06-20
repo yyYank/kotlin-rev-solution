@@ -5,7 +5,7 @@ general:
 machine:
   timezone:
     Asia/Tokyo
-python:
+  python:
     version: 2.7.2
 
 dependencies:

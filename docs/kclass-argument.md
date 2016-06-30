@@ -9,7 +9,7 @@
     }
 
 
-KotlinのクラスはKClass<T:Any>です。  
+Kotlinのクラスは"KClass<T:Any>"です。  
 この関数を使う側は以下のように書きます。
 
 

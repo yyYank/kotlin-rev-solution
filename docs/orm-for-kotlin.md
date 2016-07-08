@@ -2,6 +2,7 @@
 
 # KotlinでORM(O/R Mapper)を使いたい
 
+以下のものがあります
 
 Exposed
 https://github.com/JetBrains/Exposed

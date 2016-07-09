@@ -17,3 +17,7 @@ https://github.com/seratch/kotliquery
 
 kotlin-nosql
 https://github.com/cheptsov/kotlin-nosql
+
+Doma2
+https://github.com/domaframework
+https://github.com/domaframework/kotlin-sample

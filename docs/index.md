@@ -112,6 +112,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
      2016/2/25:Type-Safe Buildersのページを新規作成
      2016/3/01:ユニットテストのページを新規作成
      2016/3/29:Kotlinのキーワードのページを新規作成
+     2016/7/11:KotlinでORM(O/R Mapper)を使いたい、Kotlinでtry-with-resourcesが使いたい、TODOタスクをソースに残す、クラスを引数にとる関数をつくるを追加
 
 ## Special Thanks
 

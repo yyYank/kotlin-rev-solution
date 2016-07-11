@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/collection-take/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/todo/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>リストの要素を前からいくつか取り出す - 逆引きKotlin</title>
+	<title>TODOタスクをソースに残す - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -179,7 +179,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -226,8 +226,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">リストの要素を前からいくつか取り出す</a>
+<li >
+    <a href="../collection-take/">リストの要素を前からいくつか取り出す</a>
 </li>
 
                         
@@ -242,7 +242,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -295,8 +295,8 @@
 
                         
                             
-<li >
-    <a href="../todo/">TODOタスクをソースに残す</a>
+<li class="active">
+    <a href="./">TODOタスクをソースに残す</a>
 </li>
 
                         
@@ -321,12 +321,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../collection-drop/">
+                        <a rel="next" href="../try-with-resources-for-kotlin/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../collection-zip/">
+                        <a rel="prev" href="../kclass-argument/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -351,34 +351,29 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">リストの要素を前からいくつか取り出す</a></li>
-        
-            <li><a href="#_2">フォーマット</a></li>
-        
-            <li><a href="#_3">実装サンプル</a></li>
-        
-            <li><a href="#url">参考URL</a></li>
+        <li class="main active"><a href="#todo">TODOタスクをソースに残す</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">リストの要素を前からいくつか取り出す</h2>
-<p>take関数を使います</p>
-<h3 id="_2">フォーマット</h3>
-<pre><code>take(取り出す要素数)
+<h1 id="todo">TODOタスクをソースに残す</h1>
+<p>Kotlinの場合TODO関数が用意されており、実行時にエラーにしてくれたります。
+もちろんJavaと同様にコメントとしてTODOを残すことも可能です。</p>
+<p>関数の定義</p>
+<pre><code>inline fun TODO(): Nothing (source)
+inline fun TODO(reason: String): Nothing (source)
 </code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>val array = arrayOf(1, 2, 3, 4, 5)
-array.take(1).forEach { println(it) } // =&gt; 1
-array.take(2).forEach { println(it) } // =&gt; 1, 2
-array.take(3).forEach { println(it) } // =&gt; 1, 2, 3
-array.take(4).forEach { println(it) } // =&gt; 1, 2, 3, 4
-array.take(5).forEach { println(it) } // =&gt; 1, 2, 3, 4, 5
+<p>使い方</p>
+<pre><code>TODO()
+TODO("hogehogeなためfugafugaする")
 </code></pre>
-<h3 id="url">参考URL</h3>
-<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/take.html">Kotlin公式ドキュメント stdlib / kotlin /take</a></p></div>
+<p>こうすると実行時に例外が投げられます。</p>
+<pre><code>Exception in thread "main" kotlin.NotImplementedError: An operation is not implemented: hogehogeなためfugafugaする
+    at sample.Simplest_versionKt.main(Simplest version.kt:11)
+</code></pre>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-t-o-d-o.html</a></p></div>
             
         </div>
 

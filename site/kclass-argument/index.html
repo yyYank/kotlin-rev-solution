@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/collection-take/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/kclass-argument/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>リストの要素を前からいくつか取り出す - 逆引きKotlin</title>
+	<title>クラスを引数にとる関数をつくる - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -179,7 +179,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -226,8 +226,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">リストの要素を前からいくつか取り出す</a>
+<li >
+    <a href="../collection-take/">リストの要素を前からいくつか取り出す</a>
 </li>
 
                         
@@ -242,7 +242,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -301,8 +301,8 @@
 
                         
                             
-<li >
-    <a href="../kclass-argument/">クラスを引数にとる関数をつくる</a>
+<li class="active">
+    <a href="./">クラスを引数にとる関数をつくる</a>
 </li>
 
                         
@@ -321,12 +321,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../collection-drop/">
+                        <a rel="next" href="../todo/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../collection-zip/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -351,34 +351,23 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">リストの要素を前からいくつか取り出す</a></li>
-        
-            <li><a href="#_2">フォーマット</a></li>
-        
-            <li><a href="#_3">実装サンプル</a></li>
-        
-            <li><a href="#url">参考URL</a></li>
+        <li class="main active"><a href="#_1">クラスを引数にとる関数をつくる</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">リストの要素を前からいくつか取り出す</h2>
-<p>take関数を使います</p>
-<h3 id="_2">フォーマット</h3>
-<pre><code>take(取り出す要素数)
+<h1 id="_1">クラスを引数にとる関数をつくる</h1>
+<p>引数としてクラスを関数に渡したい場合は以下のように書きます。</p>
+<pre><code>fun  &lt;T : Any&gt; jsonToObject(jsonString : String, clazz : KClass&lt;T&gt;) {
+    // 処理
+}
 </code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>val array = arrayOf(1, 2, 3, 4, 5)
-array.take(1).forEach { println(it) } // =&gt; 1
-array.take(2).forEach { println(it) } // =&gt; 1, 2
-array.take(3).forEach { println(it) } // =&gt; 1, 2, 3
-array.take(4).forEach { println(it) } // =&gt; 1, 2, 3, 4
-array.take(5).forEach { println(it) } // =&gt; 1, 2, 3, 4, 5
-</code></pre>
-<h3 id="url">参考URL</h3>
-<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/take.html">Kotlin公式ドキュメント stdlib / kotlin /take</a></p></div>
+<p>Kotlinのクラスは"KClass<T:Any>"です。<br />
+この関数を使う側は以下のように書きます。</p>
+<pre><code>jsonToObject(jsonString, Hoge::class)
+</code></pre></div>
             
         </div>
 

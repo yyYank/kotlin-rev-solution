@@ -38,8 +38,8 @@ pages:
 - [framework-for-kotlin.md, '応用編', 'Kotlinでフレームワークを使いたい']
 - [unit-test-for-kotlin.md, '応用編', 'ユニットテストをしたい']
 - [keyword-for-kotlin.md, '応用編', 'Kotlinのキーワードを知りたい']
-- [orm-for-kotlin, '応用編', 'KotlinでORM(O/R Mapper)を使いたい']
-- [try-with-resources-for-kotlin, '応用編', 'Kotlinでtry-with-resourcesが使いたい']
-- [todo, '応用編', 'TODOタスクをソースに残す']
-- [kclass-argument, '応用編', 'クラスを引数にとる関数をつくる']
+- [orm-for-kotlin.md, '応用編', 'KotlinでORM(O/R Mapper)を使いたい']
+- [try-with-resources-for-kotlin.md, '応用編', 'Kotlinでtry-with-resourcesが使いたい']
+- [todo.md, '応用編', 'TODOタスクをソースに残す']
+- [kclass-argument.md, '応用編', 'クラスを引数にとる関数をつくる']
 

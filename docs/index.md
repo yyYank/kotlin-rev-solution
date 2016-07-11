@@ -41,6 +41,10 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
 * [クラスの機能を拡張したい](./extension) 
 * [クラスのメタデータを取得したい（リフレクション操作がしたい）](./reflection) 
 * [Kotlinのキーワードを知りたい](./keyword-for-kotlin) 
+* [KotlinでORM(O/R Mapper)を使いたい](./orm-for-kotlin)
+* [Kotlinでtry-with-resourcesが使いたい](./try-with-resources-for-kotlin)
+* [TODOタスクをソースに残す](./todo)
+* [クラスを引数にとる関数をつくる](./kclass-argument)
    
 <br/>  
 <br/>  

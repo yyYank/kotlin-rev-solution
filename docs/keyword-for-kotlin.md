@@ -28,7 +28,12 @@ Javaとほぼ同じ。同一クラスかサブクラスからアクセス可能�
 
 ### internal
 
-同一モジュール内ならどこでも見える。
+同一モジュール内ならどこでも見える。  
+  
+これは、Jigsaw以前のJavaにおいてモジュールという概念無いためピンと来ない人も多いと思う（僕もそう）。  
+このあたりに書いてあるので参照されたし。  
+[http://stackoverflow.com/questions/35271413/what-is-a-kotlin-module](http://stackoverflow.com/questions/35271413/what-is-a-kotlin-module)  
+要するに同一のコンパイル単位なら参照可能っぽい。同一jarとか考えるとまぁいいかなぁ。
 
 
 

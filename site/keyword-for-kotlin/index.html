@@ -403,7 +403,11 @@
 <h3 id="protected">protected</h3>
 <p>Javaとほぼ同じ。同一クラスかサブクラスからアクセス可能。</p>
 <h3 id="internal">internal</h3>
-<p>同一モジュール内ならどこでも見える。</p>
+<p>同一モジュール内ならどこでも見える。  </p>
+<p>これは、Jigsaw以前のJavaにおいてモジュールという概念無いためピンと来ない人も多いと思う（僕もそう）。<br />
+このあたりに書いてあるので参照されたし。<br />
+<a href="http://stackoverflow.com/questions/35271413/what-is-a-kotlin-module">http://stackoverflow.com/questions/35271413/what-is-a-kotlin-module</a><br />
+要するに同一のコンパイル単位なら参照可能っぽい。同一jarとか考えるとまぁいいかなぁ。</p>
 <h2 id="class">classのキーワード</h2>
 <h3 id="open">open</h3>
 <p>classの継承をする際に親クラスにつける。

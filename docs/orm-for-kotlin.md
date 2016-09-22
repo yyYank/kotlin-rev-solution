@@ -16,10 +16,10 @@
 ## Doma2
 [https://github.com/domaframework](https://github.com/domaframework)
 
-### サンプル  
+* サンプル  
 [https://github.com/domaframework/kotlin-sample](https://github.com/domaframework/kotlin-sample)
 
-### Kotlinサポート - Doma
+* Kotlinサポート - Doma  
 [http://doma.readthedocs.io/ja/stable/kotlin-support](http://doma.readthedocs.io/ja/stable/kotlin-support)
 
 

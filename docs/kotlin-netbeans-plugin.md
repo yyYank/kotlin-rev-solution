@@ -1,3 +1,0 @@
-
-
-# Kotl(nをNetBeansで使う

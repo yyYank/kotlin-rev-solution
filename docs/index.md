@@ -1,6 +1,7 @@
 # 逆引きKotlin
+
 <br/>  
-JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。
+JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../images/Kotlin-icon.png)
 <br/>  
 <br/>  
 ## 目次

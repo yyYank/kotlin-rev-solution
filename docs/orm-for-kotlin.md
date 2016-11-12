@@ -1,6 +1,6 @@
 
 
-# KotlinでORM(O/R Mapper)を使いたい
+# KotlinでSQLライブラリやORM(O/R Mapper)を使いたい
 
 有力なものは以下のものがあります
 

@@ -42,7 +42,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 * [クラスの機能を拡張したい](./extension) 
 * [クラスのメタデータを取得したい（リフレクション操作がしたい）](./reflection) 
 * [Kotlinのキーワードを知りたい](./keyword-for-kotlin) 
-* [KotlinでORM(O/R Mapper)を使いたい](./orm-for-kotlin)
+* [KotlinでSQLライブラリやORM(O/R Mapper)を使いたい](./orm-for-kotlin)
 * [Kotlinでtry-with-resourcesが使いたい](./try-with-resources-for-kotlin)
 * [TODOタスクをソースに残す](./todo)
 * [クラスを引数にとる関数をつくる](./kclass-argument)
@@ -113,7 +113,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
      2016/2/25:Type-Safe Buildersのページを新規作成
      2016/3/01:ユニットテストのページを新規作成
      2016/3/29:Kotlinのキーワードのページを新規作成
-     2016/7/11:KotlinでORM(O/R Mapper)を使いたい、Kotlinでtry-with-resourcesが使いたい、TODOタスクをソースに残す、クラスを引数にとる関数をつくるを追加
+     2016/7/11:KotlinでSQLライブラリやORM(O/R Mapper)を使いたい、Kotlinでtry-with-resourcesが使いたい、TODOタスクをソースに残す、クラスを引数にとる関数をつくるを追加
 
 ## Special Thanks
 

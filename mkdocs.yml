@@ -42,4 +42,6 @@ pages:
 - [try-with-resources-for-kotlin.md, '応用編', 'Kotlinでtry-with-resourcesが使いたい']
 - [todo.md, '応用編', 'TODOタスクをソースに残す']
 - [kclass-argument.md, '応用編', 'クラスを引数にとる関数をつくる']
+- [gradle-kts.md, '応用編', 'GradleのビルドスクリプトをKotlinで書く']
+
 

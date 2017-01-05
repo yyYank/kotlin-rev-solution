@@ -16,25 +16,29 @@ Kotlin 1.1以降
 
 * Function Type
 
+```kotlin
     typealias MyHandler = (Int, String, Any) -> Unit
     typealias HtmlBuilderAction = HtmlBuilder.() -> Unit
     typealias Predicate<T> = (T) -> Boolean
+```
     
 * コレクション
     
+```kotlin
     typealias NodeSet = Set<Network.Node>
     typealias FilesTable<K> = MutableMap<K, MutableList<File>>
+```
 
 * Nestしたクラス
 
-
+```kotlin
     class Outer {
       class Nested {
         inner class Inner
       }
     }
     typealias Something = Outer.Nested.Inner
-
+```
     
 ## 参考URL
 

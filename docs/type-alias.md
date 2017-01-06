@@ -10,8 +10,8 @@ Kotlin 1.1以降
 
 ## 文法
 
-    typealias 任意の型
-    
+    typealias 任意の型名 = 対応する型
+    
 ## 書き方
 
 * Function Type

@@ -19,7 +19,7 @@ JUnitは普通に依存関係に入れてください。
 
 ### Gradle
 
-    'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
 
 
 ### コード

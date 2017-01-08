@@ -365,12 +365,6 @@
         
             <li><a href="#kotlintest">KotlinTest</a></li>
         
-            <li><a href="#maven_2">Maven</a></li>
-        
-            <li><a href="#gradle_2">Gradle</a></li>
-        
-            <li><a href="#_3">コード</a></li>
-        
     
     </ul>
 </div></div>
@@ -463,8 +457,9 @@ dependencies {
 }}
 </code></pre>
 <h2 id="kotlintest">KotlinTest</h2>
-<p>https://github.com/kotlintest/kotlintest</p>
-<h2 id="maven_2">Maven</h2>
+<p>これもspekと同じくスペックテスト的なものをするためのライブラリ。ScalaTestに影響を受けている。
+<a href="https://github.com/kotlintest/kotlintest">https://github.com/kotlintest/kotlintest</a></p>
+<h3 id="maven_2">Maven</h3>
 <pre><code>&lt;dependency&gt;
     &lt;groupId&gt;io.kotlintest&lt;/groupId&gt;
     &lt;artifactId&gt;kotlintest&lt;/artifactId&gt;
@@ -472,10 +467,10 @@ dependencies {
     &lt;scope&gt;test&lt;/scope&gt;
 &lt;/dependency&gt;
 </code></pre>
-<h2 id="gradle_2">Gradle</h2>
+<h3 id="gradle_2">Gradle</h3>
 <pre><code>testCompile 'io.kotlintest:kotlintest:xxx'
 </code></pre>
-<h2 id="_3">コード</h2>
+<h3 id="_3">コード</h3>
 <p>公式ドキュメントより。</p>
 <pre><code>class StringSpecExample : StringSpec() {
     init {

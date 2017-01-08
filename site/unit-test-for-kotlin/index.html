@@ -363,6 +363,14 @@
         
             <li><a href="#spek">spek</a></li>
         
+            <li><a href="#kotlintest">KotlinTest</a></li>
+        
+            <li><a href="#maven_2">Maven</a></li>
+        
+            <li><a href="#gradle_2">Gradle</a></li>
+        
+            <li><a href="#_3">コード</a></li>
+        
     
     </ul>
 </div></div>
@@ -453,6 +461,29 @@ dependencies {
         }
     }
 }}
+</code></pre>
+<h2 id="kotlintest">KotlinTest</h2>
+<p>https://github.com/kotlintest/kotlintest</p>
+<h2 id="maven_2">Maven</h2>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;io.kotlintest&lt;/groupId&gt;
+    &lt;artifactId&gt;kotlintest&lt;/artifactId&gt;
+    &lt;version&gt;xxx&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h2 id="gradle_2">Gradle</h2>
+<pre><code>testCompile 'io.kotlintest:kotlintest:xxx'
+</code></pre>
+<h2 id="_3">コード</h2>
+<p>公式ドキュメントより。</p>
+<pre><code>class StringSpecExample : StringSpec() {
+    init {
+        "strings.length should return size of string" {
+            "hello".length shouldBe 5
+        }
+    }
+}
 </code></pre></div>
             
         </div>

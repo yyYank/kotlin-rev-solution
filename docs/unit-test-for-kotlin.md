@@ -118,9 +118,10 @@ Spekクラスを継承してgiven-on-itのスタイルでテストが出来ま�
 
 ## KotlinTest
 
-https://github.com/kotlintest/kotlintest
+これもspekと同じくスペックテスト的なものをするためのライブラリ。ScalaTestに影響を受けている。
+[https://github.com/kotlintest/kotlintest](https://github.com/kotlintest/kotlintest)
 
-## Maven
+### Maven
 
     <dependency>
         <groupId>io.kotlintest</groupId>
@@ -130,12 +131,12 @@ https://github.com/kotlintest/kotlintest
     </dependency>
 
 
-## Gradle
+### Gradle
 
     testCompile 'io.kotlintest:kotlintest:xxx'
 
 
-## コード
+### コード
 
 
 公式ドキュメントより。

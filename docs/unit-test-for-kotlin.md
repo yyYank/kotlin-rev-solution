@@ -113,3 +113,37 @@ Spekクラスを継承してgiven-on-itのスタイルでテストが出来ま�
             }
         }
     }}
+
+
+
+## KotlinTest
+
+https://github.com/kotlintest/kotlintest
+
+## Maven
+
+    <dependency>
+        <groupId>io.kotlintest</groupId>
+        <artifactId>kotlintest</artifactId>
+        <version>xxx</version>
+        <scope>test</scope>
+    </dependency>
+
+
+## Gradle
+
+    testCompile 'io.kotlintest:kotlintest:xxx'
+
+
+## コード
+
+
+公式ドキュメントより。
+
+    class StringSpecExample : StringSpec() {
+        init {
+            "strings.length should return size of string" {
+                "hello".length shouldBe 5
+            }
+        }
+    }

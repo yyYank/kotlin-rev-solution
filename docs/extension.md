@@ -29,6 +29,3 @@ getter/setterでのみ値の決定が可能です。
 
 [Kotlin Reference - Extensions](http://kotlinlang.org/docs/reference/extensions.html)
 
-#### ページ公開時のKotlinのバージョン
-   
-0.12.613

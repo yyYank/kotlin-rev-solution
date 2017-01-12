@@ -13,11 +13,11 @@ map関数を使います
 
     fun main (args : Array<String>) {    
         val array = arrayOf(
-            Person("kimura", 42), // 1972/11/13
-            Person("kusanagi", 41), // 1974/7/9
-            Person("katori", 37), // 1977/1/31
-            Person("inagaki", 41), // 1973/12/8
-            Person("nakai", 42) // 1972/8/18
+            Person("kimura", birthDayToAge(LocalDate.of(1972,11,13))),
+            Person("kusanagi", birthDayToAge(LocalDate.of(1974,7,9))),
+            Person("katori", birthDayToAge(LocalDate.of(1977,1,31))),
+            Person("inagaki", birthDayToAge(LocalDate.of(1973,12,8))),
+            Person("nakai", birthDayToAge(LocalDate.of(1972,8,18)))
         ) 
         // lambdaでuserインスタンスを引数とします
         array.map({user -> user.name}).forEach{println(it)} 　// kimura,kusanagi,katori,inagaki,nakai
@@ -26,6 +26,8 @@ map関数を使います
         // itで代用できます(このitはUserのインスタンス)
         array.map{it.name}.forEach{println(it)}　　// kimura,kusanagi,katori,inagaki,nakai
     }
+    
+    fun birthDayToAge(birthday : LocalDate) = ChronoUnit.YEARS.between(birthday, LocalDate.now())
 
 
 第一線で活躍する40代
@@ -34,3 +36,5 @@ map関数を使います
 ### 参考URL
 
 [Kotlin公式ドキュメント stdlib / kotlin / map](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/map.html)
+
+

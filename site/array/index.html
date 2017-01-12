@@ -382,12 +382,12 @@
 <h3 id="_3">実装サンプル</h3>
 <p>実際には以下のように宣言します。
 (偶数を宣言しています)</p>
-<pre><code>// [0, 2, 4 , 6, 8, 10, 12, 14, 16, 18]
+<pre><code>// [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 val evenNumbers = Array&lt;Int&gt;(10, {it * 2})
 </code></pre>
 <h3 id="array-listof-arraylistof-linkedlistof">array, listOf, arrayListOf, linkedListOf</h3>
 <p>配列の宣言にはKotlinの標準ライブラリとして以下の関数が提供されています。</p>
-<h4 id="array">array</h4>
+<h4 id="arrayof">arrayOf</h4>
 <p>Arrayインスタンスを簡易に生成</p>
 <h4 id="listof">listOf</h4>
 <p>java.util.Listを生成。要素を変更できません。</p>
@@ -397,7 +397,7 @@ val evenNumbers = Array&lt;Int&gt;(10, {it * 2})
 <p>java.util.LinkedListインスタンスを生成。Javaと同様に追加、削除などが可能。</p>
 <p>arrayListという関数もあったようですが、非推奨になっています。  </p>
 <h3 id="_4">実装サンプル</h3>
-<pre><code>val oddNumbers = array(1, 3, 5, 7, 9)
+<pre><code>val oddNumbers = arrayOf(1, 3, 5, 7, 9)
 val list = listOf(1,2,3,4,5)
 val arrayList = arrayListOf(1,2,3,4,5)
 val linkedList = linkedListOf(1,2,3,4,5)
@@ -406,9 +406,7 @@ val linkedList = linkedListOf(1,2,3,4,5)
 <br/>
 <br/>
 <br/>
-<br/></p>
-<h4 id="kotlin">ページ公開時のKotlinのバージョン</h4>
-<p>0.10.195 </p></div>
+<br/></p></div>
             
         </div>
 

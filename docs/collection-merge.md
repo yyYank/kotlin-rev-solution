@@ -16,20 +16,20 @@ merge関数を使います
     
         // なんでもこなすグループ
         val sGroup = arrayOf(
-            Person("kimura", 42), // 1972/11/13
-            Person("kusanagi", 41), // 1974/7/9
-            Person("katori", 37), // 1977/1/31
-            Person("inagaki", 41), // 1973/12/8
-            Person("nakai", 42) // 1972/8/18
+            Person("kimura", birthDayToAge(LocalDate.of(1972,11,13))),
+            Person("kusanagi", birthDayToAge(LocalDate.of(1974,7,9))),
+            Person("katori", birthDayToAge(LocalDate.of(1977,1,31))),
+            Person("inagaki", birthDayToAge(LocalDate.of(1973,12,8))),
+            Person("nakai", birthDayToAge(LocalDate.of(1972,8,18)))
         )
     
         // なんでも作るグループ
         val tGroup = arrayOf(
-            Person("nagase", 36), // 1978/11/7
-            Person("joushima", 44), // 1970/11/17
-            Person("matsuoka", 38), // 1977/1/11
-            Person("yamaguchi", 43), // 1972/1/10
-            Person("kokubun", 40) // 1974/9/2
+            Person("nagase", birthDayToAge(LocalDate.of(1978,11,7))),
+            Person("joushima", birthDayToAge(LocalDate.of(1970,11,17))),
+            Person("matsuoka", birthDayToAge(LocalDate.of(1977,1,11))),
+            Person("yamaguchi", birthDayToAge(LocalDate.of(1972,1,10))),
+            Person("kokubun", birthDayToAge(LocalDate.of(1974,9,2)))
         )
     
         // 年齢の高い方をマージする
@@ -41,7 +41,11 @@ merge関数を使います
         } // => kimura,joushima,matsuoka,yamaguchi,nakai
         // なかなか見ないキャスティングになった
     }
+    
+    fun birthDayToAge(birthday : LocalDate) = ChronoUnit.YEARS.between(birthday, LocalDate.now())
 
 ### 参考URL
 
 [Kotlin公式ドキュメント stdlib / kotlin / merge](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/merge.html)
+
+

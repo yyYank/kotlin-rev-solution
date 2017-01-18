@@ -16,12 +16,27 @@ ifと同様にwhenも式（when式）です。
         値-> 戻り値
         else -> 戻り値
     }
+    
+    
+    when {
+        条件-> 戻り値
+        else -> 戻り値
+    }
    
 elseは必須となっております
 
 
 ### 実装サンプル
    
+   
+
+   
+    val value = "hoge"
+    when {
+        value == "hoge" -> println("ほげ")
+        value == "fuga" -> println("ふが")
+        value == else -> println("piyo")
+    }
    
    
 よくあるswitch的な書き方だとこんな感じです。
@@ -49,16 +64,3 @@ Stringの戻り値を持つwhenはこのように書きます。
     println(result) // => ほげ
 
 
-
-
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-#### ページ公開時のKotlinのバージョン
-   
-0.10.195 
- 

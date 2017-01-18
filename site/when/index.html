@@ -377,17 +377,18 @@
 ifと同様にwhenも式（when式）です。</p>
 <h3 id="_1">フォーマット</h3>
 <p>以下のように記述します。</p>
-<pre><code>when(引数) {
-    値-&gt; 戻り値
-    else -&gt; 戻り値
-}
-
-
-when {
-</code></pre>
-<p>条件-&gt; 戻り値
+<pre><code>    when(引数) {
+        値-&gt; 戻り値
         else -&gt; 戻り値
-    }</p>
+    }
+
+    when {
+        条件-&gt; 戻り値
+        else -&gt; 戻り値
+    }
+
+</code></pre>
+
 <p>elseは必須となっております</p>
 <h3 id="_2">実装サンプル</h3>
 <pre><code>val value = "hoge"

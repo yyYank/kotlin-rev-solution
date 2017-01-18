@@ -35,7 +35,7 @@ elseは必須となっております
     when {
         value == "hoge" -> println("ほげ")
         value == "fuga" -> println("ふが")
-        value == else -> println("piyo")
+        else -> println("piyo")
     }
    
    

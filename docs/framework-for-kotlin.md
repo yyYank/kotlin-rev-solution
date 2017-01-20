@@ -53,6 +53,8 @@ Kotlinのリリースと同じぐらいのタイミングでSpring側がKotlin�
 
 [Developing Spring Boot applications with Kotlin](https://spring.io/blog/2016/02/15/developing-spring-boot-applications-with-kotlin)
 
+
+Spring Bootは2016/02現在の最新バージョンです。コピペする場合には最新バージョンを確認し直してください。
 Getting StartedはSpring Initializr使ったほうが楽だと思う。
 [Spring Initializr](https://start.spring.io/#!language=kotlin)
 
@@ -83,17 +85,24 @@ wasabiはフルKotlinなHTTPフレームワーク。
 https://github.com/hhariri/wasabi
 
 
+## Maven
+
+
+```
+<dependency>
+  <groupId>org.wasabifx</groupId>
+  <artifactId>wasabi</artifactId>
+  <version>0.3.120</version>
+  <type>pom</type>
+</dependency>
+```
+
 ## Gradle
 
 
-    repositories {
-        // Other repositories you use.
-        maven { url 'http://repository.jetbrains.com/all' }
-    }
-
-    dependencies {
+    dependencies {
         // Other dependencies you use.
-        compile 'org.wasabi:wasabi:0.1-SNAPSHOT'
+        compile 'org.wasabifx:wasabi:0.3.120'
     }
     
 

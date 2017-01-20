@@ -99,12 +99,12 @@ https://github.com/hhariri/wasabi
 
 ## Gradle
 
-
+```
     dependencies {
         // Other dependencies you use.
         compile 'org.wasabifx:wasabi:0.3.120'
     }
-    
+```    
 
 
 ## コード

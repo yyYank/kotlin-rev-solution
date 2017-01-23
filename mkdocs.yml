@@ -43,5 +43,6 @@ pages:
 - [todo.md, '応用編', 'TODOタスクをソースに残す']
 - [kclass-argument.md, '応用編', 'クラスを引数にとる関数をつくる']
 - [gradle-kts.md, '応用編', 'GradleのビルドスクリプトをKotlinで書く']
+- [type-alias.md, 'ver1.1', 'よく使う型に別名をつけたい']
 
 

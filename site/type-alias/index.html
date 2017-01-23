@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/collection-for-each/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/type-alias/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>リストの要素分ループして操作する - 逆引きKotlin</title>
+	<title>よく使う型に別名をつけたい - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -179,7 +179,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">コレクション操作 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -190,8 +190,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">リストの要素分ループして操作する</a>
+<li >
+    <a href="../collection-for-each/">リストの要素分ループして操作する</a>
 </li>
 
                         
@@ -317,13 +317,13 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">ver1.1 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="../type-alias/">よく使う型に別名をつけたい</a>
+<li class="active">
+    <a href="./">よく使う型に別名をつけたい</a>
 </li>
 
                         
@@ -342,12 +342,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../kotlin-collection-framework/">
+                        <a rel="next" href="../gradle-kts/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../collection-filter/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -372,11 +372,13 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">リストの要素をループして操作する</a></li>
+        <li class="main active"><a href="#type-alias">type aliasについて</a></li>
         
-            <li><a href="#_2">フォーマット</a></li>
+            <li><a href="#version">version</a></li>
         
-            <li><a href="#_3">実装サンプル</a></li>
+            <li><a href="#_1">文法</a></li>
+        
+            <li><a href="#_2">書き方</a></li>
         
             <li><a href="#url">参考URL</a></li>
         
@@ -385,31 +387,43 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="_1">リストの要素をループして操作する</h2>
-<p>forEach関数を使います</p>
-<h3 id="_2">フォーマット</h3>
-<pre><code>forEach{ 処理 }
+<h1 id="type-alias">type aliasについて</h1>
+<p>Kotlinのtype aliasはその名の通り、型に対して別名（エイリアス）を付ける機能です。</p>
+<h2 id="version">version</h2>
+<p>Kotlin 1.1以降</p>
+<h2 id="_1">文法</h2>
+<p>typealias 任意の型名 = 対応する型
+    </p>
+<h2 id="_2">書き方</h2>
+<ul>
+<li>Function Type</li>
+</ul>
+<pre><code class="kotlin">    typealias MyHandler = (Int, String, Any) -&gt; Unit
+    typealias HtmlBuilderAction = HtmlBuilder.() -&gt; Unit
+    typealias Predicate&lt;T&gt; = (T) -&gt; Boolean
 </code></pre>
-<h3 id="_3">実装サンプル</h3>
-<pre><code>val array = arrayOf(1, 2, 3, 4, 5)
 
-// ラムダを使った書き方
-array.forEach({ element -&gt;
-    println(element) 
-}) // =&gt; 1,2,3,4,5
-
-// （）は省略できます
-array.forEach{ element -&gt;
-    println(element) 
-} // =&gt; 1,2,3,4,5
-
-// itでラムダの変わりに要素を評価することも可能
-array.forEach{
-    println(it) 
-} // =&gt; 1,2,3,4,5
+<ul>
+<li>コレクション
+    </li>
+</ul>
+<pre><code class="kotlin">    typealias NodeSet = Set&lt;Network.Node&gt;
+    typealias FilesTable&lt;K&gt; = MutableMap&lt;K, MutableList&lt;File&gt;&gt;
 </code></pre>
-<h3 id="url">参考URL</h3>
-<p><a href="http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/for-each.html">Kotlin公式ドキュメント stdlib / kotlin / for-each</a>   </p></div>
+
+<ul>
+<li>Nestしたクラス</li>
+</ul>
+<pre><code class="kotlin">    class Outer {
+      class Nested {
+        inner class Inner
+      }
+    }
+    typealias Something = Outer.Nested.Inner
+</code></pre>
+
+<h2 id="url">参考URL</h2>
+<p>https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md</p></div>
             
         </div>
 

@@ -6,12 +6,14 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 <br/>  
 ## 目次
 <br/>  
+
 ### 導入
 * [Kotlinをインストールする](./kotlin-install)
 * [KotlinプラグインをIntelliJ IDEAに導入する](./kotlin-plugin-intellij)
 * [KotlinプラグインをAndroid Studioに入れる](./kotlin-plugin-androidstudio)
 * [AndroidでHello World](./hello-kotlin-android)
 * [KotlinをEclipseで動かす](./kotlin-plugin-eclipse)
+
 ### 基本文法
 * [変数を宣言する](./variable)
 * [型を宣言する](./type)
@@ -25,6 +27,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 * [switchみたいな条件分岐がしたい](./when)
 * [ループ処理を行う](./loop)
 * [enumを使いたい](./enum)  
+
 ### コレクション操作
 * [Kotlinのコレクション・フレームワークを知りたい](./kotlin-collection-framework)  
 * [リストの要素をループして操作する](./collection-for-each)  
@@ -34,6 +37,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 * [リストの値を集計する](./collection-sum)
 * [リストの要素を前からいくつか取り出す](./collection-take) 
 * [リストの要素を前からいくつか削る](./collection-drop) 
+
 
 ### 応用編
 * [Kotlinでフレームワークを使いたい](./framework-for-kotlin) 

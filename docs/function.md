@@ -48,16 +48,4 @@
    
    
 $personは文字列への埋め込みの記法です。
-
-
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-#### ページ公開時のKotlinのバージョン
-   
-0.10.195 
- 
+string templateまたはstring interpolationと一般に呼ばれます。

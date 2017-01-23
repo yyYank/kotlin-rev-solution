@@ -34,12 +34,6 @@ if、else if、elseで条件が分岐できます。
     } else {
         println("other value")
     }
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-#### ページ公開時のKotlinのバージョン
-   
-0.10.195 
+
+
  

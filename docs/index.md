@@ -47,6 +47,11 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 * [TODOタスクをソースに残す](./todo)
 * [クラスを引数にとる関数をつくる](./kclass-argument)
 * [GradleのビルドスクリプトをKotlinで書く](./gradle-kts)
+
+### ver1.1
+
+* [よく使う型に別名をつけたい](./type-alias)
+
    
 <br/>  
 <br/>  

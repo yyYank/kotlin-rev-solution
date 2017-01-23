@@ -45,14 +45,3 @@ Stringの戻り値を持つ、処理のように扱うことが出来ます。
 [AutoHotkeyJp- if式](https://sites.google.com/site/autohotkeyjp/reference/commands/IfExpression)
    
    
-   
-  
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-#### ページ公開時のKotlinのバージョン
-   
-0.10.195 
- 

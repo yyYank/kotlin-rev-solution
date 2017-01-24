@@ -97,6 +97,3 @@ Javaでinvokeメソッドを呼ぶ場合のように、コレクションにパ�
     val result = method.invoke(obj, *params)
     println(result) // => XXYY
 
-#### ページ公開時のKotlinのバージョン
-   
-0.12.613

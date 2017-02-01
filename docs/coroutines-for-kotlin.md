@@ -2,7 +2,7 @@
 # コールバックヘルとサヨナラしたい
 
 
-coroutinesと使うと良いかもしれません。
+coroutinesを使うと良いかもしれません。
 
 
 ## 導入されたversion
@@ -25,6 +25,29 @@ future {
 }
 ```
 
+
+```kotlin
+// inferred type is Sequence<Int>
+val fibonacci = buildSequence {
+    yield(1) // first Fibonacci number
+    var cur = 1
+    var next = 1
+    while (true) {
+        yield(next) // next Fibonacci number
+        val tmp = cur + next
+        cur = next
+        next = tmp
+    }
+}
+```
+
+
+## 環境設定
+
+* コマンドライン： -Xcoroutines=enabled オプションをつける
+* Gradle: gradle.properties or local.properties で kotlin.coroutines=enableを設定
+* Maven: <configuration> <args> <arg>-Xcoroutines=enable</arg> </args> </configuration> を設定
+* IDE: quick-fix (Alt+Enter)かfacet optionsで編集可能(Project Structure -> Modules -> Your Module -> Compiler -> Coroutines (experimental))
 
 ## 参考URL
 

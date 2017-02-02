@@ -87,7 +87,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
    
 ## 履歴
 
-
+```
      2015/03/05:サイト開設
      2015/03/07:変数の宣言についてページ作成
      2015/03/08:型の宣言についてページ作成
@@ -126,7 +126,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
      2016/7/11:KotlinでSQLライブラリやORM(O/R Mapper)を使いたい、Kotlinでtry-with-resourcesが使いたい、TODOタスクをソースに残す、クラスを引数にとる関数をつくるを追加
      2016/12/12 GradleのビルドスクリプトをKotlinで書く新規追加
      2017/1/23 よく使う型に別名をつけたい新規追加
-      
+```      
      
 ## Special Thanks
 

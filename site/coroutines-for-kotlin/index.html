@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/orm-for-kotlin/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/coroutines-for-kotlin/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>KotlinでORM(O/R Mapper)を使いたい - 逆引きKotlin</title>
+	<title>コールバックヘルとサヨナラしたい - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -242,7 +242,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">応用編 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -283,8 +283,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">KotlinでORM(O/R Mapper)を使いたい</a>
+<li >
+    <a href="../orm-for-kotlin/">KotlinでORM(O/R Mapper)を使いたい</a>
 </li>
 
                         
@@ -317,7 +317,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">ver1.1 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -328,8 +328,8 @@
 
                         
                             
-<li >
-    <a href="../coroutines-for-kotlin/">コールバックヘルとサヨナラしたい</a>
+<li class="active">
+    <a href="./">コールバックヘルとサヨナラしたい</a>
 </li>
 
                         
@@ -348,12 +348,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../keyword-for-kotlin/">
+                        <a rel="next" href="../type-alias/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../try-with-resources-for-kotlin/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -378,47 +378,65 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#kotlinsqlormor-mapper">KotlinでSQLライブラリやORM(O/R Mapper)を使いたい</a></li>
+        <li class="main active"><a href="#_1">コールバックヘルとサヨナラしたい</a></li>
         
-            <li><a href="#exposed">Exposed</a></li>
+            <li><a href="#version">導入されたversion</a></li>
         
-            <li><a href="#kwery">kwery</a></li>
+            <li><a href="#_2">サンプルコード</a></li>
         
-            <li><a href="#doma2">Doma2</a></li>
+            <li><a href="#_3">環境設定</a></li>
         
-            <li><a href="#kotliquery">kotliquery</a></li>
-        
-            <li><a href="#kotlin-nosql">kotlin-nosql</a></li>
+            <li><a href="#url">参考URL</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="kotlinsqlormor-mapper">KotlinでSQLライブラリやORM(O/R Mapper)を使いたい</h1>
-<p>有力なものは以下のものがあります</p>
-<h2 id="exposed">Exposed</h2>
-<p><a href="https://github.com/JetBrains/Exposed">https://github.com/JetBrains/Exposed</a></p>
-<p><a href="http://blog.orekyuu.net/?p=484">Exposedの使い方 - Javaビーム研究所 - </a></p>
-<h2 id="kwery">kwery</h2>
-<p><a href="https://github.com/andrewoma/kwery">https://github.com/andrewoma/kwery</a></p>
-<h2 id="doma2">Doma2</h2>
-<p><a href="https://github.com/domaframework">https://github.com/domaframework</a></p>
+<h1 id="_1">コールバックヘルとサヨナラしたい</h1>
+<p>coroutinesを使うと良いかもしれません。</p>
+<h2 id="version">導入されたversion</h2>
+<p>1.1(experimental)</p>
+<p>1.2で非同期用のAPIが追加されるが、async/awaitの文法上の変更は無いとのこと。</p>
+<h2 id="_2">サンプルコード</h2>
+<pre><code class="kotlin">future {
+    val original = asyncLoadImage(&quot;...original...&quot;) // creates a Future
+    val overlay = asyncLoadImage(&quot;...overlay...&quot;) // creates a Future
+    ...
+    // suspend while awaiting the loading of the images
+    // then run `applyOverlay(...)` when they are both loaded
+    return applyOverlay(original.await(), overlay.await())
+}
+</code></pre>
+
+<pre><code class="kotlin">// inferred type is Sequence&lt;Int&gt;
+val fibonacci = buildSequence {
+    yield(1) // first Fibonacci number
+    var cur = 1
+    var next = 1
+    while (true) {
+        yield(next) // next Fibonacci number
+        val tmp = cur + next
+        cur = next
+        next = tmp
+    }
+}
+</code></pre>
+
+<h2 id="_3">環境設定</h2>
 <ul>
-<li>
-<p>サンプル<br />
-<a href="https://github.com/domaframework/kotlin-sample">https://github.com/domaframework/kotlin-sample</a></p>
-</li>
-<li>
-<p>Kotlinサポート - Doma<br />
-<a href="http://doma.readthedocs.io/ja/stable/kotlin-support">http://doma.readthedocs.io/ja/stable/kotlin-support</a></p>
-</li>
+<li>コマンドライン： -Xcoroutines=enabled オプションをつける</li>
+<li>Gradle: gradle.properties or local.properties で kotlin.coroutines=enableを設定</li>
+<li>Maven: <configuration> <args> <arg>-Xcoroutines=enable</arg> </args> </configuration> を設定</li>
+<li>IDE: quick-fix (Alt+Enter)かfacet optionsで編集可能(Project Structure -&gt; Modules -&gt; Your Module -&gt; Compiler -&gt; Coroutines (experimental))</li>
 </ul>
-<h2 id="kotliquery">kotliquery</h2>
-<p><a href="https://github.com/seratch">searchさん</a>作
-<a href="https://github.com/seratch/kotliquery">https://github.com/seratch/kotliquery</a></p>
-<h2 id="kotlin-nosql">kotlin-nosql</h2>
-<p><a href="https://github.com/cheptsov/kotlin-nosql">https://github.com/cheptsov/kotlin-nosql</a></p></div>
+<h2 id="url">参考URL</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4W3ruTWUhpw">https://www.youtube.com/watch?v=4W3ruTWUhpw</a></li>
+<li><a href="https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/">https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/</a></li>
+<li><a href="https://github.com/Kotlin/kotlin-coroutines">https://github.com/Kotlin/kotlin-coroutines</a></li>
+<li><a href="https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md">https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md</a></li>
+</ul></div>
             
         </div>
 

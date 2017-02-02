@@ -1269,6 +1269,36 @@
             "location": "/type-alias/#url", 
             "text": "https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md", 
             "title": "\u53c2\u8003URL"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/", 
+            "text": "\u30b3\u30fc\u30eb\u30d0\u30c3\u30af\u30d8\u30eb\u3068\u30b5\u30e8\u30ca\u30e9\u3057\u305f\u3044\n\n\ncoroutines\u3092\u4f7f\u3046\u3068\u826f\u3044\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3002\n\n\n\u5c0e\u5165\u3055\u308c\u305fversion\n\n\n1.1(experimental)\n\n\n1.2\u3067\u975e\u540c\u671f\u7528\u306eAPI\u304c\u8ffd\u52a0\u3055\u308c\u308b\u304c\u3001async/await\u306e\u6587\u6cd5\u4e0a\u306e\u5909\u66f4\u306f\u7121\u3044\u3068\u306e\u3053\u3068\u3002\n\n\n\u30b5\u30f3\u30d7\u30eb\u30b3\u30fc\u30c9\n\n\nfuture {\n    val original = asyncLoadImage(\n...original...\n) // creates a Future\n    val overlay = asyncLoadImage(\n...overlay...\n) // creates a Future\n    ...\n    // suspend while awaiting the loading of the images\n    // then run `applyOverlay(...)` when they are both loaded\n    return applyOverlay(original.await(), overlay.await())\n}\n\n\n\n\n// inferred type is Sequence\nInt\n\nval fibonacci = buildSequence {\n    yield(1) // first Fibonacci number\n    var cur = 1\n    var next = 1\n    while (true) {\n        yield(next) // next Fibonacci number\n        val tmp = cur + next\n        cur = next\n        next = tmp\n    }\n}\n\n\n\n\n\u74b0\u5883\u8a2d\u5b9a\n\n\n\n\n\u30b3\u30de\u30f3\u30c9\u30e9\u30a4\u30f3\uff1a -Xcoroutines=enabled \u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u3064\u3051\u308b\n\n\nGradle: gradle.properties or local.properties \u3067 kotlin.coroutines=enable\u3092\u8a2d\u5b9a\n\n\nMaven: \n \n \n-Xcoroutines=enable\n \n \n \u3092\u8a2d\u5b9a\n\n\nIDE: quick-fix (Alt+Enter)\u304bfacet options\u3067\u7de8\u96c6\u53ef\u80fd(Project Structure -\n Modules -\n Your Module -\n Compiler -\n Coroutines (experimental))\n\n\n\n\n\u53c2\u8003URL\n\n\n\n\nhttps://www.youtube.com/watch?v=4W3ruTWUhpw\n\n\nhttps://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/\n\n\nhttps://github.com/Kotlin/kotlin-coroutines\n\n\nhttps://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md", 
+            "title": "\u30b3\u30fc\u30eb\u30d0\u30c3\u30af\u30d8\u30eb\u3068\u30b5\u30e8\u30ca\u30e9\u3057\u305f\u3044"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/#_1", 
+            "text": "coroutines\u3092\u4f7f\u3046\u3068\u826f\u3044\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3002", 
+            "title": "\u30b3\u30fc\u30eb\u30d0\u30c3\u30af\u30d8\u30eb\u3068\u30b5\u30e8\u30ca\u30e9\u3057\u305f\u3044"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/#version", 
+            "text": "1.1(experimental)  1.2\u3067\u975e\u540c\u671f\u7528\u306eAPI\u304c\u8ffd\u52a0\u3055\u308c\u308b\u304c\u3001async/await\u306e\u6587\u6cd5\u4e0a\u306e\u5909\u66f4\u306f\u7121\u3044\u3068\u306e\u3053\u3068\u3002", 
+            "title": "\u5c0e\u5165\u3055\u308c\u305fversion"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/#_2", 
+            "text": "future {\n    val original = asyncLoadImage( ...original... ) // creates a Future\n    val overlay = asyncLoadImage( ...overlay... ) // creates a Future\n    ...\n    // suspend while awaiting the loading of the images\n    // then run `applyOverlay(...)` when they are both loaded\n    return applyOverlay(original.await(), overlay.await())\n}  // inferred type is Sequence Int \nval fibonacci = buildSequence {\n    yield(1) // first Fibonacci number\n    var cur = 1\n    var next = 1\n    while (true) {\n        yield(next) // next Fibonacci number\n        val tmp = cur + next\n        cur = next\n        next = tmp\n    }\n}", 
+            "title": "\u30b5\u30f3\u30d7\u30eb\u30b3\u30fc\u30c9"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/#_3", 
+            "text": "\u30b3\u30de\u30f3\u30c9\u30e9\u30a4\u30f3\uff1a -Xcoroutines=enabled \u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u3064\u3051\u308b  Gradle: gradle.properties or local.properties \u3067 kotlin.coroutines=enable\u3092\u8a2d\u5b9a  Maven:      -Xcoroutines=enable      \u3092\u8a2d\u5b9a  IDE: quick-fix (Alt+Enter)\u304bfacet options\u3067\u7de8\u96c6\u53ef\u80fd(Project Structure -  Modules -  Your Module -  Compiler -  Coroutines (experimental))", 
+            "title": "\u74b0\u5883\u8a2d\u5b9a"
+        }, 
+        {
+            "location": "/coroutines-for-kotlin/#url", 
+            "text": "https://www.youtube.com/watch?v=4W3ruTWUhpw  https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/  https://github.com/Kotlin/kotlin-coroutines  https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md", 
+            "title": "\u53c2\u8003URL"
         }
     ]
 }

@@ -1,10 +1,10 @@
 
 <html>
     <head>
-        <meta content='summary' name='twitter:card'/>
-        <meta content='http://kotlin-rev-solution.herokuapp.com/images/Kotlin-icon.png' name='twitter:image'/>
-        <meta expr:content='逆引きKotlin' name='twitter:title'/>
-        <meta expr:content='JVM言語Kotlinの逆引きサイトです' name='twitter:description'/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="逆引きKotlin">
+        <meta name="twitter:description" content="JVM言語Kotlinの逆引きサイトです">
+        <meta name="twitter:image:src" content="http://kotlin-rev-solution.herokuapp.com/images/Kotlin-icon.png">
         <meta http-equiv="Refresh" content="0; URL=./site">
         <title>逆引きKotlin</title>
     </head>

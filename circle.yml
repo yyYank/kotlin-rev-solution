@@ -7,6 +7,9 @@ machine:
     Asia/Tokyo
   python:
     version: 2.7.10
+  post:
+    - sudo service mysql stop
+    - sudo service postgresql stop
 
 dependencies:
   pre:

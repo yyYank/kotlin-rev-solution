@@ -15,10 +15,15 @@ build.gradleに以下を追記してください。
 
 ```
 allOpen {
-    annotation('io.realm.annotations.RealmClass')
+    annotation('クラスの完全修飾子名')
 }
 ```
 
 ## 用途
 
 DIライブラリ、Mockitoなどとの組み合わせ
+
+## 参考URL
+
+*[http://taro.hatenablog.jp/entry/2016/12/28/105949](http://taro.hatenablog.jp/entry/2016/12/28/105949)
+* [http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work](http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work)

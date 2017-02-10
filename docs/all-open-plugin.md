@@ -33,6 +33,6 @@ DIライブラリ、Mockitoなどとの組み合わせ
 
 ## 参考URL
 
-*[https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/](https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/)
-*[http://taro.hatenablog.jp/entry/2016/12/28/105949](http://taro.hatenablog.jp/entry/2016/12/28/105949)
+* [https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/](https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/)
+* [http://taro.hatenablog.jp/entry/2016/12/28/105949](http://taro.hatenablog.jp/entry/2016/12/28/105949)
 * [http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work](http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work)

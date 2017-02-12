@@ -56,6 +56,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 
 * [よく使う型に別名をつけたい](./type-alias)
 * [コールバックヘルとサヨナラしたい](./coroutines-for-kotlin)
+* [SpringのAOPやMockitoでopenって書きたくない](./all-open-plugin)
    
 <br/>  
 <br/>  
@@ -127,7 +128,8 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
      2016/12/12:GradleのビルドスクリプトをKotlinで書く新規追加
      2017/1/23:よく使う型に別名をつけたい新規追加
      2017/2/2:コールバックヘルとサヨナラしたい新規追加
-```      
+     2017/2/12:SpringのAOPやMockitoでopenって書きたくない新規作成
+```      
      
 ## Special Thanks
 

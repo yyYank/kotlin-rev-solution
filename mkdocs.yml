@@ -45,4 +45,5 @@ pages:
 - [gradle-kts.md, '応用編', 'GradleのビルドスクリプトをKotlinで書く']
 - [type-alias.md, 'ver1.1', 'よく使う型に別名をつけたい']
 - [coroutines-for-kotlin.md, 'ver1.1', 'コールバックヘルとサヨナラしたい']
+- [all-open-plugin.md, 'ver1.1', 'SpringのAOPやMockitoでopenって書きたくない']
 

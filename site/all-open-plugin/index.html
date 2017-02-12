@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="yy_yank">
-        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/function_type/">
+        <link rel="canonical" href="http://kotlin-rev-solution.herokuapp.com/site/all-open-plugin/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>好きなタイミングで特定の処理を行う - 逆引きKotlin</title>
+	<title>SpringのAOPやMockitoでopenって書きたくない - 逆引きKotlin</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -98,7 +98,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本文法 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -133,8 +133,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">好きなタイミングで特定の処理を行う</a>
+<li >
+    <a href="../function_type/">好きなタイミングで特定の処理を行う</a>
 </li>
 
                         
@@ -317,7 +317,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">ver1.1 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -334,8 +334,8 @@
 
                         
                             
-<li >
-    <a href="../all-open-plugin/">SpringのAOPやMockitoでopenって書きたくない</a>
+<li class="active">
+    <a href="./">SpringのAOPやMockitoでopenって書きたくない</a>
 </li>
 
                         
@@ -354,12 +354,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../function/">
+                        <a rel="next" href="../coroutines-for-kotlin/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../function_object/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -384,58 +384,49 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#_1">好きなタイミングで特定の処理を行う</a></li>
+        <li class="main active"><a href="#springaopmockitoopen">SpringのAOPやMockitoでopenって書きたくない</a></li>
         
-            <li><a href="#_2">フォーマット</a></li>
+            <li><a href="#version">利用できるversion</a></li>
         
-            <li><a href="#_3">使用例</a></li>
+            <li><a href="#_1">使い方</a></li>
+        
+            <li><a href="#_2">用途</a></li>
+        
+            <li><a href="#url">参考URL</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="_1">好きなタイミングで特定の処理を行う</h1>
-<p><br/></p>
-<p>そういうとき、高階関数が便利です。</p>
-<p><a href="https://ja.wikipedia.org/wiki/%E9%AB%98%E9%9A%8E%E9%96%A2%E6%95%B0">高階関数 - Wikipedia</a></p>
-<p><br/></p>
-<h2 id="_2">フォーマット</h2>
-<p><br/>
-<br/>
-関数型の指定は、以下のように書きます。</p>
-<pre><code>    (引数の型[, 引数の型]...) -&gt; 戻り値の型
-</code></pre>
-<p><br/>
-<br/></p>
-<h2 id="_3">使用例</h2>
-<p><br/>
-<br/></p>
-<h4 id="_4">関数を引数として渡す</h4>
-<p><br/></p>
-<p>関数を引数として渡せば、振る舞いの定義だけすることが出来ます。</p>
-<p>Ajaxのコールバックなどが好例です。</p>
-<p>引数として関数オブジェクトを受け取るには、次のように書きます。</p>
-<pre><code>fun printResult(callee: (Int, Int) -&gt; Int, val1: Int, val2: Int): String {
-  val result = callee(val1, val2)
-  return "Result : $result";
+<h1 id="springaopmockitoopen">SpringのAOPやMockitoでopenって書きたくない</h1>
+<p>all openプラグインを利用します。</p>
+<h2 id="version">利用できるversion</h2>
+<p>1.1以降</p>
+<h2 id="_1">使い方</h2>
+<p>build.gradleに以下を追記してください。
+明示的なopenが不要になり、デフォルトでclassがopen(継承可能)となります。</p>
+<pre><code>buildscript {
+    dependencies {
+        classpath &quot;org.jetbrains.kotlin:kotlin-allopen:$kotlin_version&quot;
+    }
+}
+
+apply plugin: &quot;kotlin-allopen&quot;
+
+allOpen {
+    annotation(&quot;com.your.Annotation&quot;)
 }
 </code></pre>
-<p>この例では、第一引数に関数を受け取るように定義しています。
-受け取る関数は、第一、第二引数、戻り値ともにInt型を指定しています。</p>
-<p><br/>
-<br/></p>
-<h4 id="_5">関数を戻り値として受け取る</h4>
-<p><br/>
-<br/>
-逆に関数オブジェクトを戻り値として受け取れば、好きなタイミングで
-実行できます。</p>
-<pre><code>fun example2(val1: Int): (Int, Int) -&gt; Int {
-    return {x, y -&gt; (x + y) % val1};
-}
-</code></pre>
-<p>関数型には引数で受け取る場合と同じ型を指定しています。</p>
-<p>返す関数は関数リテラルで、クロージャーを使用して引数として渡された値を使用するように書いています。</p></div>
+
+<h2 id="_2">用途</h2>
+<p>DIライブラリ、Mockitoなどとの組み合わせ</p>
+<h2 id="url">参考URL</h2>
+<ul>
+<li><a href="https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/">https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/</a></li>
+<li><a href="http://taro.hatenablog.jp/entry/2016/12/28/105949">http://taro.hatenablog.jp/entry/2016/12/28/105949</a></li>
+<li><a href="http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work">http://stackoverflow.com/questions/41462180/kotlin-all-open-compiler-plugin-doesnt-work</a></li>
+</ul></div>
             
         </div>
 

@@ -261,6 +261,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://kotlin-rev-solution.herokuapp.com/site/all-open-plugin/</loc>
+     <lastmod>2017-02-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

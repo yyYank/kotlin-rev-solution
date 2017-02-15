@@ -88,7 +88,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
    
 ## 履歴
 
-
+<pre>
 ```
 2015/03/05:サイト開設
 2015/03/07:変数の宣言についてページ作成
@@ -131,7 +131,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 2017/2/2:コールバックヘルとサヨナラしたい新規追加
 2017/2/12:SpringのAOPやMockitoでopenって書きたくない新規作成
 ```    
-
+</pre>
 
 
 ## Special Thanks

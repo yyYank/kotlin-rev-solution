@@ -17,7 +17,7 @@ Kotlinで検索しプラグインをインストール
 https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/へアクセスする
 
 
-2.ラインセンスに同意します
+2.ライセンスに同意します
 
 
 3.Eclipseを再起動します

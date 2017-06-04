@@ -141,6 +141,7 @@ JVM言語の[Kotlin](http://kotlinlang.org)の逆引きサイトです。![](../
 * [iwata-nさん](https://github.com/iwata-n)  
 * [hkdnetさん](https://github.com/hkdnet)  
 * [EFEXPさん](https://github.com/EFEXP)  
+* [umireonさん](https://github.com/umireon)
    
   
    

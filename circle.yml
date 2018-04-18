@@ -19,6 +19,7 @@ deployment:
   deploy:
     branch: master
     commands:
+      - mkdocs --version
       - mkdocs build --clean
       - git config --global user.email yy.yank.dev.blog@gmail.com
       - git config --global user.name yyYank

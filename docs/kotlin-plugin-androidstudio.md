@@ -2,6 +2,15 @@
 
 
 
+※追記
+
+Android Studio 3.0 以降、Kotlinプラグインが標準搭載されるようになったため、
+
+この手順は不要でKotlinが使用できます！！
+
+[Android Announces Support for Kotlin](https://android-developers.googleblog.com/2017/05/android-announces-support-for-kotlin.html)
+
+
 ### 事前準備
 
 Android Studioのインストール

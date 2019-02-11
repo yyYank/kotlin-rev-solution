@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +13,31 @@
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kotlin-install/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-intellij/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-androidstudio/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kotlin-plugin-eclipse/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/hello-kotlin-android/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,73 +47,73 @@
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/variable/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/type/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/instance/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/array/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/function/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/function_type/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/function_object/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/if-statement/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/if-function/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/when/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/loop/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/enum/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,55 +123,55 @@
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kotlin-collection-framework/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-for-each/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-filter/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-map/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-merge/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-sum/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-drop/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-take/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/collection-zip/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -181,67 +181,67 @@
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/extension/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/type-safe-builder/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/reflection/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/framework-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/unit-test-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/keyword-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/orm-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/try-with-resources-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/todo/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/kclass-argument/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/gradle-kts/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -251,19 +251,19 @@
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/type-alias/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/coroutines-for-kotlin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://kotlin-rev-solution.herokuapp.com/site/all-open-plugin/</loc>
-     <lastmod>2018-04-18</lastmod>
+     <lastmod>2019-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

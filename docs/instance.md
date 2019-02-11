@@ -14,14 +14,14 @@ Kotlinにおいてクラスのインスタンスを生成するには
    
   
 ### 実装サンプル
-例えば、以下の様なHogeというクラスが合った時   
+例えば、以下の様なHogeというクラスが有った時   
 
     public class Hoge(val message : String) {
        fun printHoge () {
            println("helllo! -> $message")
        }
     }
- 
+
 インスタンスの生成は以下のように行います。
 
     val hoge = Hoge("hoge")

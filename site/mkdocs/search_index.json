@@ -1167,7 +1167,7 @@
         }, 
         {
             "location": "/orm-for-kotlin/", 
-            "text": "Kotlin\u3067SQL\u30e9\u30a4\u30d6\u30e9\u30ea\u3084ORM(O/R Mapper)\u3092\u4f7f\u3044\u305f\u3044\n\n\n\u6709\u529b\u306a\u3082\u306e\u306f\u4ee5\u4e0b\u306e\u3082\u306e\u304c\u3042\u308a\u307e\u3059\n\n\nExposed\n\n\nhttps://github.com/JetBrains/Exposed\n\n\nExposed\u306e\u4f7f\u3044\u65b9 - Java\u30d3\u30fc\u30e0\u7814\u7a76\u6240 - \n\n\nkwery\n\n\nhttps://github.com/andrewoma/kwery\n\n\nDoma2\n\n\nhttps://github.com/domaframework\n\n\n\n\n\n\n\u30b5\u30f3\u30d7\u30eb\n\n\nhttps://github.com/domaframework/kotlin-sample\n\n\n\n\n\n\nKotlin\u30b5\u30dd\u30fc\u30c8 - Doma\n\n\nhttp://doma.readthedocs.io/ja/stable/kotlin-support\n\n\n\n\n\n\nkotliquery\n\n\nsearch\u3055\u3093\n\u4f5c\n\nhttps://github.com/seratch/kotliquery\n\n\nkotlin-nosql\n\n\nhttps://github.com/cheptsov/kotlin-nosql", 
+            "text": "Kotlin\u3067SQL\u30e9\u30a4\u30d6\u30e9\u30ea\u3084ORM(O/R Mapper)\u3092\u4f7f\u3044\u305f\u3044\n\n\n\u6709\u529b\u306a\u3082\u306e\u306f\u4ee5\u4e0b\u306e\u3082\u306e\u304c\u3042\u308a\u307e\u3059\n\n\nExposed\n\n\nhttps://github.com/JetBrains/Exposed\n\n\nExposed\u306e\u4f7f\u3044\u65b9 - Java\u30d3\u30fc\u30e0\u7814\u7a76\u6240 - \n\n\nkwery\n\n\nhttps://github.com/andrewoma/kwery\n\n\nDoma2\n\n\nhttps://github.com/domaframework\n\n\n\n\n\n\n\u30b5\u30f3\u30d7\u30eb\n\n\nhttps://github.com/domaframework/kotlin-sample\n\n\n\n\n\n\nKotlin\u30b5\u30dd\u30fc\u30c8 - Doma\n\n\nhttp://doma.readthedocs.io/ja/stable/kotlin-support\n\n\n\n\n\n\nkotliquery\n\n\nseratch\u3055\u3093\n\u4f5c\n\nhttps://github.com/seratch/kotliquery\n\n\nkotlin-nosql\n\n\nhttps://github.com/cheptsov/kotlin-nosql", 
             "title": "Kotlin\u3067ORM(O/R Mapper)\u3092\u4f7f\u3044\u305f\u3044"
         }, 
         {
@@ -1192,7 +1192,7 @@
         }, 
         {
             "location": "/orm-for-kotlin/#kotliquery", 
-            "text": "search\u3055\u3093 \u4f5c https://github.com/seratch/kotliquery", 
+            "text": "seratch\u3055\u3093 \u4f5c https://github.com/seratch/kotliquery", 
             "title": "kotliquery"
         }, 
         {
